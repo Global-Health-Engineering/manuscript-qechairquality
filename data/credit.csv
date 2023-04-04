@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 first_name, surname, credit_statement
 Elizabeth, Tilley, Conceptualization
 Elizabeth, Tilley, Methodology
@@ -7,15 +6,5 @@ Marc, Kalina, Methodology
 Lars, Schöbitz, Software
 Lars, Schöbitz, Data Curation
 Lars, Schöbitz, Visualization
-=======
-first_name, surname, credit_statement,
-Elizabeth, Tilley, Conceptualization,
-Elizabeth, Tilley, Methodology,
-Marc, Kalina, Conceptualization,
-Marc, Kalina, Methodology,
-Lars, Schöbitz, Software,
-Lars, Schöbitz, Data Curation,
-Lars, Schöbitz, Visualization,
->>>>>>> d77766ccc42d480fe5df93a857671f8f7376a6ea
 Jonathan, Kwangulero, ADD
 Hope, hilunga, ADD
