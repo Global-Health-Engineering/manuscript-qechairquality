@@ -42,7 +42,7 @@ keywords:
   - keyword1
   - keyword2
 date: last-modified
-bibliography: bibliography.bib
+bibliography: [bibliography.bib, introduction.bib, man-qech_air-quality.bib]
 format:
   elsevier-pdf:
     keep-tex: true
@@ -51,9 +51,40 @@ format:
       formatting: preprint
       model: 3p
       cite-style: super
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
 # Introduction
+
+Built in 1964, Malawi's year of independence, Queen Elizabeth Hospital
+(QECH), or Queen's, as it's known locally, is the country's largest
+public hospital. Designed in the Tropical Modernism style of
+architecture popular within Africa in the late colonial period, Queen's
+open-plan form sprawls across a broad swath of central Blantyre, with
+dozens of wards, specialised facilities, and administrative buildings,
+linked together by a bewildering maze of covered walkways. A hive of
+around-the-clock activity, Queen's bustles from dawn to dusk with a
+constant stream of patients, drawn from across the country, and
+maintains a city-like feel even after dark as staff and stay-in family
+members cook and care for their in-patient dependants. Yet, for the
+first-time visitor, it's not the architecture or the crowds that are the
+most striking when entering the grounds, but the smell. Immediately
+noticeable, even from the road outside the hospital, Queen's is
+smothered by an acrid-smelling, white smoke, which hangs over the
+grounds day and night: the product of several constantly burning fires
+spread across the campus. Breathing this air, when a significant amount
+of burning is occurring, primarily at night when the smoke is less
+visible, can be incredibly uncomfortable. Moreover, the tropical
+architecture, designed to let air and light circulate, means that even
+indoors, within patient wards, surgery, and treatment areas, the air
+quality can also be unbearable. Poor air quality associated with
+burning, through released particulate matter (PM), has been linked to
+multiple negative health outcomes like asthma, heart disease, heart
+failure, stroke, and cancer among others (Anderson et al., 2012; Bell &
+HEI Health Review Committee, 2012). In a space of healing and recovery,
+why is such burning occurring, and how can it continue to persist?
 
 # Material and methods
 
@@ -65,42 +96,52 @@ format:
 
 # Appendix
 
-If there is more than one appendix, they should be identified as A, B, etc. Formulae and equations in appendices should be given separate numbering: Eq. (A.1), Eq. (A.2), etc.; in a subsequent appendix, Eq. (B.1) and so on. Similarly for tables and figures: Table A.1; Fig. A.1, etc.
-
+If there is more than one appendix, they should be identified as A, B,
+etc. Formulae and equations in appendices should be given separate
+numbering: Eq. (A.1), Eq. (A.2), etc.; in a subsequent appendix, Eq.
+(B.1) and so on. Similarly for tables and figures: Table A.1; Fig. A.1,
+etc.
 
 # Template instructions
 
-Please make sure that your manuscript follows the guidelines in the 
-Guide for Authors of the relevant journal. It is not necessary to 
-typeset your manuscript in exactly the same way as an article, 
-unless you are submitting to a camera-ready copy (CRC) journal.
+Please make sure that your manuscript follows the guidelines in the
+Guide for Authors of the relevant journal. It is not necessary to
+typeset your manuscript in exactly the same way as an article, unless
+you are submitting to a camera-ready copy (CRC) journal.
 
-For detailed instructions regarding the elsevier article class, see   <https://www.elsevier.com/authors/policies-and-guidelines/latex-instructions>
+For detailed instructions regarding the elsevier article class, see
+<https://www.elsevier.com/authors/policies-and-guidelines/latex-instructions>
 
 # Bibliography styles
 
-Here are two sample references:  @Feynman1963118 @Dirac1953888.
+Here are two sample references: @Feynman1963118 @Dirac1953888.
 
-By default, natbib will be used with the `authoryear` style, set in `classoption` variable in YAML. 
-You can sets extra options with `natbiboptions` variable in YAML header. Example 
+By default, natbib will be used with the `authoryear` style, set in
+`classoption` variable in YAML. You can sets extra options with
+`natbiboptions` variable in YAML header. Example
 
-```
+```         
 natbiboptions: longnamesfirst,angle,semicolon
 ```
 
 There are various more specific bibliography styles available at
-<https://support.stmdocs.in/wiki/index.php?title=Model-wise_bibliographic_style_files>. 
-To use one of these, add it in the header using, for example, `biblio-style: model1-num-names`.
+<https://support.stmdocs.in/wiki/index.php?title=Model-wise_bibliographic_style_files>.
+To use one of these, add it in the header using, for example,
+`biblio-style: model1-num-names`.
 
-## Using CSL 
+## Using CSL
 
-If `cite-method` is set to `citeproc` in `elsevier_article()`, then pandoc is used for citations instead of `natbib`. In this case, the `csl` option is used to format the references. By default, this template will provide an appropriate style, but alternative `csl` files are available from <https://www.zotero.org/styles?q=elsevier>. These can be downloaded
-and stored locally, or the url can be used as in the example header.
+If `cite-method` is set to `citeproc` in `elsevier_article()`, then
+pandoc is used for citations instead of `natbib`. In this case, the
+`csl` option is used to format the references. By default, this template
+will provide an appropriate style, but alternative `csl` files are
+available from <https://www.zotero.org/styles?q=elsevier>. These can be
+downloaded and stored locally, or the url can be used as in the example
+header.
 
 # Equations
 
-Here is an equation:
-$$ 
+Here is an equation: $$ 
   f_{X}(x) = \left(\frac{\alpha}{\beta}\right)
   \left(\frac{x}{\beta}\right)^{\alpha-1}
   e^{-\left(\frac{x}{\beta}\right)^{\alpha}}; 
@@ -126,7 +167,8 @@ plot(runif(25), runif(25))
 
 # Tables coming from R
 
-Tables can also be generated using R chunks, as shown in @tbl-simple example.
+Tables can also be generated using R chunks, as shown in @tbl-simple
+example.
 
 ```{r}
 #| label: tbl-simple
@@ -135,4 +177,4 @@ Tables can also be generated using R chunks, as shown in @tbl-simple example.
 knitr::kable(head(mtcars)[,1:4])
 ```
 
-# References {-}
+# References {.unnumbered}
