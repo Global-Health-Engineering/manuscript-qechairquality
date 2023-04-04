@@ -53,6 +53,23 @@ format:
       cite-style: super
 ---
 
+# Introduction
+
+# Material and methods
+
+# Theory/calculation (not applicable)
+
+# Results and Discussion
+
+# Conclusions
+
+# Appendix
+
+If there is more than one appendix, they should be identified as A, B, etc. Formulae and equations in appendices should be given separate numbering: Eq. (A.1), Eq. (A.2), etc.; in a subsequent appendix, Eq. (B.1) and so on. Similarly for tables and figures: Table A.1; Fig. A.1, etc.
+
+
+# Template instructions
+
 Please make sure that your manuscript follows the guidelines in the 
 Guide for Authors of the relevant journal. It is not necessary to 
 typeset your manuscript in exactly the same way as an article, 
