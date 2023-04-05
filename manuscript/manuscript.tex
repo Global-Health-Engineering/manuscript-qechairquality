@@ -4,8 +4,8 @@
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
-  super,
-  preprint,
+  authoryear,
+  review,
   3p]{elsarticle}
 
 \usepackage{amsmath,amssymb}
@@ -166,12 +166,12 @@
 \makeatother
 \makeatletter
 \makeatother
-\journal{Journal Name}
+\journal{Habitat International}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 \usepackage[]{natbib}
-\bibliographystyle{elsarticle-num}
+\bibliographystyle{elsarticle-harv}
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
@@ -237,6 +237,9 @@ tempus elit.
 
 
 
+\begin{highlights}
+\item Highlight 1\item Highlight 2\item Highlight 3
+\end{highlights}
 
 
 \begin{keyword}
@@ -244,7 +247,64 @@ tempus elit.
     keyword2
 \end{keyword}
 \end{frontmatter}
-    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, breakable, frame hidden, sharp corners, boxrule=0pt]}{\end{tcolorbox}}\fi
+    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, frame hidden, interior hidden, sharp corners, borderline west={3pt}{0pt}{shadecolor}, enhanced, breakable]}{\end{tcolorbox}}\fi
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+Built in 1964, Malawi's year of independence, Queen Elizabeth Hospital
+(QECH), or Queen's, as it's known locally, is the country's largest
+public hospital. Designed in the Tropical Modernism style of
+architecture popular within Africa in the late colonial period, Queen's
+open-plan form sprawls across a broad swath of central Blantyre, with
+dozens of wards, specialised facilities, and administrative buildings,
+linked together by a bewildering maze of covered walkways. A hive of
+around-the-clock activity, Queen's bustles from dawn to dusk with a
+constant stream of patients, drawn from across the country, and
+maintains a city-like feel even after dark as staff and stay-in family
+members cook and care for their in-patient dependants. Yet, for the
+first-time visitor, it's not the architecture or the crowds that are the
+most striking when entering the grounds, but the smell. Immediately
+noticeable, even from the road outside the hospital, Queen's is
+smothered by an acrid-smelling, white smoke, which hangs over the
+grounds day and night: the product of several constantly burning fires
+spread across the campus. Breathing this air, when a significant amount
+of burning is occurring, primarily at night when the smoke is less
+visible, can be incredibly uncomfortable. Moreover, the tropical
+architecture, designed to let air and light circulate, means that even
+indoors, within patient wards, surgery, and treatment areas, the air
+quality can also be unbearable. Poor air quality associated with
+burning, through released particulate matter (PM), has been linked to
+multiple negative health outcomes like asthma, heart disease, heart
+failure, stroke, and cancer among others
+\citep{anderson2012clearing, bell2012assessment}. In a space of healing
+and recovery, why is such burning occurring, and how can it continue to
+persist?
+
+\hypertarget{material-and-methods}{%
+\section{Material and methods}\label{material-and-methods}}
+
+\hypertarget{theorycalculation-not-applicable}{%
+\section{Theory/calculation (not
+applicable)}\label{theorycalculation-not-applicable}}
+
+\hypertarget{results-and-discussion}{%
+\section{Results and Discussion}\label{results-and-discussion}}
+
+\hypertarget{conclusions}{%
+\section{Conclusions}\label{conclusions}}
+
+\hypertarget{appendix}{%
+\section{Appendix}\label{appendix}}
+
+If there is more than one appendix, they should be identified as A, B,
+etc. Formulae and equations in appendices should be given separate
+numbering: Eq. (A.1), Eq. (A.2), etc.; in a subsequent appendix, Eq.
+(B.1) and so on. Similarly for tables and figures: Table A.1; Fig. A.1,
+etc.
+
+\hypertarget{template-instructions}{%
+\section{Template instructions}\label{template-instructions}}
 
 Please make sure that your manuscript follows the guidelines in the
 Guide for Authors of the relevant journal. It is not necessary to
@@ -345,7 +405,7 @@ Valiant & 18.1 & 6 & 225 & 105 \\
 
 
 \renewcommand\refname{References}
-  \bibliography{bibliography.bib}
+  \bibliography{bibliography.bib,introduction.bib,man-qech-air-quality.bib}
 
 
 \end{document}
