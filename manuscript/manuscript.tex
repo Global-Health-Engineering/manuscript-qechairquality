@@ -49,46 +49,6 @@
   \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
 
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{241,243,245}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
-\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
@@ -247,7 +207,7 @@ tempus elit.
     keyword2
 \end{keyword}
 \end{frontmatter}
-    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, breakable, boxrule=0pt, enhanced, interior hidden, borderline west={3pt}{0pt}{shadecolor}, sharp corners]}{\end{tcolorbox}}\fi
+    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, sharp corners, frame hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, boxrule=0pt, breakable]}{\end{tcolorbox}}\fi
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
@@ -293,17 +253,24 @@ municipal collection that is done is ad-hoc, sporadic, and based on the
 hospital's available financial resources. Rather, most hospital waste
 (infectious and non-infectious) is gathered by grounds staff and burnt
 at the hospital's incinerator, located at a central point within the
-hospital campus \citep{kalina2020this}. However, the vast majority of
-the deposited waste is not incinerated, as a new incinerator provided by
-the Ministry of Health in late 2019, is only able to handle a small
-percentage of the hospital's waste. Furthermore, the incinerator is
-frequently inoperable, under repair, or without power,. Rather, the
-waste is openly burned, in a constantly smouldering pile to the side of
-the incinerator building, sending up the aforementioned clouds of smoke,
-which choke the grounds (Figure 1). Innumerable other, smaller, fires,
-scattered across the QECH campus (Figure 2) contribute their part, as
-grounds and maintenance staff habitually burn leaves and other garden
-refuse. Furthermore, caregivers who reside separately on hospital
+hospital campus\footnote{Sharps are handled and disposed of separately.}
+\citep{kalina2020this}. However, the vast majority of the deposited
+waste is not incinerated, as a new incinerator provided by the Ministry
+of Health in late 2019, is only able to handle a small percentage of the
+hospital's waste. Furthermore, the incinerator is frequently inoperable,
+under repair, or without power\footnote{There was an older incinerator
+  on the grounds which failed in 2017. Between 2017 and 2021, when the
+  new incinerator was commissioned, nothing was incinerated at all.}.
+Rather, the waste is openly burned, in a constantly smouldering pile to
+the side of the incinerator building, sending up the aforementioned
+clouds of smoke, which choke the grounds
+(Figure~\ref{fig-open-burning}). Innumerable other, smaller, fires,
+scattered across the QECH campus (Figure~\ref{fig-map-sensors})
+contribute their part, as grounds and maintenance staff habitually burn
+leaves and other garden refuse. Furthermore, caregivers\footnote{Patients
+  are required to bring a caregiver for in-patient hospitals stays,
+  usually a family member, who assist with feeding, bathing, and all
+  other non-medical services.} who reside separately on hospital
 grounds, cook for themselves throughout the day and night using biomass
 (charcoal or wood), and burn their own domestic waste. As a result, air
 quality at the hospital is a constant source of discussion, with
@@ -334,18 +301,14 @@ the quantity of waste generation in these countries is expected to
 triple by 2050. As a result, open waste burning, in nations like Malawi,
 can be expected to become more prevalent.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Figure 1: Open burning at QECH, with the old incinerator building in the background (Authors).}
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{include\_graphics}\NormalTok{(here}\SpecialCharTok{::}\FunctionTok{here}\NormalTok{(}\StringTok{"manuscript/img/image{-}replace{-}tree.png"}\NormalTok{))}
-\end{Highlighting}
-\end{Shaded}
+\begin{figure}
 
-\begin{figure}[H]
-
-{\centering \includegraphics{img/image-replace-tree.png}
+{\centering \includegraphics[width=0.8\textwidth,height=\textheight]{img/open-waste-burning-incinerator-qech.jpg}
 
 }
+
+\caption{\label{fig-open-burning}Open burning at QECH, with the old
+incinerator building in the background (Authors).}
 
 \end{figure}
 
@@ -499,10 +462,12 @@ below and shown in Figure 2:
   \textbf{The Blantyre Malaria Project (BMP)}, established by Professors
   Terrie Taylor and Malcolm Molyneux, has carried out clinical research
   and patient care in the area of paediatric malaria, specifically
-  cerebral malaria, for more than 30 years. Its research infrastructure
-  includes an administrative team, an inpatient research ward, an MRI
-  centre, and an outpatient research clinic in Ndirande township and in
-  other districts outside of Blantyre.
+  cerebral malaria, for more than 30 years\footnote{BMP is credited with
+    the development of the Blantyre Coma Score, which is used widely.}.
+  Its research infrastructure includes an administrative team, an
+  inpatient research ward, an MRI centre, and an outpatient research
+  clinic in Ndirande township and in other districts outside of
+  Blantyre.
 \item
   \textbf{Ward 6B} is a male ward for trauma and orthopaedic patients.
   It was established as part of the original hospital design. It is a
@@ -535,17 +500,21 @@ below and shown in Figure 2:
   guardian: someone to cook for them, buy medicine, do their laundry,
   and help them bathe. The \textbf{Guardian Shelter} is a
   gender-separated concrete floor shelter for sleeping along with a
-  cooking pavilion and toilet/shower block are maintained by a local
-  NGO. Though simple, the facility is secure and offers one of the only
-  free/accessible toilet facilities for visitors on the QECH campus.
+  cooking pavilion and toilet/shower block are maintained by a the local
+  NGO Chira fund. Though simple, the facility is secure and offers one
+  of the only free/accessible toilet facilities for visitors on the QECH
+  campus.
 \end{itemize}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# map}
-\CommentTok{\# Figure 2: Sensor locations within QECH}
-\end{Highlighting}
-\end{Shaded}
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\textwidth,height=\textheight]{figs/map-sensores-qech-blantyre.png}
+
+}
+
+\caption{\label{fig-map-sensors}Sensor locations within QECH}
+
+\end{figure}
 
 \hypertarget{waste-management}{%
 \subsection{Waste management}\label{waste-management}}
@@ -627,7 +596,7 @@ read digital signals, we needed to include an analog-to-digital (ADC)
 converter. The amount of dust is measured by a Nova PM SDS011 High
 Precision Laser sensor. This sensor measures particles at 2.5 and 10
 micrometres in diameter in mg/m3. A list of the specific hardware and
-software components can be found in Appendix TODO.
+software components can be found in Appendix B.
 
 \hypertarget{installation}{%
 \subsubsection{Installation}\label{installation}}
@@ -734,22 +703,27 @@ Therefore, for international comparisons and due to the lack of
 comprehensive Malawian Standards, we use the WHO recommendations as a
 basis of comparison for the measured values
 \citep{worldhealthorganization2021who}. The relevant particulate matter
-targets are presented in Table 1.
+targets are presented in \textbf{?@tbl-who-targets}.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Table 1. Particulate matter targets from @worldhealthorganization2021who}
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{include\_graphics}\NormalTok{(here}\SpecialCharTok{::}\FunctionTok{here}\NormalTok{(}\StringTok{"manuscript/img/image{-}replace{-}table.png"}\NormalTok{))}
-\end{Highlighting}
-\end{Shaded}
+(TODO: REPLACE screenshot)
 
-\begin{figure}[H]
+\begin{table}
 
-{\centering \includegraphics{img/image-replace-table.png}
+\caption{\textbf{?(caption)}}\begin{minipage}[t]{\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics[width=2.04in,height=\textheight]{img/image-replace-table.png}
 
 }
 
-\end{figure}
+}
+
+\end{minipage}%
+
+\end{table}
 
 \hypertarget{particulate-measurements}{%
 \subsection{Particulate Measurements}\label{particulate-measurements}}
@@ -760,15 +734,34 @@ targets are presented in Table 1.
 Due to localised variation (air movement in the immediate area) and the
 density of the observations, the plotted 5-minute data obscure
 persistent trends. The full set of 5-minute data are plotted and
-presented in Appendix XA1 (TODO). However, the number of measured values
-that exceeded the hazardous limit for both parameters are summarised in
-Table 2.
+presented in Appendix A Figure A.1. However, the number of measured
+values that exceeded the hazardous limit for both parameters are
+summarised in Table~\ref{tbl-peaks}.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Table 2. Peaks for both PM2.5 and PM10 are the number of data points above the WHO interim target 1 (annual) which is the least stringent;  the number of observations recorded (count) is provided for reference. }
-\end{Highlighting}
-\end{Shaded}
+\hypertarget{tbl-peaks}{}
+\begin{longtable}[]{@{}lrrr@{}}
+\caption{\label{tbl-peaks}Peaks for both PM\textsubscript{2.5} and
+PM\textsubscript{10} are the number of data points above the WHO interim
+target 1 (annual) which is the least stringent; the number of
+observations recorded (count) is provided for reference.}\tabularnewline
+\toprule()
+location & n & pm10 & pm2.5 \\
+\midrule()
+\endfirsthead
+\toprule()
+location & n & pm10 & pm2.5 \\
+\midrule()
+\endhead
+Administration & 10900 & 171 & 94 \\
+Guardian Shelter & 11032 & 4529 & 5314 \\
+Lighthouse Clinic & 11472 & 4365 & 3891 \\
+Lions Sight & 11749 & 91 & 14 \\
+Malaria & 12031 & 617 & 578 \\
+Mercy James & 12193 & 736 & 749 \\
+Ward 6B & 11861 & 1113 & 1236 \\
+uMoyo & 10637 & 703 & 399 \\
+\bottomrule()
+\end{longtable}
 
 Over the course of the two-month study, the hazardous limits for both
 parameters were exceeded at all locations except for the Lions Sight
@@ -791,10 +784,10 @@ acceptable.
 \subsubsection{24-hour averages}\label{hour-averages}}
 
 The 24-hour averaged values (logged every 5 minutes) are presented for
-each location, for both PM10 and PM2.5 in Figure 3. As well as dampening
-local variation and peaks, the WHO air quality guidelines are also based
-on 24-hour averages which are the standard against which the health
-risks can be judged.
+each location, for both PM10 and PM2.5 in fig-24-hour-average. As well
+as dampening local variation and peaks, the WHO air quality guidelines
+are also based on 24-hour averages which are the standard against which
+the health risks can be judged.
 
 Overall, PM2.5 values remained below 100 μg/m3 at 6 of 8 locations
 (Administration, Lions Sight, Malaria Project, uMoyo, Ward 6B, and Mercy
@@ -813,11 +806,16 @@ constant. However, further analysis of 12 hour averages (8:00-15:59
 differences between the time periods; stated differently, the data did
 not clearly point to more or less burning in the day or at night.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Figure 3. Average 24{-}hour PM10 and PM2.5 at 8 monitoring stations over 2 months}
-\end{Highlighting}
-\end{Shaded}
+\begin{figure}
+
+{\centering \includegraphics{manuscript_files/figure-pdf/fig-24-hour-average-1.pdf}
+
+}
+
+\caption{\label{fig-24-hour-average}Average 24-hour PM10 and PM2.5 at 8
+monitoring stations over 2 months}
+
+\end{figure}
 
 \hypertarget{pm-ratios}{%
 \subsubsection{PM ratios}\label{pm-ratios}}
@@ -826,13 +824,20 @@ Given that the type of fuel and the type of burning (contained vs.~open)
 produce very different particulate ``fingerprints'', the ratio of PM10
 to PM2.5 values were examined to determine if a clear difference between
 locations, and therefore source, could be identified. The results are
-presented in Figure 4.
+presented in Figure~\ref{fig-pm-ratios}.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Figure 4. PM10:PM2.5 values for each location.  Each line shows the minimum and maximum ratio for the day based on ratios calculated hourly.  }
-\end{Highlighting}
-\end{Shaded}
+\begin{figure}
+
+{\centering \includegraphics{manuscript_files/figure-pdf/fig-pm-ratios-1.pdf}
+
+}
+
+\caption{\label{fig-pm-ratios}PM10:PM2.5 values for each location. Each
+line shows the minimum and maximum ratio for the day based on ratios
+calculated hourly. Does not include 14th to 16th October at location
+uMoyo due to extreme outliers.}
+
+\end{figure}
 
 The results presented in Figure 5 illustrate both the presence of PM10
 relative to PM2.5 as well as the range of values over which that ratio
@@ -864,13 +869,19 @@ reflects a range of burning styles and/or fuel type.
 \subsection{Exposure Data}\label{exposure-data}}
 
 The relative amount of time exposed to a given category of air quality
-is shown in Figure 5. Each square represents 1\% of the measured time.
+is shown in Figure~\ref{fig-percent-exposure}. Each square represents
+1\% of the measured time.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Figure 5. Percentage of measured values categorised according to WHO 2021 targets}
-\end{Highlighting}
-\end{Shaded}
+\begin{figure}
+
+{\centering \includegraphics{manuscript_files/figure-pdf/fig-percent-exposure-1.pdf}
+
+}
+
+\caption{\label{fig-percent-exposure}Percentage of measured values
+categorised according to WHO 2021 targets}
+
+\end{figure}
 
 Unsurprisingly, a majority of the air quality at the Lighthouse Clinic
 and the Guardian Shelter falls at, or below, interim target 1. What is
@@ -1018,7 +1029,8 @@ when the new incinerator is opened.''
 \section{Conclusions}\label{conclusions}}
 
 \hypertarget{appendix}{%
-\section{Appendix}\label{appendix}}
+\section*{Appendix}\label{appendix}}
+\addcontentsline{toc}{section}{Appendix}
 
 If there is more than one appendix, they should be identified as A, B,
 etc. Formulae and equations in appendices should be given separate
@@ -1026,52 +1038,226 @@ numbering: Eq. (A.1), Eq. (A.2), etc.; in a subsequent appendix, Eq.
 (B.1) and so on. Similarly for tables and figures: Table A.1; Fig. A.1,
 etc.
 
-\hypertarget{figures-and-tables}{%
-\section{Figures and tables}\label{figures-and-tables}}
-
-Figure~\ref{fig-meaningless} is generated using an R chunk.
+\hypertarget{appendix-a}{%
+\subsection*{Appendix A}\label{appendix-a}}
+\addcontentsline{toc}{subsection}{Appendix A}
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\textwidth,height=\textheight]{manuscript_files/figure-pdf/fig-meaningless-1.pdf}
+{\centering \includegraphics{manuscript_files/figure-pdf/fig-5-minute-intervals-1.pdf}
 
 }
 
-\caption{\label{fig-meaningless}A meaningless scatterplot}
+\caption{\label{fig-5-minute-intervals}PM2.5 and PM10 values collected
+every 5 minutes over 10 months at 8 locations.}
 
 \end{figure}
 
-\hypertarget{tables-coming-from-r}{%
-\section{Tables coming from R}\label{tables-coming-from-r}}
+\hypertarget{appendix-b}{%
+\subsection*{Appendix B}\label{appendix-b}}
+\addcontentsline{toc}{subsection}{Appendix B}
 
-Tables can also be generated using R chunks, as shown in
-Table~\ref{tbl-simple} example.
+\hypertarget{hardware-components}{%
+\subsubsection*{Hardware Components}\label{hardware-components}}
+\addcontentsline{toc}{subsubsection}{Hardware Components}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}\FunctionTok{head}\NormalTok{(mtcars)[,}\DecValTok{1}\SpecialCharTok{:}\DecValTok{4}\NormalTok{])}
-\end{Highlighting}
-\end{Shaded}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Raspberry Pi 3 Model B single-board computer technical specifications:
+\end{enumerate}
 
-\hypertarget{tbl-simple}{}
-\begin{longtable}[]{@{}lrrrr@{}}
-\caption{\label{tbl-simple}Caption centered above table}\tabularnewline
-\toprule()
-& mpg & cyl & disp & hp \\
-\midrule()
-\endfirsthead
-\toprule()
-& mpg & cyl & disp & hp \\
-\midrule()
-\endhead
-Mazda RX4 & 21.0 & 6 & 160 & 110 \\
-Mazda RX4 Wag & 21.0 & 6 & 160 & 110 \\
-Datsun 710 & 22.8 & 4 & 108 & 93 \\
-Hornet 4 Drive & 21.4 & 6 & 258 & 110 \\
-Hornet Sportabout & 18.7 & 8 & 360 & 175 \\
-Valiant & 18.1 & 6 & 225 & 105 \\
-\bottomrule()
-\end{longtable}
+\begin{itemize}
+\tightlist
+\item
+  Broadcom BCM2837 64bit Quad Core Processor powered Single Board
+  Computer running at 1.2GHz 1GB RAM
+\item
+  BCM43438 WiFi on board
+\item
+  Bluetooth Low Energy (BLE) on board
+\item
+  40pin extended GPIO
+\item
+  4 x USB 2 ports 4 pole Stereo output and Composite video port
+\item
+  Full size HDMI CSI camera port for connecting the Raspberry Pi camera
+\item
+  DSI display port for connecting the Raspberry Pi touch screen display
+\item
+  Micro SD port for loading your operating system and storing data
+\item
+  Upgraded switched Micro USB power source (now supports up to 2.4 Amps)
+\item
+  Same form factor as the Pi 2 Model B, however the LEDs have changed
+  position
+\item
+  RPI3-MODB-16GB-NOOBS
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Nova PM SDS011 Sensor
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  See Data Sheet attachment for technical specifications
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  MCP3008 microchip
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  analog-to-digital converter (ADC)
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Romoss Sense8+ 30000mAh QC Type-C
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Power bank battery
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Pipe
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  clear rubber pipe attainable from any local hardware store
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  Box
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  any box that can fit all the components comfortbaly can be used. The
+  box will need to have a whole drilled in it for the pipe.
+\end{itemize}
+
+\hypertarget{software-components-and-data-management}{%
+\subsubsection*{Software `components' and data
+management}\label{software-components-and-data-management}}
+\addcontentsline{toc}{subsubsection}{Software `components' and data
+management}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The Raspberry Pi operating system runs off of Rasbian software on a
+  NOOBS scandisk.
+\item
+  Air quality monitoring code is written in Python using the
+  \href{https://pypi.org/project/python-aqi/}{aqi library} (A library of
+  algorithms to convert between AQI value and pollutant concentration).
+  The code is stored on the
+  \href{https://github.com/opendatadurban/hospital_stations}{Open Data
+  Durban GitHub account} and is free for all to access. To be able to
+  collect data, the device needs to be connected to a reliable wifi
+  network, the SSID and password need to be coded onto the device during
+  step 2 in the building method.
+\item
+  Once the whole device has been put together and placed on site, to
+  access that data we use a combination of propgrams:
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://www.putty.org/}{Putty} - this is an SSH client that we
+  use to gain access to the Raspberry Pi from another computer. To be
+  able to access the Raspberry Pi in question, the computer in use and
+  the air quality monitoring device need to be on the same network for
+  the connection to be successful.
+\item
+  \href{https://winscp.net/eng/download.php}{Winscp} - this is an FTP
+  client that we use, in conjunction with Putty, to be able to transfer
+  data files from the air quality monitoring device to one's computer.
+\item
+  \href{https://app.remote.it/}{Remote.it} - this is an application that
+  supports remote SSH, so this is used when wanting to access data from
+  a device that is not connected to the same network as the computer in
+  use. Remote.it is used together with Putty and Winscp to access the
+  air quality data remotely.
+\end{itemize}
+
+\hypertarget{connectionbuilding-method}{%
+\subsubsection*{Connection/building
+method}\label{connectionbuilding-method}}
+\addcontentsline{toc}{subsubsection}{Connection/building method}
+
+To build the sensor, we followed these steps:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Set up the Raspberry Pi with the Rasbian software using the NOOBS
+  scandisk. (insert the scandisk into the Rasberry Pi) A comprehensive
+  start up guide can be found here.
+\item
+  Next we load the code onto the Raspberry Pi. The code can be found on
+  the Open Data Durban Hospital Stations Repository Github. To use it
+  you can follow the steps in the file called Initiate\_WS.txt. Once all
+  the steps have been completed, the Raspberry Pi is now a device that
+  can be connected to a particulate matter monitoring sensor.\\
+\item
+  Connect the hardware components
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Connect the Raspberry Pi to the Nova PM Sensor using the break out
+  board that comes with the Sensor.
+\item
+  Connect the battery to the Raspberry Pi via the micro port
+\item
+  Attach the rubber pipe to the sensor
+\item
+  Assemble all components inside the box, with the pipe coming out of
+  the drilled hole
+\item
+  To prevent dirt entering the system, close off all openings between
+  the pipe and the box with silicone putty
+\item
+  Secure box in an elevated position (not too close to the ground) and
+  with the pipe facing the direction of the inflow of the air under
+  investigation.
+\end{itemize}
 
 
 \renewcommand\refname{References}

@@ -55,10 +55,23 @@ format:
         - Highlight 1
         - Highlight 2
         - Highlight 3
+execute: 
+  echo: false
+  warning: false
 editor: 
   markdown: 
     wrap: 72
+editor_options: 
+  chunk_output_type: console
 ---
+
+```{r setup}
+
+# Source data preparation script
+source(here::here("R/01-data-preparation.R"))
+
+```
+
 
 # Introduction
 
@@ -109,8 +122,8 @@ percentage of the hospital's waste. Furthermore, the incinerator is
 frequently inoperable, under repair, or without power[^2]. Rather, the
 waste is openly burned, in a constantly smouldering pile to the side of
 the incinerator building, sending up the aforementioned clouds of smoke,
-which choke the grounds (Figure 1). Innumerable other, smaller, fires,
-scattered across the QECH campus (Figure 2) contribute their part, as
+which choke the grounds (@fig-open-burning). Innumerable other, smaller, fires,
+scattered across the QECH campus (@fig-map-sensors) contribute their part, as
 grounds and maintenance staff habitually burn leaves and other garden
 refuse. Furthermore, caregivers[^3] who reside separately on hospital
 grounds, cook for themselves throughout the day and night using biomass
@@ -122,12 +135,12 @@ is, as the quote used in the title of this article, 'unbearable.'
 [^1]: Sharps are handled and disposed of separately.
 
 [^2]: There was an older incinerator on the grounds which failed in
-    2017. Between 2017 and 2021, when the new incinerator was
-    commissioned, nothing was incinerated at all.
+2017. Between 2017 and 2021, when the new incinerator was
+commissioned, nothing was incinerated at all.
 
 [^3]: Patients are required to bring a caregiver for in-patient
-    hospitals stays, usually a family member, who assist with feeding,
-    bathing, and all other non-medical services.
+hospitals stays, usually a family member, who assist with feeding,
+bathing, and all other non-medical services.
 
 Challenges with solid waste management (SWM) are not unique to Queen's,
 and remain persistent globally, particularly within African nations, and
@@ -154,8 +167,12 @@ burning, in nations like Malawi, can be expected to become more
 prevalent.
 
 ```{r}
-# Figure 1: Open burning at QECH, with the old incinerator building in the background (Authors).
-knitr::include_graphics(here::here("manuscript/img/image-replace-tree.png"))
+#| label: fig-open-burning
+#| fig-cap: Open burning at QECH, with the old incinerator building in the background (Authors).
+#| fig-align: center
+#| out-width: 80%
+
+knitr::include_graphics(here::here("manuscript/img/open-waste-burning-incinerator-qech.jpg"))
 ```
 
 Although hospital waste is among the common types of solid waste openly
@@ -292,65 +309,135 @@ unit's head, and convenience. Each of the locations is briefly described
 below and shown in Figure 2:
 
 -   **Lions Sight First Eye Hospital**, often shortened to **Lions
-    Sight**, is the largest eye hospital in Malawi and serves as the
-    main teaching eye hospital for the Kamuzu University of Health
-    Sciences (formerly College of Medicine). It is staffed by 5
-    consultants and a team of clinical officers and nurses. It provides
-    a mix of public (no cost) and private (at cost) services.
+Sight**, is the largest eye hospital in Malawi and serves as the
+main teaching eye hospital for the Kamuzu University of Health
+Sciences (formerly College of Medicine). It is staffed by 5
+consultants and a team of clinical officers and nurses. It provides
+a mix of public (no cost) and private (at cost) services.
 
 -   **The Blantyre Malaria Project (BMP)**, established by Professors
-    Terrie Taylor and Malcolm Molyneux, has carried out clinical
-    research and patient care in the area of paediatric malaria,
-    specifically cerebral malaria, for more than 30 years[^4]. Its
-    research infrastructure includes an administrative team, an
-    inpatient research ward, an MRI centre, and an outpatient research
-    clinic in Ndirande township and in other districts outside of
-    Blantyre.
+Terrie Taylor and Malcolm Molyneux, has carried out clinical
+research and patient care in the area of paediatric malaria,
+specifically cerebral malaria, for more than 30 years[^4]. Its
+research infrastructure includes an administrative team, an
+inpatient research ward, an MRI centre, and an outpatient research
+clinic in Ndirande township and in other districts outside of
+Blantyre.
 
 -   **Ward 6B** is a male ward for trauma and orthopaedic patients. It
-    was established as part of the original hospital design. It is a
-    60-bed ward with a dedicated nursing station and treatment rooms.
+was established as part of the original hospital design. It is a
+60-bed ward with a dedicated nursing station and treatment rooms.
 
 -   **The Blantyre Lighthouse Trust Clinic**, also known as **Umodzi
-    Family Centre** or simply, the **Lighthouse Clinic**, is one of four
-    operating across Malawi. The clinics work in collaboration with the
-    Ministry of Health (MOH) to provide integrated HIV testing,
-    treatment and care for people living with HIV.
+Family Centre** or simply, the **Lighthouse Clinic**, is one of four
+operating across Malawi. The clinics work in collaboration with the
+Ministry of Health (MOH) to provide integrated HIV testing,
+treatment and care for people living with HIV.
 
 -   The **Moyo Nutritional Rehabilitation and Research Unit**, known on
-    campus as **uMoyo**, is a 57-bed nutritional rehabilitation unit
-    (NRU) for treating infants and children with severe malnutrition and
-    acute illnesses. It is one of 104 operational NRUs in Malawi. It
-    also has an outpatient therapeutic feeding program (OTP) for
-    children with malnutrition who can be treated outside of the
-    hospital.
+campus as **uMoyo**, is a 57-bed nutritional rehabilitation unit
+(NRU) for treating infants and children with severe malnutrition and
+acute illnesses. It is one of 104 operational NRUs in Malawi. It
+also has an outpatient therapeutic feeding program (OTP) for
+children with malnutrition who can be treated outside of the
+hospital.
 
 -   **Mercy James Institute for Pediatric Surgery and Intensive Care
-    (MJC)**, shortened on campus to **Mercy James**, was opened in 2017
-    by the NGO Raising Malawi, which was founded by Madonna. With 3
-    operating rooms and 50 beds, it is the first and only first
-    dedicated paediatric surgery hospital in Malawi. Prior to its
-    opening, QECH had fewer than 10 intensive care beds.
+(MJC)**, shortened on campus to **Mercy James**, was opened in 2017
+by the NGO Raising Malawi, which was founded by Madonna. With 3
+operating rooms and 50 beds, it is the first and only first
+dedicated paediatric surgery hospital in Malawi. Prior to its
+opening, QECH had fewer than 10 intensive care beds.
 
 -   The **Administration Building** is the operational hub of the
-    campus, containing mostly offices and meeting rooms.
+campus, containing mostly offices and meeting rooms.
 
 -   When a patient arrives at QECH, she or he will usually arrive with a
-    guardian: someone to cook for them, buy medicine, do their laundry,
-    and help them bathe. The **Guardian Shelter** is a gender-separated
-    concrete floor shelter for sleeping along with a cooking pavilion
-    and toilet/shower block are maintained by a the local NGO Chira
-    fund. Though simple, the facility is secure and offers one of the
-    only free/accessible toilet facilities for visitors on the QECH
-    campus.
+guardian: someone to cook for them, buy medicine, do their laundry,
+and help them bathe. The **Guardian Shelter** is a gender-separated
+concrete floor shelter for sleeping along with a cooking pavilion
+and toilet/shower block are maintained by a the local NGO Chira
+fund. Though simple, the facility is secure and offers one of the
+only free/accessible toilet facilities for visitors on the QECH
+campus.
 
 [^4]: BMP is credited with the development of the Blantyre Coma Score,
-    which is used widely.
+which is used widely.
 
 ```{r}
-# map
-# Figure 2: Sensor locations within QECH
+#| label: prepare-sensor-map
+
+# Icon from: https://github.com/apancik/public-domain-icons/blob/master/dist/symbol%20fire.svg
+
+fire_icon <- makeIcon(iconUrl = here::here("manuscript/img/symbol-fire.png"),
+                      iconWidth = 50,
+                      iconHeight = 50)
+
+# Create a palette that maps factor levels to colors
+pal <- colorFactor(c("#EE4B2B", "navy"), domain = c("sensor", "fire"))
+
+fire_loc <- locations  |>
+  filter(type == "fire")
+
+sensor_loc <- locations  |>
+  filter(type == "sensor")
+
+qech_sensor_map <- leaflet(sensor_loc)  |>
+  setView(lng = 35.021071999805755,
+          lat = -15.803269709021687,
+          zoom = 18)  |>
+  #addProviderTiles(providers$Stamen)  |>
+  addTiles()  |>
+  addMarkers(
+    lng = fire_loc$long,
+    lat = fire_loc$lat,
+    label = fire_loc$location,
+    icon = ~fire_icon,
+    labelOptions = labelOptions(noHide = T,
+                                textsize = "15px",
+                                direction = "bottom",
+                                offset = c(0, 20),
+                                style = list(
+                                  "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
+                                  "border-color" = "rgba(0,0,0,0.5)"
+                                  #"font-style" = "italic"
+                                ))
+  )  |>
+  addCircleMarkers(
+    lng = ~long,
+    lat = ~lat,
+    label = ~location,
+    radius = 16,
+    stroke = FALSE,
+    fillOpacity = 1,
+    color = ~pal(type),
+    #icon = ~fire_icon,
+    labelOptions = labelOptions(noHide = T,
+                                textsize = "15px",
+                                direction = "bottom",
+                                offset = c(0, 10),
+                                style = list(
+                                  "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
+                                  "border-color" = "rgba(0,0,0,0.5)"
+                                  #"font-style" = "italic"
+                                ))) 
+
+
+qech_sensor_map |> 
+  mapshot(file = here::here("manuscript/figs/map-sensors-qech-blantyre.png"))
 ```
+
+
+```{r}
+#| label: fig-map-sensors
+#| fig-cap: Sensor locations within QECH
+#| fig-align: center
+#| out-width: 80%
+
+# Figure 2: Sensor locations within QECH
+knitr::include_graphics(here::here("manuscript/figs/map-sensores-qech-blantyre.png"))
+```
+
 
 ## Waste management
 
@@ -530,10 +617,14 @@ Therefore, for international comparisons and due to the lack of
 comprehensive Malawian Standards, we use the WHO recommendations as a
 basis of comparison for the measured values
 [@worldhealthorganization2021who]. The relevant particulate matter
-targets are presented in Table 1.
+targets are presented in @tbl-who-targets.
 
+ (TODO: REPLACE screenshot)
+ 
 ```{r}
-# Table 1. Particulate matter targets from @worldhealthorganization2021who
+#| label: tbl-who-targets
+#| tbl-cap: Particulate matter targets from [@worldhealthorganization2021who]
+
 knitr::include_graphics(here::here("manuscript/img/image-replace-table.png"))
 
 ```
@@ -545,14 +636,39 @@ knitr::include_graphics(here::here("manuscript/img/image-replace-table.png"))
 Due to localised variation (air movement in the immediate area) and the
 density of the observations, the plotted 5-minute data obscure
 persistent trends. The full set of 5-minute data are plotted and
-presented in Appendix A Figure A.1 (TODO). However, the number of measured values
+presented in Appendix A Figure A.1. However, the number of measured values
 that exceeded the hazardous limit for both parameters are summarised in
-Table 2.
+@tbl-peaks.
+
 
 ```{r}
-# Table 2. Peaks for both PM2.5 and PM10 are the number of data points above the WHO interim target 1 (annual) which is the least stringent;  the number of observations recorded (count) is provided for reference. 
+#| label: tbl-peaks
+#| tbl-cap: Peaks for both PM~2.5~ and PM~10~ are the number of data points above the WHO interim target 1 (annual) which is the least stringent; the number of observations recorded (count) is provided for reference. 
 
+observations_location <- dat_in |> 
+  select(date_time, location) |> 
+  unique() |> 
+  count(location)
+
+no_peaks_who <- dat_in |> 
+  mutate(peaks = case_when(
+    indicator == "pm2.5" & value >  35 ~ TRUE,
+    indicator == "pm10" & value >  70 ~ TRUE,
+    TRUE ~ FALSE
+  )) |> 
+  mutate(date = as_date(date_time)) |> 
+  group_by(indicator, location) |> 
+  summarise(
+    peaks = sum(peaks)
+  ) |> 
+  ungroup() |> 
+  pivot_wider(names_from = indicator, values_from = peaks) 
+
+observations_location |> 
+  left_join(no_peaks_who) |> 
+  knitr::kable()
 ```
+
 
 Over the course of the two-month study, the hazardous limits for both
 parameters were exceeded at all locations except for the Lions Sight
@@ -574,7 +690,7 @@ acceptable.
 ### 24-hour averages
 
 The 24-hour averaged values (logged every 5 minutes) are presented for
-each location, for both PM10 and PM2.5 in Figure 3. As well as dampening
+each location, for both PM10 and PM2.5 in fig-24-hour-average. As well as dampening
 local variation and peaks, the WHO air quality guidelines are also based
 on 24-hour averages which are the standard against which the health
 risks can be judged.
@@ -597,8 +713,22 @@ differences between the time periods; stated differently, the data did
 not clearly point to more or less burning in the day or at night.
 
 ```{r}
-# Figure 3. Average 24-hour PM10 and PM2.5 at 8 monitoring stations over 2 months
+#| label: fig-24-hour-average
+#| fig-cap: Average 24-hour PM10 and PM2.5 at 8 monitoring stations over 2 months
+#| fig-align: center
 
+dat_in_sum_day |> 
+  ggplot(aes(x = date, y = mean, group = indicator, color = indicator)) +
+  geom_point(size = 0.8) +
+  geom_line() +
+  labs(x = NULL) +
+  ylab(bquote(uq/m^3)) +
+  facet_wrap(~location, ncol = 4) + 
+  scale_y_continuous(limits = c(0, 400)) +
+  scale_color_brewer(type = "qual", palette = 2) + 
+  theme_bw(base_size = 14) + 
+  theme(panel.grid.minor = element_blank(),
+        panel.grid.major.x = element_blank()) 
 
 ```
 
@@ -608,10 +738,37 @@ Given that the type of fuel and the type of burning (contained vs. open)
 produce very different particulate "fingerprints", the ratio of PM10 to
 PM2.5 values were examined to determine if a clear difference between
 locations, and therefore source, could be identified. The results are
-presented in Figure 4.
+presented in @fig-pm-ratios.
 
 ```{r}
-# Figure 4. PM10:PM2.5 values for each location.  Each line shows the minimum and maximum ratio for the day based on ratios calculated hourly.  
+#| label: fig-pm-ratios
+#| fig-cap: PM10:PM2.5 values for each location. Each line shows the minimum and maximum ratio for the day based on ratios calculated hourly. Does not include 14th to 16th October at location uMoyo due to extreme outliers.
+#| fig-align: center
+
+dat_in_ratios <- dat_in |> 
+  mutate(date = as_date(date_time)) |> 
+  mutate(hour = hour(date_time)) |> 
+  group_by(date, hour, location, indicator) |> 
+  summarise(mean = mean(value)) |> 
+  pivot_wider(names_from = indicator, 
+              values_from = mean) |> 
+  mutate(p10_pm2.5_ratio = pm10/pm2.5)  |>
+  
+  filter((date != "2019-10-14" & date != "2019-10-15" & date != "2019-10-16")
+         | location != "uMoyo") |> 
+  #filter(p10_pm2.5_ratio > 30)
+  
+  group_by(date, location) |> 
+  summarise(min = min(p10_pm2.5_ratio),
+            max = max(p10_pm2.5_ratio)) 
+
+# Plot
+
+dat_in_ratios |> 
+  ggplot(aes(x = date)) +
+  geom_linerange(aes(ymin = min, ymax = max)) +
+  labs(x = "hour") +
+  facet_wrap(~location, ncol = 2)
 ```
 
 The results presented in Figure 5 illustrate both the presence of PM10
@@ -643,10 +800,56 @@ reflects a range of burning styles and/or fuel type.
 ## Exposure Data
 
 The relative amount of time exposed to a given category of air quality
-is shown in Figure 5. Each square represents 1% of the measured time.
+is shown in @fig-percent-exposure. Each square represents 1% of the measured time.
 
 ```{r}
-# Figure 5. Percentage of measured values categorised according to WHO 2021 targets
+#| label: fig-percent-exposure
+#| fig-cap: Percentage of measured values categorised according to WHO 2021 targets
+#| fig-align: center
+
+dat_air_quality_sum_who_2021 |> 
+  #filter(indicator == "pm2.5") |> 
+  group_by(location, indicator) |> 
+  mutate(exposure_percent = round(exposure_hrs / sum(exposure_hrs) * 100, 0)) |> 
+  
+  # manipulate data for purpose of plot
+  
+  mutate(exposure_percent = case_when(
+    location == "Administration" 
+    & indicator == "pm10"
+    & air_quality_who_annual == "Interim target 2" ~ exposure_percent - 1,
+    
+    location == "Administration" 
+    & indicator == "pm2.5"
+    & air_quality_who_annual == "Interim target 3" ~ exposure_percent + 1,
+    
+    location == "uMoyo" 
+    & indicator == "pm2.5"
+    & air_quality_who_annual == "Interim target 4" ~ exposure_percent - 1,
+    
+    location == "Mercy James" 
+    & indicator == "pm10"
+    & air_quality_who_annual == "Interim target 4" ~ exposure_percent + 1,
+    
+    TRUE ~ exposure_percent
+  )) |> 
+  
+  #filter(is.na(exposure_percent))
+
+ggplot(aes(fill = air_quality_who_annual, values = exposure_percent)) +
+  geom_waffle(color ="white", size = 0.5, n_rows = 5, na.rm = TRUE) +
+  coord_equal() +
+  labs(fill = "WHO 2021 targets (annual)") +
+  scale_fill_brewer(type = "div", palette = "RdYlBu", direction = -1) +
+  scale_x_discrete(expand=c(0,0)) +
+  scale_y_discrete(expand=c(0,0)) +
+  facet_grid(location ~ indicator, switch = "y") +
+  
+  #facet_wrap(~location, ncol = 2) +
+  theme_minimal(base_size = 14) +
+  # help from: https://stackoverflow.com/questions/34749636/left-justify-text-from-multi-line-facet-labels
+  theme(strip.text.x = element_text(hjust = 0),
+        strip.text.y = element_text(vjust = 0, size = 4))
 ```
 
 Unsurprisingly, a majority of the air quality at the Lighthouse Clinic
@@ -797,95 +1000,79 @@ etc.
 ## Appendix A {.unnumbered}
 
 ```{r}
+#| label: fig-5-minute-intervals
+#| fig-cap: PM2.5 and PM10 values collected every 5 minutes over 10 months at 8 locations.
+#| fig-align: center
 
-# Figure XA1. PM2.5 and PM10 values collected every 5 minutes over 10 months at 8 locations. 
-# TODO: ##Lars can you please fix the x-axis labels so they aren’t squished
+dat_in |> 
+  ggplot(aes(x = date_time, y = value)) +
+  geom_line(alpha = 0.5) +
+  labs(title = "Hospital Air Quality",
+       subtitle = "PM2.5 and PM10 measurements in 5-min intervals at eight locations") +
+  ylab(bquote(uq/m^3)) +
+  facet_grid(indicator~location) +
+  theme_bw(base_size = 14) + 
+  theme(panel.grid.minor = element_blank(),
+        panel.grid.major.x = element_blank(),
+        axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) 
 
 ```
 
 ## Appendix B {.unnumbered}
 
 ### Hardware Components {.unnumbered}
-  
+
 1.  Raspberry Pi 3 Model B single-board computer technical
-    specifications:
-    -   Broadcom BCM2837 64bit Quad Core Processor powered Single Board
-        Computer running at 1.2GHz 1GB RAM
-    -   BCM43438 WiFi on board
-    -   Bluetooth Low Energy (BLE) on board
-    -   40pin extended GPIO
-    -   4 x USB 2 ports 4 pole Stereo output and Composite video port
-    -   Full size HDMI CSI camera port for connecting the Raspberry Pi
-        camera
-    -   DSI display port for connecting the Raspberry Pi touch screen
-        display
-    -   Micro SD port for loading your operating system and storing data
-    -   Upgraded switched Micro USB power source (now supports up to 2.4
-        Amps)
-    -   Same form factor as the Pi 2 Model B, however the LEDs have
-        changed position
-    -   RPI3-MODB-16GB-NOOBS
+specifications:
+-   Broadcom BCM2837 64bit Quad Core Processor powered Single Board
+Computer running at 1.2GHz 1GB RAM
+-   BCM43438 WiFi on board
+-   Bluetooth Low Energy (BLE) on board
+-   40pin extended GPIO
+-   4 x USB 2 ports 4 pole Stereo output and Composite video port
+-   Full size HDMI CSI camera port for connecting the Raspberry Pi
+camera
+-   DSI display port for connecting the Raspberry Pi touch screen
+display
+-   Micro SD port for loading your operating system and storing data
+-   Upgraded switched Micro USB power source (now supports up to 2.4
+Amps)
+-   Same form factor as the Pi 2 Model B, however the LEDs have
+changed position
+-   RPI3-MODB-16GB-NOOBS
 2.  Nova PM SDS011 Sensor
-    -   See Data Sheet attachment for technical specifications
+-   See Data Sheet attachment for technical specifications
 3.  MCP3008 microchip
-    -   analog-to-digital converter (ADC)
+-   analog-to-digital converter (ADC)
 4.  Romoss Sense8+ 30000mAh QC Type-C
-    -   Power bank battery
+-   Power bank battery
 5.  Pipe
-    -   clear rubber pipe attainable from any local hardware store
+-   clear rubber pipe attainable from any local hardware store
 6.  Box
-    -   any box that can fit all the components comfortbaly can be used.
-        The box will need to have a whole drilled in it for the pipe.
-        
+-   any box that can fit all the components comfortbaly can be used.
+The box will need to have a whole drilled in it for the pipe.
+
 ### Software ‘components’ and data management {.unnumbered}
-  
+
 1. The Raspberry Pi operating system runs off of Rasbian software on a NOOBS scandisk. 
 2. Air quality monitoring code is written in Python using the [aqi library](https://pypi.org/project/python-aqi/) (A library of algorithms to convert between AQI value and pollutant concentration). The code is stored on the [Open Data Durban GitHub account](https://github.com/opendatadurban/hospital_stations) and is free for all to access. To be able to collect data, the device needs to be connected to a reliable wifi network, the SSID and password need to be coded onto the device during step 2 in the building method.
 3. Once the whole device has been put together and placed on site, to access that data we use a combination of propgrams:
-    - [Putty](https://www.putty.org/) - this is an SSH client that we use to gain access to the Raspberry Pi from another computer. To be able to access the Raspberry Pi in question, the computer in use and the air quality monitoring device need to be on the same network for the connection to be successful. 
-    - [Winscp](https://winscp.net/eng/download.php) - this is an FTP client that we use, in conjunction with Putty, to be able to transfer data files from the air quality monitoring device to one’s computer.
-    - [Remote.it](https://app.remote.it/) - this is an application that supports remote SSH, so this is used when wanting to access data from a device that is not connected to the same network as the computer in use. Remote.it is used together with Putty and Winscp to access the air quality data remotely. 
-    
+- [Putty](https://www.putty.org/) - this is an SSH client that we use to gain access to the Raspberry Pi from another computer. To be able to access the Raspberry Pi in question, the computer in use and the air quality monitoring device need to be on the same network for the connection to be successful. 
+- [Winscp](https://winscp.net/eng/download.php) - this is an FTP client that we use, in conjunction with Putty, to be able to transfer data files from the air quality monitoring device to one’s computer.
+- [Remote.it](https://app.remote.it/) - this is an application that supports remote SSH, so this is used when wanting to access data from a device that is not connected to the same network as the computer in use. Remote.it is used together with Putty and Winscp to access the air quality data remotely. 
+
 ### Connection/building method {.unnumbered}
-  
+
 To build the sensor, we followed these steps:
 
 1. Set up the Raspberry Pi with the Rasbian software using the NOOBS scandisk. (insert the scandisk into the Rasberry Pi) A comprehensive start up guide can be found here. 
 2. Next we load the code onto the Raspberry Pi. The code can be found on the Open Data Durban Hospital Stations Repository Github. To use it you can follow the steps in the file called Initiate_WS.txt. Once all the steps have been completed, the Raspberry Pi is now a device that can be connected to a particulate matter monitoring sensor.  
 3. Connect the hardware components
-    - Connect the Raspberry Pi to the Nova PM Sensor using the break out board that comes with the Sensor. 
-    - Connect the battery to the Raspberry Pi via the micro port
-    - Attach the rubber pipe to the sensor 
-    - Assemble all components inside the box, with the pipe coming out of the drilled hole
-    - To prevent dirt entering the system, close off all openings between the pipe and the box with silicone putty
-    - Secure box in an elevated position (not too close to the ground) and with the pipe facing the direction of the inflow of the air under investigation. 
-
-
-# Figures and tables
-
-@fig-meaningless is generated using an R chunk.
-
-```{r}
-#| label: fig-meaningless
-#| fig-cap: A meaningless scatterplot
-#| fig-width: 5
-#| fig-height: 5
-#| fig-align: center
-#| out-width: 50%
-#| echo: false
-plot(runif(25), runif(25))
-```
-
-# Tables coming from R
-
-Tables can also be generated using R chunks, as shown in @tbl-simple
-example.
-
-```{r}
-#| label: tbl-simple
-#| tbl-cap: Caption centered above table
-#| echo: true
-knitr::kable(head(mtcars)[,1:4])
-```
+- Connect the Raspberry Pi to the Nova PM Sensor using the break out board that comes with the Sensor. 
+- Connect the battery to the Raspberry Pi via the micro port
+- Attach the rubber pipe to the sensor 
+- Assemble all components inside the box, with the pipe coming out of the drilled hole
+- To prevent dirt entering the system, close off all openings between the pipe and the box with silicone putty
+- Secure box in an elevated position (not too close to the ground) and with the pipe facing the direction of the inflow of the air under investigation. 
 
 # References {.unnumbered}
