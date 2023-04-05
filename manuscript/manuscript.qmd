@@ -1,46 +1,44 @@
 ---
-title: Short Paper
-subtitle: A Short Subtitle
+title: The invisible title
 author:
-  - name: Alice Anonymous
-    email: alice@example.com
+  - name: Elizabeth Tilley
+    orcid: 0000-0002-2095-9724
+    email: tilleye@ethz.ch
     affiliations: 
-        - id: some-tech
-          name: Some Institute of Technology
-          department: Department Name
-          address: Street Address
-          city: City
-          state: State
-          postal-code: Postal Code
+        - id: ethz
+          name: ETH Zurich, Global Health Engineering
+          department: Department of Mechanical and Process Engineering
+          address: Clausiusstrasse 37
+          city: Zurich
+          postal-code: 8092
     attributes:
         corresponding: true
-    note: This is the first author footnote.
-  - name: Bob Security
-    email: bob@example.com
+  - name: Marc Kalina
+    orcid: 0000-0002-6335-3845
+    email: mkalina@ethz.ch
     affiliations:
-        - id: another-u
-          name: Another University
-          department: Department Name
-          address: Street Address
-          city: City
-          state: State
-          postal-code: Postal Code
-    note: |
-      Another author footnote, this is a very long footnote and it should be a really long footnote. But this footnote is not yet sufficiently long enough to make two lines of footnote text.
-  - name: Cat Memes
-    email: cat@example.com
-    affiliations:
-        - ref: another-u
-    note: Yet another author footnote.
-  - name: Derek Zoolander
-    email: derek@example.com
+        - ref: ethz
+  - name: Jonathan Kwangulero
+    orcid: 0000-0002-4050-5121
+    email: kwangerlo@gmail.comm
     affilations:
-        - ref: some-tech
+        - id: polytech
+          name: The Polytechnic, University of Malawi
+          department: Department of Environmental Health
+  - name: Hope Chilunga
+    orcid: 0000-0003-4216-6319
+    email: hchilunga@poly.ac.mw
+    affilations:
+        - ref: polytech
 abstract: |
-  This is the abstract. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum augue turpis, dictum non malesuada a, volutpat eget velit. Nam placerat turpis purus, eu tristique ex tincidunt et. Mauris sed augue eget turpis ultrices tincidunt. Sed et mi in leo porta egestas. Aliquam non laoreet velit. Nunc quis ex vitae eros aliquet auctor nec ac libero. Duis laoreet sapien eu mi luctus, in bibendum leo molestie. Sed hendrerit diam diam, ac dapibus nisl volutpat vitae. Aliquam bibendum varius libero, eu efficitur justo rutrum at. Sed at tempus elit.
+  Built in 1964, Malawi’s year of independence, Queen Elizabeth Hospital (QECH), or Queen’s, as it’s known locally, is the country’s largest public hospital. However, Queen’s is not served by regular municipal waste collection. What municipal collection that is done is ad-hoc, sporadic, and based on the hospital’s available financial resources. Rather, most hospital waste (infectious and non-infectious) is gathered by grounds staff and openly burned, in several constantly smouldering piles, sending up clouds of smoke.  This study utilised a mixed-methods approach to both quantitatively measure the air quality around QECH, and to qualitatively investigate the perceived impacts amongst staff and caregivers. Low-cost sensors measuring particulate matter (PM) with particle sizes less than 10μm (PM10) and less than 2.5μm (PM2.5), expressed as the mass of PM per volume of air (μg PMx/m3 air) were recorded every 5 minutes at 8 locations across the QECH for 2 months. Qualitative data collection consisted of 57 interviews with patients, caregivers and hospital staff (including janitorial and maintenance staff, nurses, doctors, and administrators).  Our results show that a) safe air quality thresholds are consistently exceeded across space and time; and b) that the most problematic air quality surrounds the shelter for caregivers and those receiving treatment for HIV/AIDs. Nearly every staff member interviewed recalled having received a complaint about the smoke, but those in charge of waste management felt powerless to make changes or deal with complaints.  Waste management interventions are desperately needed lest the patients who arrive at Queen’s leave with more health issues than the ones with which they arrived. 
 keywords: 
-  - keyword1
-  - keyword2
+  - waste management
+  - healthcare waste
+  - trash burning
+  - air quality
+  - Malawi
+  - urbanisation
 date: last-modified
 bibliography: man-qechairquality.bib
 format:
@@ -52,9 +50,10 @@ format:
       model: 3p
       cite-style: authoryear
       highlights:
-        - Highlight 1
-        - Highlight 2
-        - Highlight 3
+        - Low-cost monitors were used to assess air quality at Malawi’s largest hospital
+        - Open waste burning is physically extensive and temporally frequent across the hospital campus
+        - Air quality measured as PM2.5 and PM10 consistently exceeded even the most hazardous levels 
+        - The most exposed locations were where guardians of patients stay and the HIV clinic
 execute: 
   echo: false
   warning: false
