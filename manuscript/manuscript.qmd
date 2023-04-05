@@ -42,7 +42,7 @@ keywords:
   - keyword1
   - keyword2
 date: last-modified
-bibliography: [bibliography.bib, introduction.bib, man-qech-air-quality.bib]
+bibliography: man-qechairquality.bib
 format:
   elsevier-pdf:
     keep-tex: true
@@ -158,7 +158,7 @@ Therefore, for international comparisons and due to the lack of comprehensive Ma
 
 ```{r}
 # Table 1. Particulate matter targets from @worldhealthorganization2021who
-knitr::include_graphics(here::here("img/image-replace-table.png"))
+knitr::include_graphics(here::here("manuscript/img/image-replace-table.png"))
 
 ```
 
