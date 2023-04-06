@@ -61,7 +61,7 @@ keywords:
   - Malawi
   - urbanisation
 date: last-modified
-bibliography: man-qechairquality.bib
+bibliography: [man-qechairquality.bib, packages.bib]
 format:
   elsevier-pdf:
     keep-tex: true
@@ -89,6 +89,8 @@ editor_options:
 
 # Source data preparation script
 source(here::here("R/01-data-preparation.R"))
+
+knitr::write_bib(file = here::here("manuscript/packages.bib"))
 
 ```
 
@@ -559,7 +561,7 @@ unit was equipped with an external battery (5000 mAh) which powered the
 sensor unit for three days continuously. To avoid any down time, we
 changed the batteries every two days. Data were also collected from the
 sensor at the time of battery replacement. The sensors were capable of
-being connected to Wi-Fi, a feature which enabled wireless data access. 
+being connected to Wi-Fi, a feature which enabled wireless data access.
 
 ### Qualitative Methods
 
@@ -618,6 +620,12 @@ humidity, and the potential for interference was not accounted for; the
 measurements were not adjusted for humidity which could affect the
 values, though not enough to significantly alter the key findings and
 need for immediate action.
+
+### Computational reproducibility and data availability
+
+R Statistical Software version 4.2.1, RStudio IDE version 2023.3.0.386, and Quarto scientific publishing system version were used for quantitative data analysis and writing of the manuscript [@R-base; @allaire2022quartoa; @positteam2023rstudio]. A set of additional R packages were used for data wrangling, analysis, and visualisation [@ggplot22016; @lubridate2011;  @R-dplyr; @R-forcats; @R-ggplot2; @R-janitor; @R-leaflet; @R-lubridate; @R-mapview; @R-readr; @R-tidyr; @R-waffle]. 
+
+Raw data and analysis-ready processed data is available as an R package at @R-qechairquality. The data underlying the tables and figures of this manuscript are contained in a repository alongside a reproducible document that contains the analysis code and the written narrative of the manuscript [TODO: manuscript software citation]. 
 
 # Theory/calculation (not applicable)
 
@@ -771,7 +779,7 @@ dat_in_ratios <- dat_in |>
   summarise(mean = mean(value)) |> 
   pivot_wider(names_from = indicator, 
               values_from = mean) |> 
-  mutate(p10_pm25_ratio = pm10/pm25)  |>
+  mutate(p10_pm25_ratio = pm10/pm2.5)  |>
   
   filter((date != "2019-10-14" & date != "2019-10-15" & date != "2019-10-16")
          | location != "uMoyo") |> 
