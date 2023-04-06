@@ -1,37 +1,51 @@
 ---
-title: The invisible title
+title: "'It Is Unbearable To Breath Here': Air Quality, Open Incineration, And Misinformation In Blantyre, Malawi"
 author:
   - name: Elizabeth Tilley
     orcid: 0000-0002-2095-9724
     email: tilleye@ethz.ch
     affiliations: 
         - id: ethz
-          name: ETH Zurich, Global Health Engineering
+          name: ETH Zurich
           department: Department of Mechanical and Process Engineering
-          address: Clausiusstrasse 37
           city: Zurich
-          postal-code: 8092
+          country: Switzerland
     attributes:
         corresponding: true
+  - name: Hope Chilunga
+    orcid: 0000-0003-4216-6319
+    email: hchilunga@poly.ac.mw
+    affiliations: 
+        - id: mubas
+          name: Malawi University of Business and Applied Sciences
+          department: Department of Environmental Health
+          city: Blantyre
+          country: Malawi
+  - name: Jonathan Kwangulero
+    orcid: 0000-0002-4050-5121
+    email: kwangerlo@gmail.comm
+    affilations:
+        - ref: mubas
+  - name: Lars Schöbitz
+    orcid: 0000-0003-2196-5015
+    email: lschoebitz@ethz.ch
+    affiliations:
+        - ref: ethz
+  - name: Heiko Heilgendorff
+    email: me@me.com
+    affiliations: 
+        - id: ukzn
+          name: University of KwaZulu-Natal
+          department: School of Mathematics, Statistics and Computer Science
+          city: Durban
+          country: South Africa
   - name: Marc Kalina
     orcid: 0000-0002-6335-3845
     email: mkalina@ethz.ch
     affiliations:
         - ref: ethz
-  - name: Jonathan Kwangulero
-    orcid: 0000-0002-4050-5121
-    email: kwangerlo@gmail.comm
-    affilations:
-        - id: polytech
-          name: The Polytechnic, University of Malawi
-          department: Department of Environmental Health
-  - name: Hope Chilunga
-    orcid: 0000-0003-4216-6319
-    email: hchilunga@poly.ac.mw
-    affilations:
-        - ref: polytech
 abstract: |
-  Built in 1964, Malawi’s year of independence, Queen Elizabeth Hospital (QECH), or Queen’s, as it’s known locally, is the country’s largest public hospital. However, Queen’s is not served by regular municipal waste collection. What municipal collection that is done is ad-hoc, sporadic, and based on the hospital’s available financial resources. Rather, most hospital waste (infectious and non-infectious) is gathered by grounds staff and openly burned, in several constantly smouldering piles, sending up clouds of smoke.  This study utilised a mixed-methods approach to both quantitatively measure the air quality around QECH, and to qualitatively investigate the perceived impacts amongst staff and caregivers. Low-cost sensors measuring particulate matter (PM) with particle sizes less than 10μm (PM10) and less than 2.5μm (PM2.5), expressed as the mass of PM per volume of air (μg PMx/m3 air) were recorded every 5 minutes at 8 locations across the QECH for 2 months. Qualitative data collection consisted of 57 interviews with patients, caregivers and hospital staff (including janitorial and maintenance staff, nurses, doctors, and administrators).  Our results show that a) safe air quality thresholds are consistently exceeded across space and time; and b) that the most problematic air quality surrounds the shelter for caregivers and those receiving treatment for HIV/AIDs. Nearly every staff member interviewed recalled having received a complaint about the smoke, but those in charge of waste management felt powerless to make changes or deal with complaints.  Waste management interventions are desperately needed lest the patients who arrive at Queen’s leave with more health issues than the ones with which they arrived. 
+  Blantyre, Malawi’s Queen Elizabeth Central Hospital (QECH), or Queen’s, as it’s known locally, is the country’s largest public hospital. However, Queen’s is not served by regular municipal waste collection. What municipal collection that is done is ad-hoc, sporadic, and based on the hospital’s available financial resources. Rather, most hospital waste (infectious and non-infectious) is gathered by grounds staff and openly burned, in several constantly smouldering piles, sending up clouds of smoke.  Speaking directly to an identified knowledge gap on air quality impacts linked to trash burning and the paucity of African urban dwellers’ voices on air quality issues, this study employed a mixed-methods approach to both quantitatively measure the air quality around QECH, and to qualitatively investigate the perceived impacts amongst staff and caregivers. Low-cost sensors measuring particulate matter (PM) with particle sizes less than 10μm (PM10) and less than 2.5μm (PM2.5), expressed as the mass of PM per volume of air (μg PMx/m3 air) were recorded every 5 minutes at 8 locations across the QECH for 2 months. Qualitative data collection consisted of 57 interviews with patients, caregivers and hospital staff (including janitorial and maintenance staff, nurses, doctors, and administrators).  Our results show that safe air quality thresholds are consistently exceeded across space and time and that the most problematic air quality surrounds the shelter for caregivers and those receiving treatment for HIV/AIDs. Moreover, staff and visitors are severely impacted by the poor air quality within the space, but  feel powerless to make changes or address complaints. Waste management interventions are desperately needed lest the patients who arrive at Queen’s leave with more health issues than the ones with which they arrived. 
 keywords: 
   - waste management
   - healthcare waste
@@ -74,7 +88,7 @@ source(here::here("R/01-data-preparation.R"))
 
 # Introduction
 
-Built in 1964, Malawi's year of independence, Queen Elizabeth Hospital
+Built in 1964, Malawi's year of independence, Queen Elizabeth Central Hospital
 (QECH), or Queen's, as it's known locally, is the country's largest
 public hospital. Designed in the Tropical Modernism style of
 architecture popular within Africa in the late colonial period, Queen's
@@ -987,6 +1001,13 @@ described,"we are just hoping we will start breathing good air soon,
 when the new incinerator is opened."
 
 # Conclusions
+
+The air quality, as a result of open waste burning at Queen’s is poor and not suitable for a city, let alone a hospital. Over the course of this two-month study, the hazardous limits for both PM parameters were exceeded at all locations except for the Lions Sight hospital. The WHO limits were exceeded fewer than 50 times at five of the locations, and only the monitors at the Lighthouse Clinic and the Guardian Shelter recorded more than 50 instances above the most hazardous limit. The composition of emissions recorded ranged significantly, analysed as the ratio PM10:PM2.5 likely reflects a range of burning styles and/or fuel (waste) type, and no discernable trend was observed..  Among interview respondents, there was a general  consensus that air quality caused by the burning of waste within the hospital was a problem, although there were significant differences between respondents over their understandings of potential impacts, the effectiveness of various coping mechanisms, and their problematisations linked to the burning of specific waste materials. For most, going home or leaving the Queen’s campus was the only pathway to relief, though for patients who can not leave, endurance was the only option. This work was originally planned as a before-and-after study:  we envisioned reporting these baseline results compared to follow-up measurements once the long-promised incinerator was commissioned.  However, nearly 4 years later, the incinerator is rarely functional (partly for technical reasons, partly for financial ones) and the smoke hovering over Queen’s is still thick.  Waste management has long been known as an environmental health issue, but in the case of open trash burning at a medical facility, it becomes more:  for some of the most vulnerable, especially those with TB, asthma or other chronic disease, it could be a matter of life or death. 
+
+# Acknowledgements
+
+The authors are grateful to the staff, patients and caregivers at QECH for their assistance, willingness to share their views, and importantly, perseverance in delivering the best care possible under difficult circumstances. Moreover, we would like to acknowledge the assistance and effort of Open Data Durban, now the Open Cities Lab, for their assistance in constructing and programming the sensors.
+
 
 # Appendix {.unnumbered}
 
