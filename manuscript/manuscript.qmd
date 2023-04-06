@@ -8,8 +8,10 @@ author:
         - id: ethz
           name: ETH Zurich
           department: Department of Mechanical and Process Engineering
+          address: Global Health Engineering, Clausiusstrasse 37
           city: Zurich
           country: Switzerland
+          postal-code: 8092
     attributes:
         corresponding: true
   - name: Hope Chilunga
@@ -45,7 +47,7 @@ author:
     affiliations:
         - ref: ethz
 abstract: |
-  Blantyre, Malawi’s Queen Elizabeth Central Hospital (QECH), or Queen’s, as it’s known locally, is the country’s largest public hospital. However, Queen’s is not served by regular municipal waste collection. What municipal collection that is done is ad-hoc, sporadic, and based on the hospital’s available financial resources. Rather, most hospital waste (infectious and non-infectious) is gathered by grounds staff and openly burned, in several constantly smouldering piles, sending up clouds of smoke.  Speaking directly to an identified knowledge gap on air quality impacts linked to trash burning and the paucity of African urban dwellers’ voices on air quality issues, this study employed a mixed-methods approach to both quantitatively measure the air quality around QECH, and to qualitatively investigate the perceived impacts amongst staff and caregivers. Low-cost sensors measuring particulate matter (PM) with particle sizes less than 10μm (PM10) and less than 2.5μm (PM2.5), expressed as the mass of PM per volume of air (μg PMx/m3 air) were recorded every 5 minutes at 8 locations across the QECH for 2 months. Qualitative data collection consisted of 57 interviews with patients, caregivers and hospital staff (including janitorial and maintenance staff, nurses, doctors, and administrators).  Our results show that safe air quality thresholds are consistently exceeded across space and time and that the most problematic air quality surrounds the shelter for caregivers and those receiving treatment for HIV/AIDs. Moreover, staff and visitors are severely impacted by the poor air quality within the space, but  feel powerless to make changes or address complaints. Waste management interventions are desperately needed lest the patients who arrive at Queen’s leave with more health issues than the ones with which they arrived. 
+  Blantyre, Malawi’s Queen Elizabeth Central Hospital (QECH), or Queen’s, as it’s known locally, is the country’s largest public hospital. However, Queen’s is not served by regular municipal waste collection. What municipal collection that is done is ad-hoc, sporadic, and based on the hospital’s available financial resources. Rather, most hospital waste (infectious and non-infectious) is gathered by grounds staff and openly burned, in several constantly smouldering piles, sending up clouds of smoke.  Speaking directly to an identified knowledge gap on air quality impacts linked to trash burning and the paucity of African urban dwellers’ voices on air quality issues, this study employed a mixed-methods approach to both quantitatively measure the air quality around QECH, and to qualitatively investigate the perceived impacts amongst staff and caregivers. Low-cost sensors measuring particulate matter (PM) with particle sizes less than 10 µm (PM~10~) and less than 2.5 µm (PM~2.5~), expressed as the mass of PM per volume of air (µg PMx/m^3^ air) were recorded every 5 minutes at 8 locations across the QECH for 2 months. Qualitative data collection consisted of 57 interviews with patients, caregivers and hospital staff (including janitorial and maintenance staff, nurses, doctors, and administrators).  Our results show that safe air quality thresholds are consistently exceeded across space and time and that the most problematic air quality surrounds the shelter for caregivers and those receiving treatment for HIV/AIDs. Moreover, staff and visitors are severely impacted by the poor air quality within the space, but  feel powerless to make changes or address complaints. Waste management interventions are desperately needed lest the patients who arrive at Queen’s leave with more health issues than the ones with which they arrived. 
 keywords: 
   - waste management
   - healthcare waste
@@ -66,7 +68,7 @@ format:
       highlights:
         - Low-cost monitors were used to assess air quality at Malawi’s largest hospital
         - Open waste burning is physically extensive and temporally frequent across the hospital campus
-        - Air quality measured as PM2.5 and PM10 consistently exceeded even the most hazardous levels 
+        - Air quality measured as PM~2.5~ and PM~10~ consistently exceeded even the most hazardous levels 
         - The most exposed locations were where guardians of patients stay and the HIV clinic
 execute: 
   echo: false
@@ -214,19 +216,19 @@ waste has been identified as one of the key contributors to air
 pollution within urban areas [@amegah2018proliferation;
 @bulto2020impact]. Although open trashing burning is a problem in LICs
 broadly, for instance, @wiedinmyer2014global estimate that open trash
-burning contributes to 29% of the total global PM2.5 anthropogenic
+burning contributes to 29% of the total global PM~2.5~ anthropogenic
 emissions, it is of particular concern in Sub-Saharan African (SSA)
 cities, which are home to 19 of the world's 50 biggest dumpsites (United
 Nations Development Programme, 2021). Particulate matter, or PM, is not
 specific to trash burning, but rather the product of any type of
 incomplete combustion and is one of the most commonly measured
 indicators for air quality. PM is measured in terms of its particle size
-and generally classified into PM with particle sizes less than 10μm
-(PM10) and those with sizes less than 2.5μm (PM2.5), while one way of
+and generally classified into PM with particle sizes less than 10 µm
+(PM~10~) and those with sizes less than 2.5 µm (PM~2.5~), while one way of
 measuring the severity of air pollution is by expressing the mass of PM
-per volume of air (μg PMx/m3 air). PM has been linked to multiple
-negative health outcomes. Amongst particulate air pollution, PM10 and
-PM2.5 are of particular concern as they can penetrate deep into the
+per volume of air (µg PMx/m^3^ air). PM has been linked to multiple
+negative health outcomes. Amongst particulate air pollution, PM~10~ and
+PM~2.5~ are of particular concern as they can penetrate deep into the
 lungs, and their exposure has been associated with asthma, heart
 disease, heart failure, stroke, and cancer [@mohapatra2014effect;
 @xing2016impact]. As a result, the health impacts of ambient air
@@ -272,7 +274,7 @@ within their communities and understand potential risks.
 Findings suggest that particulate matter concentrations are routinely
 above the WHO guidelines and are especially worrisome at several
 locations. Over the course of the two-month study, the hazardous limits
-for both PM10 and PM2.5 were exceeded at all locations except for the
+for both PM~10~ and PM~2.5~ were exceeded at all locations except for the
 Lions Sight hospital. The limits were exceeded fewer than 50 times at
 five of the locations, but the monitors at the Lighthouse Clinic and the
 Guardian Shelter recorded more than 50 instances above the hazardous
@@ -528,7 +530,7 @@ lost if the internet connection breaks down. Because the Pi can only
 read digital signals, we needed to include an analog-to-digital (ADC)
 converter. The amount of dust is measured by a Nova PM SDS011 High
 Precision Laser sensor. This sensor measures particles at 2.5 and 10
-micrometres in diameter in mg/m3. A list of the specific hardware and
+µm in diameter in mg/m^3^. A list of the specific hardware and
 software components can be found in Appendix B.
 
 ### Installation
@@ -622,8 +624,8 @@ setting and publishing all standards in the country. At the time of
 writing, the official website (www.mbsmw.org) was not available.
 However, published work that references Malawian standards
 [@kutlarjoss2017time; @mapoma2014air] indicate that the maximum 24-h
-PM10 value is 25 μg/m3 and the maximum annual PM2.5 value is 8 μg/m3.
-There is no daily maximum value for PM2.5. It should be noted that both
+PM~10~ value is 25 µg/m^3^ and the maximum annual PM~2.5~ value is 8 µg/m^3^.
+There is no daily maximum value for PM~2.5~. It should be noted that both
 of these values are at, or below, the level-4 interim WHO targets.
 
 Therefore, for international comparisons and due to the lack of
@@ -649,7 +651,7 @@ knitr::include_graphics(here::here("manuscript/img/image-replace-table.png"))
 Due to localised variation (air movement in the immediate area) and the
 density of the observations, the plotted 5-minute data obscure
 persistent trends. The full set of 5-minute data are plotted and
-presented in Appendix A Figure A.1. However, the number of measured values
+presented in Appendix A @fig-five-minute-intervals. However, the number of measured values
 that exceeded the hazardous limit for both parameters are summarised in
 @tbl-peaks.
 
@@ -665,7 +667,7 @@ observations_location <- dat_in |>
 
 no_peaks_who <- dat_in |> 
   mutate(peaks = case_when(
-    indicator == "pm2.5" & value >  35 ~ TRUE,
+    indicator == "pm25" & value >  35 ~ TRUE,
     indicator == "pm10" & value >  70 ~ TRUE,
     TRUE ~ FALSE
   )) |> 
@@ -688,29 +690,29 @@ parameters were exceeded at all locations except for the Lions Sight
 hospital. The limits were exceeded fewer than 50 times at five of the
 locations, and only the monitors at the Lighthouse Clinic and the
 Guardian Shelter recorded more than 50 instances above the hazardous
-limits. At the Lighthouse Clinic, the PM10 limit was exceeded almost
-twice as often as the PM2.5 limit, while at the Guardian Shelter, the
+limits. At the Lighthouse Clinic, the PM~10~ limit was exceeded almost
+twice as often as the PM~2.5~ limit, while at the Guardian Shelter, the
 reverse is true. Because the Lighthouse Clinic is within 50 m of the
-incinerator, the number and predominance of PM10 peaks is characteristic
+incinerator, the number and predominance of PM~10~ peaks is characteristic
 of incomplete combustion and dust that is typical for the area and the
 open burning that occurs there. The residents at the Guardian Shelter
 however are mostly cooking within contained clay stoves that have been
 designed to improve combustion of the coal and wood that is burned
-within them. The fewer number of PM10 peaks is a testament to this
-intervention, though the frequency of PM2.5 peaks is still beyond
+within them. The fewer number of PM~10~ peaks is a testament to this
+intervention, though the frequency of PM~2.5~ peaks is still beyond
 acceptable.
 
 ### 24-hour averages
 
 The 24-hour averaged values (logged every 5 minutes) are presented for
-each location, for both PM10 and PM2.5 in fig-24-hour-average. As well as dampening
+each location, for both PM~10~ and PM~2.5~ in fig-24-hour-average. As well as dampening
 local variation and peaks, the WHO air quality guidelines are also based
 on 24-hour averages which are the standard against which the health
 risks can be judged.
 
-Overall, PM2.5 values remained below 100 μg/m3 at 6 of 8 locations
+Overall, PM~2.5~ values remained below 100 µg/m^3^ at 6 of 8 locations
 (Administration, Lions Sight, Malaria Project, uMoyo, Ward 6B, and Mercy
-James); PM10 values were consistently below 100μg/m3 at the same
+James); PM~10~ values were consistently below 100µg/m^3^ at the same
 locations, but with several average values extending slightly above, and
 then infrequently.
 
@@ -727,7 +729,7 @@ not clearly point to more or less burning in the day or at night.
 
 ```{r}
 #| label: fig-24-hour-average
-#| fig-cap: Average 24-hour PM10 and PM2.5 at 8 monitoring stations over 2 months
+#| fig-cap: Average 24-hour PM~10~ and PM~2.5~ at 8 monitoring stations over 2 months
 #| fig-align: center
 
 dat_in_sum_day |> 
@@ -748,14 +750,14 @@ dat_in_sum_day |>
 ### PM ratios
 
 Given that the type of fuel and the type of burning (contained vs. open)
-produce very different particulate "fingerprints", the ratio of PM10 to
-PM2.5 values were examined to determine if a clear difference between
+produce very different particulate "fingerprints", the ratio of PM~10~ to
+PM~2.5~ values were examined to determine if a clear difference between
 locations, and therefore source, could be identified. The results are
 presented in @fig-pm-ratios.
 
 ```{r}
 #| label: fig-pm-ratios
-#| fig-cap: PM10:PM2.5 values for each location. Each line shows the minimum and maximum ratio for the day based on ratios calculated hourly. Does not include 14th to 16th October at location uMoyo due to extreme outliers.
+#| fig-cap: PM~10~:PM~2.5~ values for each location. Each line shows the minimum and maximum ratio for the day based on ratios calculated hourly. Does not include 14th to 16th October at location uMoyo due to extreme outliers.
 #| fig-align: center
 
 dat_in_ratios <- dat_in |> 
@@ -765,15 +767,15 @@ dat_in_ratios <- dat_in |>
   summarise(mean = mean(value)) |> 
   pivot_wider(names_from = indicator, 
               values_from = mean) |> 
-  mutate(p10_pm2.5_ratio = pm10/pm2.5)  |>
+  mutate(p10_pm25_ratio = pm10/pm25)  |>
   
   filter((date != "2019-10-14" & date != "2019-10-15" & date != "2019-10-16")
          | location != "uMoyo") |> 
-  #filter(p10_pm2.5_ratio > 30)
+  #filter(p10_PM~2.5~_ratio > 30)
   
   group_by(date, location) |> 
-  summarise(min = min(p10_pm2.5_ratio),
-            max = max(p10_pm2.5_ratio)) 
+  summarise(min = min(p10_pm25_ratio),
+            max = max(p10_pm25_ratio)) 
 
 # Plot
 
@@ -784,13 +786,13 @@ dat_in_ratios |>
   facet_wrap(~location, ncol = 2)
 ```
 
-The results presented in Figure 5 illustrate both the presence of PM10
-relative to PM2.5 as well as the range of values over which that ratio
+The results presented in Figure 5 illustrate both the presence of PM~10~
+relative to PM~2.5~ as well as the range of values over which that ratio
 is observed.
 
 Unlike the peak values presented in Table 2, the values presented in
-Figure 5 indicate the relative presence of larger (PM10) particles to
-smaller ones (PM2.5) regardless of their concentration: the ratio of two
+Figure 5 indicate the relative presence of larger (PM~10~) particles to
+smaller ones (PM~2.5~) regardless of their concentration: the ratio of two
 low concentrations can be the same as the ratio of two high
 concentrations and is therefore more indicative of source than of
 proximity.
@@ -821,7 +823,7 @@ is shown in @fig-percent-exposure. Each square represents 1% of the measured tim
 #| fig-align: center
 
 dat_air_quality_sum_who_2021 |> 
-  #filter(indicator == "pm2.5") |> 
+  #filter(indicator == "PM~2.5~") |> 
   group_by(location, indicator) |> 
   mutate(exposure_percent = round(exposure_hrs / sum(exposure_hrs) * 100, 0)) |> 
   
@@ -833,11 +835,11 @@ dat_air_quality_sum_who_2021 |>
     & air_quality_who_annual == "Interim target 2" ~ exposure_percent - 1,
     
     location == "Administration" 
-    & indicator == "pm2.5"
+    & indicator == "pm25"
     & air_quality_who_annual == "Interim target 3" ~ exposure_percent + 1,
     
     location == "uMoyo" 
-    & indicator == "pm2.5"
+    & indicator == "pm25"
     & air_quality_who_annual == "Interim target 4" ~ exposure_percent - 1,
     
     location == "Mercy James" 
@@ -1002,7 +1004,7 @@ when the new incinerator is opened."
 
 # Conclusions
 
-The air quality, as a result of open waste burning at Queen’s is poor and not suitable for a city, let alone a hospital. Over the course of this two-month study, the hazardous limits for both PM parameters were exceeded at all locations except for the Lions Sight hospital. The WHO limits were exceeded fewer than 50 times at five of the locations, and only the monitors at the Lighthouse Clinic and the Guardian Shelter recorded more than 50 instances above the most hazardous limit. The composition of emissions recorded ranged significantly, analysed as the ratio PM10:PM2.5 likely reflects a range of burning styles and/or fuel (waste) type, and no discernable trend was observed..  Among interview respondents, there was a general  consensus that air quality caused by the burning of waste within the hospital was a problem, although there were significant differences between respondents over their understandings of potential impacts, the effectiveness of various coping mechanisms, and their problematisations linked to the burning of specific waste materials. For most, going home or leaving the Queen’s campus was the only pathway to relief, though for patients who can not leave, endurance was the only option. This work was originally planned as a before-and-after study:  we envisioned reporting these baseline results compared to follow-up measurements once the long-promised incinerator was commissioned.  However, nearly 4 years later, the incinerator is rarely functional (partly for technical reasons, partly for financial ones) and the smoke hovering over Queen’s is still thick.  Waste management has long been known as an environmental health issue, but in the case of open trash burning at a medical facility, it becomes more:  for some of the most vulnerable, especially those with TB, asthma or other chronic disease, it could be a matter of life or death. 
+The air quality, as a result of open waste burning at Queen’s is poor and not suitable for a city, let alone a hospital. Over the course of this two-month study, the hazardous limits for both PM parameters were exceeded at all locations except for the Lions Sight hospital. The WHO limits were exceeded fewer than 50 times at five of the locations, and only the monitors at the Lighthouse Clinic and the Guardian Shelter recorded more than 50 instances above the most hazardous limit. The composition of emissions recorded ranged significantly, analysed as the ratio PM~10~:PM~2.5~ likely reflects a range of burning styles and/or fuel (waste) type, and no discernable trend was observed..  Among interview respondents, there was a general  consensus that air quality caused by the burning of waste within the hospital was a problem, although there were significant differences between respondents over their understandings of potential impacts, the effectiveness of various coping mechanisms, and their problematisations linked to the burning of specific waste materials. For most, going home or leaving the Queen’s campus was the only pathway to relief, though for patients who can not leave, endurance was the only option. This work was originally planned as a before-and-after study:  we envisioned reporting these baseline results compared to follow-up measurements once the long-promised incinerator was commissioned.  However, nearly 4 years later, the incinerator is rarely functional (partly for technical reasons, partly for financial ones) and the smoke hovering over Queen’s is still thick.  Waste management has long been known as an environmental health issue, but in the case of open trash burning at a medical facility, it becomes more:  for some of the most vulnerable, especially those with TB, asthma or other chronic disease, it could be a matter of life or death. 
 
 # Acknowledgements
 
@@ -1020,15 +1022,15 @@ etc.
 ## Appendix A {.unnumbered}
 
 ```{r}
-#| label: fig-5-minute-intervals
-#| fig-cap: PM2.5 and PM10 values collected every 5 minutes over 10 months at 8 locations.
+#| label: fig-five-minute-intervals
+#| fig-cap: PM~2.5~ and PM~10~ values collected every 5 minutes over 10 months at 8 locations.
 #| fig-align: center
 
 dat_in |> 
   ggplot(aes(x = date_time, y = value)) +
   geom_line(alpha = 0.5) +
   labs(title = "Hospital Air Quality",
-       subtitle = "PM2.5 and PM10 measurements in 5-min intervals at eight locations") +
+       subtitle = "PM~2.5~ and PM~10~ measurements in 5-min intervals at eight locations") +
   ylab(bquote(uq/m^3)) +
   facet_grid(indicator~location) +
   theme_bw(base_size = 14) + 
