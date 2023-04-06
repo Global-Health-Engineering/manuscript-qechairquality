@@ -1,10 +1,26 @@
 first_name, surname, credit_statement
 Elizabeth, Tilley, Conceptualization
 Elizabeth, Tilley, Methodology
-Marc, Kalina, Conceptualization
-Marc, Kalina, Methodology
+Elizabeth, Tilley, Formal Analysis
+Elizabeth, Tilley, Writing- Original Draft
+Elizabeth, Tilley, Writing- Review & Editing
+Elizabeth, Tilley, Supervision
+Elizabeth, Tilley, Project Administration
+Elizabeth, Tilley, Funding Acquisition
+Hope, Chilunga, Software
+Hope, Chilunga, Investigation
+Hope, Chilunga, Data Curation
+Jonathan, Kwangulero, Investigation
+Jonathan, Kwangulero, Data Curation
 Lars, Schöbitz, Software
+Lars, Schöbitz, Formal Analysis
 Lars, Schöbitz, Data Curation
 Lars, Schöbitz, Visualization
-Jonathan, Kwangulero, ADD
-Hope, hilunga, ADD
+Marc, Kalina, Conceptualization
+Marc, Kalina, Methodology
+Marc, Kalina, Formal Analysis
+Marc, Kalina, Writing- Original Draft
+Marc, Kalina, Writing- Review & Editing
+Marc, Kalina, Supervision
+Marc, Kalina, Project Administration
+Marc, Kalina, Funding Acquisition
