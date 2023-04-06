@@ -33,6 +33,11 @@ author:
     email: lschoebitz@ethz.ch
     affiliations:
         - ref: ethz
+  - name: Saloni Vijay
+    orcid: 0000-0001-5883-5308
+    email: svijay@ethz.ch
+    affiliations:
+        - ref: ethz
   - name: Heiko Heilgendorff
     email: me@me.com
     affiliations: 
@@ -474,7 +479,7 @@ the implementation of best practices. These include the lack of a
 coherent hospital-wide waste management policy, insufficient waste
 management training for staff, and a persistent lack of material and
 financial resources. For instance, although hospital administration was
-able to articulate a set of standard operating principles (SoPs) for
+able to articulate a set of standard operating principles (SOPs) for
 waste management, below the administration, doctors and nurses were
 generally limited in their understanding about its contents.
 Furthermore, cleaners, who are responsible for day-to-day cleansing and
@@ -527,7 +532,7 @@ The PM monitoring device centres around a Raspberry Pi 3 Model B
 single-board computer complete with an operating system and storage
 space. The added advantage of storage space is that the data are not
 lost if the internet connection breaks down. Because the Pi can only
-read digital signals, we needed to include an analog-to-digital (ADC)
+read digital signals, we needed to include an analogue-to-digital (ADC)
 converter. The amount of dust is measured by a Nova PM SDS011 High
 Precision Laser sensor. This sensor measures particles at 2.5 and 10
 µm in diameter in mg/m^3^. A list of the specific hardware and
@@ -550,12 +555,11 @@ freely protruding in the building (room) in order to capture the air
 quality.
 
 Because connecting each unit to a power supply was not possible, each
-unit was equipped with an external battery (5000mAh) which powered the
+unit was equipped with an external battery (5000 mAh) which powered the
 sensor unit for three days continuously. To avoid any down time, we
 changed the batteries every two days. Data were also collected from the
 sensor at the time of battery replacement. The sensors were capable of
-being connected to WIFI, a feature which enabled us to download the data
-into our computers wirelessly.
+being connected to Wi-Fi, a feature which enabled wireless data access. 
 
 ### Qualitative Methods
 
@@ -1004,7 +1008,7 @@ when the new incinerator is opened."
 
 # Conclusions
 
-The air quality, as a result of open waste burning at Queen’s is poor and not suitable for a city, let alone a hospital. Over the course of this two-month study, the hazardous limits for both PM parameters were exceeded at all locations except for the Lions Sight hospital. The WHO limits were exceeded fewer than 50 times at five of the locations, and only the monitors at the Lighthouse Clinic and the Guardian Shelter recorded more than 50 instances above the most hazardous limit. The composition of emissions recorded ranged significantly, analysed as the ratio PM~10~:PM~2.5~ likely reflects a range of burning styles and/or fuel (waste) type, and no discernable trend was observed..  Among interview respondents, there was a general  consensus that air quality caused by the burning of waste within the hospital was a problem, although there were significant differences between respondents over their understandings of potential impacts, the effectiveness of various coping mechanisms, and their problematisations linked to the burning of specific waste materials. For most, going home or leaving the Queen’s campus was the only pathway to relief, though for patients who can not leave, endurance was the only option. This work was originally planned as a before-and-after study:  we envisioned reporting these baseline results compared to follow-up measurements once the long-promised incinerator was commissioned.  However, nearly 4 years later, the incinerator is rarely functional (partly for technical reasons, partly for financial ones) and the smoke hovering over Queen’s is still thick.  Waste management has long been known as an environmental health issue, but in the case of open trash burning at a medical facility, it becomes more:  for some of the most vulnerable, especially those with TB, asthma or other chronic disease, it could be a matter of life or death. 
+The air quality, as a result of open waste burning at Queen’s is poor and not suitable for a city, let alone a hospital. Over the course of this two-month study, the hazardous limits for both PM parameters were exceeded at all locations except for the Lions Sight hospital. The WHO limits were exceeded fewer than 50 times at five of the locations, and only the monitors at the Lighthouse Clinic and the Guardian Shelter recorded more than 50 instances above the most hazardous limit. The composition of emissions recorded ranged significantly, analysed as the ratio PM~10~:PM~2.5~ likely reflects a range of burning styles and/or fuel (waste) type, and no discernible trend was observed..  Among interview respondents, there was a general  consensus that air quality caused by the burning of waste within the hospital was a problem, although there were significant differences between respondents over their understandings of potential impacts, the effectiveness of various coping mechanisms, and their problematisations linked to the burning of specific waste materials. For most, going home or leaving the Queen’s campus was the only pathway to relief, though for patients who can not leave, endurance was the only option. This work was originally planned as a before-and-after study:  we envisioned reporting these baseline results compared to follow-up measurements once the long-promised incinerator was commissioned.  However, nearly 4 years later, the incinerator is rarely functional (partly for technical reasons, partly for financial ones) and the smoke hovering over Queen’s is still thick.  Waste management has long been known as an environmental health issue, but in the case of open trash burning at a medical facility, it becomes more:  for some of the most vulnerable, especially those with TB, asthma or other chronic disease, it could be a matter of life or death. 
 
 # Acknowledgements
 
@@ -1065,20 +1069,20 @@ changed position
 2.  Nova PM SDS011 Sensor
 -   See Data Sheet attachment for technical specifications
 3.  MCP3008 microchip
--   analog-to-digital converter (ADC)
+-   analogue-to-digital converter (ADC)
 4.  Romoss Sense8+ 30000mAh QC Type-C
 -   Power bank battery
 5.  Pipe
 -   clear rubber pipe attainable from any local hardware store
 6.  Box
--   any box that can fit all the components comfortbaly can be used.
+-   any box that can fit all the components comfortably can be used.
 The box will need to have a whole drilled in it for the pipe.
 
 ### Software ‘components’ and data management {.unnumbered}
 
 1. The Raspberry Pi operating system runs off of Rasbian software on a NOOBS scandisk. 
 2. Air quality monitoring code is written in Python using the [aqi library](https://pypi.org/project/python-aqi/) (A library of algorithms to convert between AQI value and pollutant concentration). The code is stored on the [Open Data Durban GitHub account](https://github.com/opendatadurban/hospital_stations) and is free for all to access. To be able to collect data, the device needs to be connected to a reliable wifi network, the SSID and password need to be coded onto the device during step 2 in the building method.
-3. Once the whole device has been put together and placed on site, to access that data we use a combination of propgrams:
+3. Once the whole device has been put together and placed on site, to access that data we use a combination of programs:
 - [Putty](https://www.putty.org/) - this is an SSH client that we use to gain access to the Raspberry Pi from another computer. To be able to access the Raspberry Pi in question, the computer in use and the air quality monitoring device need to be on the same network for the connection to be successful. 
 - [Winscp](https://winscp.net/eng/download.php) - this is an FTP client that we use, in conjunction with Putty, to be able to transfer data files from the air quality monitoring device to one’s computer.
 - [Remote.it](https://app.remote.it/) - this is an application that supports remote SSH, so this is used when wanting to access data from a device that is not connected to the same network as the computer in use. Remote.it is used together with Putty and Winscp to access the air quality data remotely. 
@@ -1087,7 +1091,7 @@ The box will need to have a whole drilled in it for the pipe.
 
 To build the sensor, we followed these steps:
 
-1. Set up the Raspberry Pi with the Rasbian software using the NOOBS scandisk. (insert the scandisk into the Rasberry Pi) A comprehensive start up guide can be found here. 
+1. Set up the Raspberry Pi with the Rasbian software using the NOOBS scandisk. (insert the scandisk into the Raspberry Pi) A comprehensive start up guide can be found here. 
 2. Next we load the code onto the Raspberry Pi. The code can be found on the Open Data Durban Hospital Stations Repository Github. To use it you can follow the steps in the file called Initiate_WS.txt. Once all the steps have been completed, the Raspberry Pi is now a device that can be connected to a particulate matter monitoring sensor.  
 3. Connect the hardware components
 - Connect the Raspberry Pi to the Nova PM Sensor using the break out board that comes with the Sensor. 
