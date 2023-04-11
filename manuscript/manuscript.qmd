@@ -52,7 +52,7 @@ author:
     affiliations:
         - ref: ethz
 abstract: |
-  Blantyre, Malawi’s Queen Elizabeth Central Hospital (QECH), or Queen’s, as it’s known locally, is the country’s largest public hospital. However, Queen’s is not served by regular municipal waste collection. What municipal collection that is done is ad-hoc, sporadic, and based on the hospital’s available financial resources. Rather, most hospital waste (infectious and non-infectious) is gathered by grounds staff and openly burned, in several constantly smouldering piles, sending up clouds of smoke.  Speaking directly to an identified knowledge gap on air quality impacts linked to trash burning and the paucity of African urban dwellers’ voices on air quality issues, this study employed a mixed-methods approach to both quantitatively measure the air quality around QECH, and to qualitatively investigate the perceived impacts amongst staff and caregivers. Low-cost sensors measuring particulate matter (PM) with particle sizes less than 10 µm (PM~10~) and less than 2.5 µm (PM~2.5~), expressed as the mass of PM per volume of air (µg PMx/m^3^ air) were recorded every 5 minutes at 8 locations across the QECH for 2 months. Qualitative data collection consisted of 57 interviews with patients, caregivers and hospital staff (including janitorial and maintenance staff, nurses, doctors, and administrators).  Our results show that safe air quality thresholds are consistently exceeded across space and time and that the most problematic air quality surrounds the shelter for caregivers and those receiving treatment for HIV/AIDs. Moreover, staff and visitors are severely impacted by the poor air quality within the space, but  feel powerless to make changes or address complaints. Waste management interventions are desperately needed lest the patients who arrive at Queen’s leave with more health issues than the ones with which they arrived. 
+  Blantyre, Malawi’s Queen Elizabeth Central Hospital (QECH), or Queen’s, as it’s known locally, is the country’s largest public hospital. However, Queen’s is not served by regular municipal waste collection. What municipal collection that is done is ad-hoc, sporadic, and based on the hospital’s available financial resources. Rather, most hospital waste (infectious and non-infectious) is gathered by grounds staff and openly burned, in several constantly smouldering piles, sending up clouds of smoke.  Speaking directly to an identified knowledge gap on air quality impacts linked to trash burning and the paucity of African urban dwellers’ voices on air quality issues, this study employed a mixed-methods approach to both quantitatively measure the air quality around QECH, and to qualitatively investigate the perceived impacts amongst staff and caregivers. Low-cost sensors measuring particulate matter (PM) with particle sizes less than 10 µm (PM~10~) and less than 2.5 µm (PM~2.5~), expressed as the mass of PM per volume of air (µg PMx/m^3^ air) were recorded every 5 minutes at 8 locations across the QECH for 2 months. Qualitative data collection consisted of 56 interviews with patients, caregivers and hospital staff (including janitorial and maintenance staff, nurses, doctors, and administrators).  Our results show that safe air quality thresholds are consistently exceeded across space and time and that the most problematic air quality surrounds the shelter for caregivers and those receiving treatment for HIV/AIDs. Moreover, staff and visitors are severely impacted by the poor air quality within the space, but  feel powerless to make changes or address complaints. Waste management interventions are desperately needed lest the patients who arrive at Queen’s leave with more health issues than the ones with which they arrived. 
 keywords: 
   - waste management
   - healthcare waste
@@ -565,14 +565,14 @@ being connected to Wi-Fi, a feature which enabled wireless data access.
 
 ### Qualitative Methods
 
-Qualitative data collection consisted of 26 interviews with caregivers
+Qualitative data collection consisted of 25 interviews with caregivers
 and hospital staff (including janitorial and maintenance staff, nurses,
 doctors, and administrators) conducted in October and November 2019, as
 well as an additional 31 interviews conducted with staff, patients, and
-caregivers in January and February 2021. Interviews were
+caregivers in January and February 2021, spread around the hospital’s various wards and departments. Interviews were
 semi-structured, and included questions on hospital waste management
 practices, perceived best practices, and workplace health, safety, and
-risk. However, the semi-structured nature of the interviews allowed for
+risk. The first round of interviews included specific questions on air quality, while the second round focused on waste management more broadly. However, the semi-structured nature of the interviews allowed for
 the participants to raise topics of interest, and for unexpected themes
 to emerge. These interviews are supplemented by participatory
 observation recorded within detailed field notes, and supported by
@@ -1002,7 +1002,7 @@ such equipment, to no avail. However, other staff members, who do have
 access to PPE, noted that even face masks do little to mitigate the
 impacts of the smoke, describing them as ineffective.
 
-Most staff, however, have been unable to find anyway to mitigate the
+Most staff, however, have been unable to find any way to mitigate the
 impacts of the smoke, and only found relief once they reached home at
 the end of their shift, as one of the janitorial staff described, "we
 only feel safe when we are home". Of course, this relief is not
