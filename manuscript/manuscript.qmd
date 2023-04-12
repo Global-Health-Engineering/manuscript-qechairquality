@@ -88,6 +88,8 @@ editor_options:
 ```{r setup}
 
 # Source data preparation script
+
+source(here::here("R/00-setup.R"))
 source(here::here("R/01-data-preparation.R"))
 
 knitr::write_bib(file = here::here("manuscript/packages.bib"))
@@ -744,18 +746,23 @@ not clearly point to more or less burning in the day or at night.
 #| fig-cap: Average 24-hour PM~10~ and PM~2.5~ at 8 monitoring stations over 2 months
 #| fig-align: center
 
-dat_in_sum_day |> 
+fig03 <- dat_in_sum_day |> 
   ggplot(aes(x = date, y = mean, group = indicator, color = indicator)) +
   geom_point(size = 0.8) +
-  geom_line() +
+  geom_line(alpha = 0.5) +
   labs(x = NULL) +
   ylab(bquote(uq/m^3)) +
   facet_wrap(~location, ncol = 4) + 
   scale_y_continuous(limits = c(0, 400)) +
-  scale_color_brewer(type = "qual", palette = 2) + 
-  theme_bw(base_size = 14) + 
-  theme(panel.grid.minor = element_blank(),
-        panel.grid.major.x = element_blank()) 
+  scale_color_brewer(type = "qual", palette = 2) 
+
+
+ggsave(filename = "manuscript/figs/fig-03-double-column.tiff",
+       plot = fig03,
+       dpi = param_dpi,
+       width = param_width_double,
+       height = param_width_double * width_height_ratio,
+       units = "mm")
 
 ```
 
@@ -791,11 +798,34 @@ dat_in_ratios <- dat_in |>
 
 # Plot
 
-dat_in_ratios |> 
+library(ggplot2)
+
+# create sample data
+df <- data.frame(x = 1:10, y = 1:10)
+
+# create plot
+ggplot(df, aes(x = x, y = y)) +
+  geom_point() +
+  xlab(expression(c('PM'[10], 'PM'[2.5])))
+
+
+fig04 <- dat_in_ratios |> 
   ggplot(aes(x = date)) +
   geom_linerange(aes(ymin = min, ymax = max)) +
-  labs(x = "hour") +
-  facet_wrap(~location, ncol = 2)
+  labs(x = "day",
+       y = "ratio") +
+  facet_wrap(~location, ncol = 2) +
+  scale_y_continuous(limits = c(0, 10))
+
+fig04
+
+ggsave(filename = "manuscript/figs/fig-04-double-column.tiff",
+       plot = fig04,
+       dpi = param_dpi,
+       width = param_width_double,
+       height = param_width_double * width_height_ratio,
+       units = "mm")
+
 ```
 
 The results presented in Figure 5 illustrate both the presence of PM~10~
@@ -834,7 +864,7 @@ is shown in @fig-percent-exposure. Each square represents 1% of the measured tim
 #| fig-cap: Percentage of measured values categorised according to WHO 2021 targets
 #| fig-align: center
 
-dat_air_quality_sum_who_2021 |> 
+percent_exposure <- dat_air_quality_sum_who_2021 |> 
   #filter(indicator == "PM~2.5~") |> 
   group_by(location, indicator) |> 
   mutate(exposure_percent = round(exposure_hrs / sum(exposure_hrs) * 100, 0)) |> 
@@ -859,11 +889,12 @@ dat_air_quality_sum_who_2021 |>
     & air_quality_who_annual == "Interim target 4" ~ exposure_percent + 1,
     
     TRUE ~ exposure_percent
-  )) |> 
+  )) 
   
   #filter(is.na(exposure_percent))
 
-ggplot(aes(fill = air_quality_who_annual, values = exposure_percent)) +
+fig05 <- ggplot(data = percent_exposure,
+                aes(fill = air_quality_who_annual, values = exposure_percent)) +
   geom_waffle(color ="white", size = 0.5, n_rows = 5, na.rm = TRUE) +
   coord_equal() +
   labs(fill = "WHO 2021 targets (annual)") +
@@ -877,6 +908,9 @@ ggplot(aes(fill = air_quality_who_annual, values = exposure_percent)) +
   # help from: https://stackoverflow.com/questions/34749636/left-justify-text-from-multi-line-facet-labels
   theme(strip.text.x = element_text(hjust = 0),
         strip.text.y = element_text(vjust = 0, size = 4))
+
+fig05
+
 ```
 
 Unsurprisingly, a majority of the air quality at the Lighthouse Clinic
