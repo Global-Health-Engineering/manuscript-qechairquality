@@ -647,7 +647,7 @@ Raw data and analysis-ready processed data is available as an R package
 at @R-qechairquality. The data underlying the tables and figures of this
 manuscript are contained in a repository alongside a reproducible
 document that contains the analysis code and the written narrative of
-the manuscript \[TODO: manuscript software citation\].
+the manuscript [@schobitz2023manuscript].
 
 # Theory/calculation (not applicable)
 
@@ -676,7 +676,6 @@ targets are presented in @tbl-who-targets.
 #| tbl-cap: Particulate matter targets from [@worldhealthorganization2021who]
 
 knitr::include_graphics(here::here("manuscript/img/image-replace-table.png"))
-
 
 
 ```
