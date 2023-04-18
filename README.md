@@ -5,8 +5,26 @@ This repository contains a reproducible manuscript for submission to the
 journal [Habitat
 International](https://www.sciencedirect.com/journal/habitat-international).
 
+## Data
+
 Raw data and analysis-ready processed data is available as an R package
-at Schöbitz et al. (2023).
+at: https://github.com/Global-Health-Engineering/qechairquality
+(Schöbitz et al. 2023).
+
+The data underlying the tables and figures of this manuscript are
+contained in this repo in
+[data/processed-data/](https://github.com/Global-Health-Engineering/manuscript-qechairquality/tree/main/data/processed-data).
+
+## Figures
+
+Figures were prepared using the [Elsevier guidelines for artwork and
+media](https://www.elsevier.com/authors/policies-and-guidelines/artwork-and-media-instructions).
+The exported figures in TIFF format exceeded 100 MB per file and are not
+tracked in this repository. The automated exported figures from the
+Quarto markdown file [are accessible in the
+repository](https://github.com/Global-Health-Engineering/manuscript-qechairquality/tree/main/manuscript/manuscript_files/figure-pdf).
+
+## Software
 
 R Statistical Software version 4.2.1, RStudio IDE version 2023.3.0.386,
 and Quarto scientific publishing system version were used for
@@ -20,20 +38,9 @@ Cheng, Karambelkar, and Xie 2023; Spinu, Grolemund, and Wickham 2023;
 Appelhans et al. 2022; Wickham, Hester, and Bryan 2023; Wickham,
 Vaughan, and Girlich 2023; Rudis and Gandy 2019).
 
-The Quarto template for Elsevier journals was used to prepared the final
-submitted PDF document.
-
-Figures were prepared using the [Elsevier guidelines for artwork and
-media](https://www.elsevier.com/authors/policies-and-guidelines/artwork-and-media-instructions).
-The exported figures in TIFF format exceeded 100 MB per file and are not
-tracked in this repository. The automated exported figures from the
-Quarto markdown file [are accessible in the
-repository](https://github.com/Global-Health-Engineering/manuscript-qechairquality/tree/main/manuscript/manuscript_files/figure-pdf).
-
-The data underlying the tables and figures of this manuscript are
-contained in:
-
-\[TODO: Add link to data\]
+The [Quarto template for Elsevier
+journals](https://github.com/quarto-journals/elsevier) was used to
+prepared the final submitted PDF document.
 
 ## References
 
