@@ -64,6 +64,7 @@ keywords:
 date: last-modified
 bibliography: [man-qechairquality.bib, packages.bib]
 format:
+  docx: default
   elsevier-pdf:
     keep-tex: true
     journal:
@@ -668,13 +669,15 @@ basis of comparison for the measured values
 [@worldhealthorganization2021who]. The relevant particulate matter
 targets are presented in @tbl-who-targets.
 
-(TODO: REPLACE screenshot)
+(TODO: REPLACE screenshot with actual data)
 
 ```{r}
 #| label: tbl-who-targets
 #| tbl-cap: Particulate matter targets from [@worldhealthorganization2021who]
 
 knitr::include_graphics(here::here("manuscript/img/image-replace-table.png"))
+
+
 
 ```
 
@@ -872,6 +875,7 @@ measured time.
 #| label: fig-percent-exposure
 #| fig-cap: Percentage of measured values categorised according to WHO 2021 targets
 #| fig-align: center
+#| fig-height: 5
 
 percent_exposure <- dat_air_quality_sum_who_2021 |> 
   #filter(indicator == "PM~2.5~") |> 
@@ -1080,10 +1084,10 @@ or are unable to leave. Ultimately, most place their hope in the
 construction of the new incinerator (which had not yet been activated at
 the time of the interviews), and biding their time as construction drags
 on; coping as best they can. As the same member of the janitorial
-staff[^12] described, "we are just hoping we will start breathing good
+staff[^11] described, "we are just hoping we will start breathing good
 air soon, when the new incinerator is opened."
 
-[^12]: ID14, 2019-11-23
+[^11]: ID14, 2019-11-23
 
 # Conclusions
 
