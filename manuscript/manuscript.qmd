@@ -693,7 +693,7 @@ of measured values that exceeded the hazardous limit for both parameters
 are summarised in @tbl-peaks.
 
 ```{r}
-#| label: tbl-peaks
+#| label: tbl01-peaks
 #| tbl-cap: Peaks for both PM~2.5~ and PM~10~ are the number of data points above the WHO interim target 1 (annual) which is the least stringent; the number of observations recorded (count) is provided for reference. 
 
 observations_location <- dat_in |> 
@@ -715,9 +715,16 @@ no_peaks_who <- dat_in |>
   ungroup() |> 
   pivot_wider(names_from = indicator, values_from = peaks) 
 
-observations_location |> 
-  left_join(no_peaks_who) |> 
+tbl01_peaks <- observations_location |> 
+  left_join(no_peaks_who) 
+
+tbl01_peaks |> 
+  write_csv(file = here::here("data/processed-data/tbl01-peaks.csv"))
+
+tbl01_peaks |> 
   knitr::kable()
+
+
 ```
 
 Over the course of the two-month study, the hazardous limits for both
@@ -763,7 +770,7 @@ differences between the time periods; stated differently, the data did
 not clearly point to more or less burning in the day or at night.
 
 ```{r}
-#| label: fig-24-hour-average
+#| label: fig03-24-hour-average
 #| fig-cap: Average 24-hour PM~10~ and PM~2.5~ at 8 monitoring stations over 2 months
 #| fig-align: center
 
@@ -786,6 +793,9 @@ ggsave(filename = here::here("manuscript/figs/fig-03-double-column.tiff"),
        height = param_width_double * width_height_ratio,
        units = "mm")
 
+dat_in_sum_day |> 
+  write_csv(here::here("data/processed-data/fig03-24-hour-average.csv"))
+
 ```
 
 ### PM ratios
@@ -797,7 +807,7 @@ between locations, and therefore source, could be identified. The
 results are presented in @fig-pm-ratios.
 
 ```{r}
-#| label: fig-pm-ratios
+#| label: fig04-pm-ratios
 #| fig-cap: PM~10~:PM~2.5~ values for each location. Each line shows the minimum and maximum ratio for the day based on ratios calculated hourly. Does not include 14th to 16th October at location uMoyo due to extreme outliers.
 #| fig-align: center
 
@@ -837,6 +847,9 @@ ggsave(filename = here::here("manuscript/figs/fig-04-double-column.tiff"),
        height = param_width_double * width_height_ratio,
        units = "mm")
 
+dat_in_ratios |> 
+  write_csv(file = here::here("data/processed-data/fig04-pm-ratios.csv"))
+
 ```
 
 The results presented in Figure 5 illustrate both the presence of PM~10~
@@ -872,7 +885,7 @@ is shown in @fig-percent-exposure. Each square represents 1% of the
 measured time.
 
 ```{r}
-#| label: fig-percent-exposure
+#| label: fig05-percent-exposure
 #| fig-cap: Percentage of measured values categorised according to WHO 2021 targets
 #| fig-align: center
 #| fig-height: 5
@@ -939,6 +952,8 @@ ggsave(filename = here::here("manuscript/figs/fig-05-double-column.tiff"),
        height = param_width_double * width_height_ratio,
        units = "mm")
 
+percent_exposure |> 
+  write_csv("data/processed-data/fig05-percent-exposure.csv")
 
 ```
 
@@ -1139,7 +1154,7 @@ etc.
 ## Appendix A {.unnumbered}
 
 ```{r}
-#| label: fig-five-minute-intervals
+#| label: figA1-five-minute-intervals
 #| fig-cap: PM~2.5~ and PM~10~ values collected every 5 minutes over 10 months at 8 locations.
 #| fig-align: center
 
@@ -1164,6 +1179,7 @@ ggsave(filename = here::here("manuscript/figs/fig-A1-double-column.tiff"),
        width = param_width_double,
        height = param_width_double * width_height_ratio,
        units = "mm")
+
 
 
 ```
