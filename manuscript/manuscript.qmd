@@ -25,7 +25,7 @@ author:
           country: Malawi
   - name: Jonathan Kwangulero
     orcid: 0000-0002-4050-5121
-    email: kwangerlo@gmail.com
+    email: kwangulero@gmail.com 
     affilations:
         - ref: mubas
   - name: Lars Schöbitz
