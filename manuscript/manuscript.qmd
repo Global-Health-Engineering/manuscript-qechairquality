@@ -953,7 +953,7 @@ ggsave(filename = here::here("manuscript/figs/fig-05-double-column.tiff"),
        units = "mm")
 
 percent_exposure |> 
-  write_csv("data/processed-data/fig05-percent-exposure.csv")
+  write_csv(here::here("data/processed-data/fig05-percent-exposure.csv"))
 
 ```
 
