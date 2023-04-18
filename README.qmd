@@ -1,0 +1,47 @@
+---
+format: gfm
+execute: 
+  echo: false
+  warning: false
+  freeze: true
+editor: 
+  markdown: 
+    wrap: 72
+bibliography: [manuscript/man-qechairquality.bib, manuscript/packages.bib]
+---
+
+## Manuscript: "'It Is Unbearable To Breath Here': Air Quality, Open Incineration, And Misinformation In Blantyre, Malawi"
+
+This repository contains a reproducible manuscript for submission to the
+journal [Habitat
+International](https://www.sciencedirect.com/journal/habitat-international).
+
+Raw data and analysis-ready processed data is available as an R package
+at @R-qechairquality.
+
+R Statistical Software version 4.2.1, RStudio IDE version 2023.3.0.386,
+and Quarto scientific publishing system version were used for
+quantitative data analysis and writing of the manuscript [@R-base;
+@allaire2022quartoa; @positteam2023rstudio].
+
+A set of additional R packages were used for data wrangling, analysis,
+and visualisation [@ggplot22016; @lubridate2011; @R-dplyr; @R-forcats;
+@R-ggplot2; @R-janitor; @R-leaflet; @R-lubridate; @R-mapview; @R-readr;
+@R-tidyr; @R-waffle].
+
+The Quarto template for Elsevier journals was used to prepared the final
+submitted PDF document.
+
+Figures were prepared using the [Elsevier guidelines for artwork and
+media](https://www.elsevier.com/authors/policies-and-guidelines/artwork-and-media-instructions).
+The exported figures in TIFF format exceeded 100 MB per file and are not
+tracked in this repository. The automated exported figures from the
+Quarto markdown file [are accessible in the
+repository](https://github.com/Global-Health-Engineering/manuscript-qechairquality/tree/main/manuscript/manuscript_files/figure-pdf).
+
+The data underlying the tables and figures of this manuscript are
+contained in:
+
+\[TODO: Add link to data\]
+
+## References
