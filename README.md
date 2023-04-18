@@ -1,7 +1,7 @@
 
 <!-- badges: start -->
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7841193.svg)](https://doi.org/10.5281/zenodo.7841193)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7841221.svg)](https://doi.org/10.5281/zenodo.7841221)
 <!-- badges: end -->
 
 ## Manuscript: “‘It Is Unbearable To Breath Here’: Air Quality, Open Incineration, And Misinformation In Blantyre, Malawi”
