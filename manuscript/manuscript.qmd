@@ -155,8 +155,8 @@ on hospital grounds, cook for themselves throughout the day and night
 using biomass (charcoal or wood), and burn their own domestic waste. As
 a result, air quality at the hospital is a constant source of
 discussion, with patients, staff, and caregivers struggling to cope,
-when just breathing is, as the quote used in the title of this article,
-'unbearable.'
+when just breathing is, as the quote[^4] used in the title of this
+article, 'unbearable.'
 
 [^1]: Sharps are handled and disposed of separately.
 
@@ -167,6 +167,8 @@ when just breathing is, as the quote used in the title of this article,
 [^3]: Patients are required to bring a caregiver for in-patient
     hospitals stays, usually a family member, who assist with feeding,
     bathing, and all other non-medical services.
+
+[^4]: ID5, 2019-11-18
 
 Challenges with solid waste management (SWM) are not unique to Queen's,
 and remain persistent globally, particularly within African nations, and
@@ -344,7 +346,7 @@ below and shown in Figure 2:
 -   **The Blantyre Malaria Project (BMP)**, established by Professors
     Terrie Taylor and Malcolm Molyneux, has carried out clinical
     research and patient care in the area of paediatric malaria,
-    specifically cerebral malaria, for more than 30 years[^4]. Its
+    specifically cerebral malaria, for more than 30 years[^5]. Its
     research infrastructure includes an administrative team, an
     inpatient research ward, an MRI centre, and an outpatient research
     clinic in Ndirande township and in other districts outside of
@@ -387,7 +389,7 @@ below and shown in Figure 2:
     only free/accessible toilet facilities for visitors on the QECH
     campus.
 
-[^4]: BMP is credited with the development of the Blantyre Coma Score,
+[^5]: BMP is credited with the development of the Blantyre Coma Score,
     which is used widely.
 
 ```{r}
@@ -489,13 +491,16 @@ generally limited in their understanding about its contents.
 Furthermore, cleaners, who are responsible for day-to-day cleansing and
 waste disposal, yet rate at the bottom of the institutional hierarchy at
 Queens, were unable to access or analyse hospital policy, and generally
-tended to rely on "experience" and "human judgement" when handling
-potentially hazardous waste. Moreover, although nearly all doctors and
-nurses had prior education on waste management best practices, cleaners
-began their waste handling duties without any prior waste management
-experience, and although there is an orientation programme for new
-hires, there is no regular refresher training or capacity building
-regarding waste for existing staff, at any level.
+tended to rely on, what one cleaner[^6] described as, "experience" and
+"human judgement" when handling potentially hazardous waste. Moreover,
+although nearly all doctors and nurses had prior education on waste
+management best practices, cleaners began their waste handling duties
+without any prior waste management experience, and although there is an
+orientation programme for new hires, there is no regular refresher
+training or capacity building regarding waste for existing staff, at any
+level.
+
+[^6]: ID44, 2021-01-18
 
 Despite its national prominence, and international reputation for
 academic medical research, Queen's is plagued by constant shortages of
@@ -965,11 +970,13 @@ janitorial staff concentrating their burning during the late hours. The
 poor air quality on hospital grounds is also a frequent cause for
 complaint by patients and visitors, with nearly every staff member
 interviewed being able to recall having received a complaint, and in
-turn, complaining to administration. One of the staff members
+turn, complaining to administration. One of the staff[^7] members
 responsible for the burning said that he personally, had received
 hundreds of complaints, but was powerless to affect meaningful change,
 aside from burning at different hours, until the incinerator could be
 repaired.
+
+[^7]: ID3, 2019-11-18
 
 Nonetheless, despite this consensus that air quality caused by the
 burning of waste within the hospital was a problem, significant
@@ -988,11 +995,13 @@ The poor air quality within QECH was responsible, according to
 respondents, for a wide array of health impacts. The most common ones
 cited included: coughing and sneezing, sore throat, stinging eyes,
 breathing difficulties, and persistent cold and flu. Nausea was also
-mentioned, but was not a commonly described impact. Only one respondent,
-of the 26 total interviewed, did not describe lingering health impacts
-which they could ascribe to the smoke, however, they also described
-having chronic eye irritation, but did not believe the smoke was a
-contributing factor.
+mentioned, but was not a commonly described impact. Only one
+respondent[^8], of the 26 total interviewed, did not describe lingering
+health impacts which they could ascribe to the smoke, however, they also
+described having chronic eye irritation, but did not believe the smoke
+was a contributing factor.
+
+[^8]: ID1, 2019-11-18
 
 In addition to these impacts, which respondents bear on a daily basis,
 many also believed that the smoke could contribute to a number of more
@@ -1010,15 +1019,19 @@ Malawi [@worldhealthorganization2019global] there was significant
 concern (more than half of respondents) about the impact the poor air
 quality could have on the infected. However, there also persisted a
 belief among several respondents, including several nurses, that the
-smoke could be a cause of the disease itself. As one staff member
-(20/11/2019) stated, "I believe breathing this air for a long time can
-cause Tuberculosis." This, however, was only one of the few instances of
+smoke could be a cause of the disease itself. As one staff member[^9]
+stated, "I believe breathing this air for a long time can cause
+Tuberculosis." This, however, was only one of the few instances of
 misinformation which staff members held regarding air quality and
 health. Another example, voiced by several respondents, included a
 belief that some staff members were immune to ill-health impacts of the
 smoke, because they had received vaccinations from the hospital.
 Nonetheless, they were concerned about the impacts of the smoke on
-patients and visitors, as one staff member (18/11/2019) expressed:
+patients and visitors, as one staff member[^10] expressed:
+
+[^9]: ID8, 2019-11-20
+
+[^10]: ID3, 2019-11-18
 
 > Personally, I have never experienced \[eye discomfort\] because I get
 > vaccinated and I am protected including other staff. However, we
@@ -1045,16 +1058,18 @@ quality, staff and visitors reported having developed a number of coping
 mechanisms, designed to help them get through their daily routines.
 These included staying indoors, blocking doors and windows, and taking
 breaks away from hospital grounds in order to catch some breaths of
-fresher air. However, for janitorial staff, inside was not necessarily
-better, as several reported their indoor workspaces as being also
-insufferable for long periods of time from the smell of cleaning agents
-and other chemicals. Furthermore, amongst respondents there was a
+fresher air. However, for janitorial staff[^11], inside was not
+necessarily better, as several reported their indoor workspaces as being
+also insufferable for long periods of time from the smell of cleaning
+agents and other chemicals. Furthermore, amongst respondents there was a
 general disagreement over the effectiveness of personal protective
 equipment (PPE), such as face masks, towards mitigating the impacts of
 the smoke. A few staff described pleading to hospital administration for
 such equipment, to no avail. However, other staff members, who do have
 access to PPE, noted that even face masks do little to mitigate the
 impacts of the smoke, describing them as ineffective.
+
+[^11]: ID14, 2019-11-23
 
 Most staff, however, have been unable to find any way to mitigate the
 impacts of the smoke, and only found relief once they reached home at
@@ -1064,9 +1079,11 @@ available for the hundreds of patients and caregivers who sleep at QECH
 or are unable to leave. Ultimately, most place their hope in the
 construction of the new incinerator (which had not yet been activated at
 the time of the interviews), and biding their time as construction drags
-on; coping as best they can. As one staff member (25/11/2019)
-described,"we are just hoping we will start breathing good air soon,
-when the new incinerator is opened."
+on; coping as best they can. As the same member of the janitorial
+staff[^12] described, "we are just hoping we will start breathing good
+air soon, when the new incinerator is opened."
+
+[^12]: ID14, 2019-11-23
 
 # Conclusions
 
