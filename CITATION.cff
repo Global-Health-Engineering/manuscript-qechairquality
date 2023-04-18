@@ -1,0 +1,42 @@
+# -----------------------------------------------------------
+# CITATION file created with {cffr} R package, v0.4.1
+# See also: https://docs.ropensci.org/cffr/
+# -----------------------------------------------------------
+
+cff-version: 1.2.0
+type: software
+license: CC-BY-4.0
+title: 'Manuscript: “‘It Is Unbearable To Breath Here’: Air Quality, Open Incineration, And Misinformation In Blantyre, Malawi”'
+version: 0.0.2
+doi: 10.5281/zenodo.7841193
+authors:
+- family-names: Schöbitz
+  given-names: Lars
+  email: lschoebitz@ethz.ch
+  orcid: https://orcid.org/0000-0003-2196-5015
+- family-names: Tilley
+  given-names: Elizabeth
+  email: tilleye@ethz.ch
+  orcid: https://orcid.org/0000-0002-2095-9724
+- family-names: Kalina
+  given-names: Marc
+  email: mkalina@ethz.ch
+  orcid: https://orcid.org/0000-0002-6335-3845
+- family-names: Kwangulero
+  given-names: Jonathan
+  email: kwangulero@gmail.com
+  orcid: https://orcid.org/0000-0002-4050-5121
+- family-names: Vijay
+  given-names: Saloni
+  email: svijay@ethz.ch
+  orcid: https://orcid.org/0000-0001-5883-5308
+- family-names: Chilunga
+  given-names: Hope
+  email: hchilunga@poly.ac.mw
+  orcid: https://orcid.org/0000-0003-4216-6319
+url: https://global-health-engineering.github.io/qechairquality/
+contact:
+- family-names: Schöbitz
+  given-names: Lars
+  email: lschoebitz@ethz.ch
+  orcid: https://orcid.org/0000-0003-2196-5015
