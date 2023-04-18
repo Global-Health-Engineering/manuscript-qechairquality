@@ -39,7 +39,8 @@ author:
     affiliations:
         - ref: ethz
   - name: Heiko Heilgendorff
-    email: me@me.com
+    orcid: 0009-0004-1389-5541
+    email: heiko.heilgendorff@gmail.com
     affiliations: 
         - id: ukzn
           name: University of KwaZulu-Natal
