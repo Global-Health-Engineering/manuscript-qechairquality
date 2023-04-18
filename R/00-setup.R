@@ -20,7 +20,7 @@ axis_title_size = 6
 
 theme_set(
   # Pick a starting theme
-  theme_gray(base_family = "Arial",
+  theme_gray(#base_family = "Arial",
              base_size = base_size) +
     # Add your favourite elements
     theme(
@@ -28,7 +28,7 @@ theme_set(
       axis.line.x = element_blank(),
       axis.line.y = element_blank(),
       axis.ticks = element_blank(),
-      axis.title=element_text(size=axis_title_size),
+      legend.title = element_text(size = base_size),
       #axis.title.x=element_text(hjust=xj),
       #axis.title.y=element_text(hjust=yj),
       panel.background = element_rect(fill = "white"),
@@ -43,21 +43,26 @@ theme_set(
 param_dpi = 1000
 param_width_single = 90
 param_width_double = 190
+width_height_ratio = 190/275
 
 # test
 
-source("R/01-data-preparation.R")
+# source("R/01-data-preparation.R")
 
-dat_in_sum_day |>
-  ggplot(aes(x = date, y = mean, group = indicator, color = indicator)) +
-  geom_point(size = 0.8) +
-  geom_line() +
-  labs(x = NULL) +
-  ylab(bquote(uq/m^3)) +
-  facet_wrap(~location, ncol = 4) +
-  scale_y_continuous(limits = c(0, 400)) +
-  scale_color_brewer(type = "qual", palette = 2)
-
-
-
+#ggplot(data = percent_exposure,
+#       aes(fill = air_quality_who_annual, values = exposure_percent)) +
+#  geom_waffle(color ="white", size = 0.5, n_rows = 5, na.rm = TRUE) +
+#  coord_equal() +
+#  labs(fill = "WHO 2021 targets (annual)") +
+#  scale_fill_brewer(type = "div", palette = "RdYlBu", direction = -1) +
+#  scale_x_discrete(expand=c(0,0)) +
+#  scale_y_discrete(expand=c(0,0)) +
+#  facet_grid(location ~ indicator, switch = "y") +
+#
+#  #facet_wrap(~location, ncol = 2) +
+#  #theme_minimal(base_size = 14) +
+#  # help from: https://stackoverflow.com/questions/34749636/left-justify-text-from-multi-line-facet-labels
+#  theme(strip.text.x = element_text(hjust = 0),
+#        strip.text.y = element_text(vjust = 0))
+#
 

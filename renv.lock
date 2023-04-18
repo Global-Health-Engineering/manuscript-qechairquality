@@ -16,6 +16,13 @@
       "Repository": "CRAN",
       "Hash": "b2866e62bab9378c3cc9476a1954226b"
     },
+    "DT": {
+      "Package": "DT",
+      "Version": "0.27",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "3444e6ed78763f9f13aaa39f2481eb34"
+    },
     "KernSmooth": {
       "Package": "KernSmooth",
       "Version": "2.23-20",
@@ -176,6 +183,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "6aa54f69598c32177e920eb3402e8293"
+    },
+    "curl": {
+      "Package": "curl",
+      "Version": "5.0.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "e4f97056611e8e6b8b852d13b7400cf1"
     },
     "digest": {
       "Package": "digest",
@@ -606,15 +620,15 @@
     },
     "qechairquality": {
       "Package": "qechairquality",
-      "Version": "0.0.0.9000",
+      "Version": "0.0.1",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteRepo": "qechairquality",
       "RemoteUsername": "Global-Health-Engineering",
       "RemoteRef": "HEAD",
-      "RemoteSha": "0185aa899b503e7ed3bd1bfa9cbb277f944cc842",
-      "Hash": "a62f490061299d3914177253ac19c485"
+      "RemoteSha": "3d724f3bad43d2f30c01da3501babb52de0dc087",
+      "Hash": "fffe5227fe8036a90ec2dd230b4baa94"
     },
     "rapidjsonr": {
       "Package": "rapidjsonr",
@@ -860,6 +874,18 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "7015a74373b83ffaef64023f4a0f5033"
+    },
+    "waffle": {
+      "Package": "waffle",
+      "Version": "1.0.1",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "waffle",
+      "RemoteUsername": "hrbrmstr",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "3f61463e6ab8d088ecff35db7cc1edfe633ee9f3",
+      "Hash": "50c3c422b1061d31431e21a22bb2265d"
     },
     "webshot": {
       "Package": "webshot",

@@ -79,6 +79,7 @@ format:
 execute: 
   echo: false
   warning: false
+  freeze: true
 editor: 
   markdown: 
     wrap: 72
@@ -97,12 +98,11 @@ knitr::write_bib(file = here::here("manuscript/packages.bib"))
 
 ```
 
-
 # Introduction
 
-Built in 1964, Malawi's year of independence, Queen Elizabeth Central Hospital
-(QECH), or Queen's, as it's known locally, is the country's largest
-public hospital. Designed in the Tropical Modernism style of
+Built in 1964, Malawi's year of independence, Queen Elizabeth Central
+Hospital (QECH), or Queen's, as it's known locally, is the country's
+largest public hospital. Designed in the Tropical Modernism style of
 architecture popular within Africa in the late colonial period, Queen's
 open-plan form sprawls across a broad swath of central Blantyre, with
 dozens of wards, specialised facilities, and administrative buildings,
@@ -147,25 +147,26 @@ percentage of the hospital's waste. Furthermore, the incinerator is
 frequently inoperable, under repair, or without power[^2]. Rather, the
 waste is openly burned, in a constantly smouldering pile to the side of
 the incinerator building, sending up the aforementioned clouds of smoke,
-which choke the grounds (@fig-open-burning). Innumerable other, smaller, fires,
-scattered across the QECH campus (@fig-map-sensors) contribute their part, as
-grounds and maintenance staff habitually burn leaves and other garden
-refuse. Furthermore, caregivers[^3] who reside separately on hospital
-grounds, cook for themselves throughout the day and night using biomass
-(charcoal or wood), and burn their own domestic waste. As a result, air
-quality at the hospital is a constant source of discussion, with
-patients, staff, and caregivers struggling to cope, when just breathing
-is, as the quote used in the title of this article, 'unbearable.'
+which choke the grounds (@fig-open-burning). Innumerable other, smaller,
+fires, scattered across the QECH campus (@fig-map-sensors) contribute
+their part, as grounds and maintenance staff habitually burn leaves and
+other garden refuse. Furthermore, caregivers[^3] who reside separately
+on hospital grounds, cook for themselves throughout the day and night
+using biomass (charcoal or wood), and burn their own domestic waste. As
+a result, air quality at the hospital is a constant source of
+discussion, with patients, staff, and caregivers struggling to cope,
+when just breathing is, as the quote used in the title of this article,
+'unbearable.'
 
 [^1]: Sharps are handled and disposed of separately.
 
 [^2]: There was an older incinerator on the grounds which failed in
-2017. Between 2017 and 2021, when the new incinerator was
-commissioned, nothing was incinerated at all.
+    2017. Between 2017 and 2021, when the new incinerator was
+    commissioned, nothing was incinerated at all.
 
 [^3]: Patients are required to bring a caregiver for in-patient
-hospitals stays, usually a family member, who assist with feeding,
-bathing, and all other non-medical services.
+    hospitals stays, usually a family member, who assist with feeding,
+    bathing, and all other non-medical services.
 
 Challenges with solid waste management (SWM) are not unique to Queen's,
 and remain persistent globally, particularly within African nations, and
@@ -234,9 +235,9 @@ specific to trash burning, but rather the product of any type of
 incomplete combustion and is one of the most commonly measured
 indicators for air quality. PM is measured in terms of its particle size
 and generally classified into PM with particle sizes less than 10 µm
-(PM~10~) and those with sizes less than 2.5 µm (PM~2.5~), while one way of
-measuring the severity of air pollution is by expressing the mass of PM
-per volume of air (µg PMx/m^3^ air). PM has been linked to multiple
+(PM~10~) and those with sizes less than 2.5 µm (PM~2.5~), while one way
+of measuring the severity of air pollution is by expressing the mass of
+PM per volume of air (µg PMx/m^3^ air). PM has been linked to multiple
 negative health outcomes. Amongst particulate air pollution, PM~10~ and
 PM~2.5~ are of particular concern as they can penetrate deep into the
 lungs, and their exposure has been associated with asthma, heart
@@ -284,10 +285,10 @@ within their communities and understand potential risks.
 Findings suggest that particulate matter concentrations are routinely
 above the WHO guidelines and are especially worrisome at several
 locations. Over the course of the two-month study, the hazardous limits
-for both PM~10~ and PM~2.5~ were exceeded at all locations except for the
-Lions Sight hospital. The limits were exceeded fewer than 50 times at
-five of the locations, but the monitors at the Lighthouse Clinic and the
-Guardian Shelter recorded more than 50 instances above the hazardous
+for both PM~10~ and PM~2.5~ were exceeded at all locations except for
+the Lions Sight hospital. The limits were exceeded fewer than 50 times
+at five of the locations, but the monitors at the Lighthouse Clinic and
+the Guardian Shelter recorded more than 50 instances above the hazardous
 limits. The extremely hazardous air quality at the Guardian shelter is
 mostly from cooking over open fires, while the PM at the Lighthouse
 Clinic is a function of being located directly adjacent to the
@@ -334,60 +335,60 @@ unit's head, and convenience. Each of the locations is briefly described
 below and shown in Figure 2:
 
 -   **Lions Sight First Eye Hospital**, often shortened to **Lions
-Sight**, is the largest eye hospital in Malawi and serves as the
-main teaching eye hospital for the Kamuzu University of Health
-Sciences (formerly College of Medicine). It is staffed by 5
-consultants and a team of clinical officers and nurses. It provides
-a mix of public (no cost) and private (at cost) services.
+    Sight**, is the largest eye hospital in Malawi and serves as the
+    main teaching eye hospital for the Kamuzu University of Health
+    Sciences (formerly College of Medicine). It is staffed by 5
+    consultants and a team of clinical officers and nurses. It provides
+    a mix of public (no cost) and private (at cost) services.
 
 -   **The Blantyre Malaria Project (BMP)**, established by Professors
-Terrie Taylor and Malcolm Molyneux, has carried out clinical
-research and patient care in the area of paediatric malaria,
-specifically cerebral malaria, for more than 30 years[^4]. Its
-research infrastructure includes an administrative team, an
-inpatient research ward, an MRI centre, and an outpatient research
-clinic in Ndirande township and in other districts outside of
-Blantyre.
+    Terrie Taylor and Malcolm Molyneux, has carried out clinical
+    research and patient care in the area of paediatric malaria,
+    specifically cerebral malaria, for more than 30 years[^4]. Its
+    research infrastructure includes an administrative team, an
+    inpatient research ward, an MRI centre, and an outpatient research
+    clinic in Ndirande township and in other districts outside of
+    Blantyre.
 
 -   **Ward 6B** is a male ward for trauma and orthopaedic patients. It
-was established as part of the original hospital design. It is a
-60-bed ward with a dedicated nursing station and treatment rooms.
+    was established as part of the original hospital design. It is a
+    60-bed ward with a dedicated nursing station and treatment rooms.
 
 -   **The Blantyre Lighthouse Trust Clinic**, also known as **Umodzi
-Family Centre** or simply, the **Lighthouse Clinic**, is one of four
-operating across Malawi. The clinics work in collaboration with the
-Ministry of Health (MOH) to provide integrated HIV testing,
-treatment and care for people living with HIV.
+    Family Centre** or simply, the **Lighthouse Clinic**, is one of four
+    operating across Malawi. The clinics work in collaboration with the
+    Ministry of Health (MOH) to provide integrated HIV testing,
+    treatment and care for people living with HIV.
 
 -   The **Moyo Nutritional Rehabilitation and Research Unit**, known on
-campus as **uMoyo**, is a 57-bed nutritional rehabilitation unit
-(NRU) for treating infants and children with severe malnutrition and
-acute illnesses. It is one of 104 operational NRUs in Malawi. It
-also has an outpatient therapeutic feeding program (OTP) for
-children with malnutrition who can be treated outside of the
-hospital.
+    campus as **uMoyo**, is a 57-bed nutritional rehabilitation unit
+    (NRU) for treating infants and children with severe malnutrition and
+    acute illnesses. It is one of 104 operational NRUs in Malawi. It
+    also has an outpatient therapeutic feeding program (OTP) for
+    children with malnutrition who can be treated outside of the
+    hospital.
 
 -   **Mercy James Institute for Pediatric Surgery and Intensive Care
-(MJC)**, shortened on campus to **Mercy James**, was opened in 2017
-by the NGO Raising Malawi, which was founded by Madonna. With 3
-operating rooms and 50 beds, it is the first and only first
-dedicated paediatric surgery hospital in Malawi. Prior to its
-opening, QECH had fewer than 10 intensive care beds.
+    (MJC)**, shortened on campus to **Mercy James**, was opened in 2017
+    by the NGO Raising Malawi, which was founded by Madonna. With 3
+    operating rooms and 50 beds, it is the first and only first
+    dedicated paediatric surgery hospital in Malawi. Prior to its
+    opening, QECH had fewer than 10 intensive care beds.
 
 -   The **Administration Building** is the operational hub of the
-campus, containing mostly offices and meeting rooms.
+    campus, containing mostly offices and meeting rooms.
 
 -   When a patient arrives at QECH, she or he will usually arrive with a
-guardian: someone to cook for them, buy medicine, do their laundry,
-and help them bathe. The **Guardian Shelter** is a gender-separated
-concrete floor shelter for sleeping along with a cooking pavilion
-and toilet/shower block are maintained by a the local NGO Chira
-fund. Though simple, the facility is secure and offers one of the
-only free/accessible toilet facilities for visitors on the QECH
-campus.
+    guardian: someone to cook for them, buy medicine, do their laundry,
+    and help them bathe. The **Guardian Shelter** is a gender-separated
+    concrete floor shelter for sleeping along with a cooking pavilion
+    and toilet/shower block are maintained by a the local NGO Chira
+    fund. Though simple, the facility is secure and offers one of the
+    only free/accessible toilet facilities for visitors on the QECH
+    campus.
 
 [^4]: BMP is credited with the development of the Blantyre Coma Score,
-which is used widely.
+    which is used widely.
 
 ```{r}
 #| label: prepare-sensor-map
@@ -452,7 +453,6 @@ qech_sensor_map |>
   mapshot(file = here::here("manuscript/figs/map-sensors-qech-blantyre.png"))
 ```
 
-
 ```{r}
 #| label: fig-map-sensors
 #| fig-cap: Sensor locations within QECH
@@ -462,7 +462,6 @@ qech_sensor_map |>
 # Figure 2: Sensor locations within QECH
 knitr::include_graphics(here::here("manuscript/figs/map-sensores-qech-blantyre.png"))
 ```
-
 
 ## Waste management
 
@@ -539,9 +538,9 @@ space. The added advantage of storage space is that the data are not
 lost if the internet connection breaks down. Because the Pi can only
 read digital signals, we needed to include an analogue-to-digital (ADC)
 converter. The amount of dust is measured by a Nova PM SDS011 High
-Precision Laser sensor. This sensor measures particles at 2.5 and 10
-µm in diameter in mg/m^3^. A list of the specific hardware and
-software components can be found in Appendix B.
+Precision Laser sensor. This sensor measures particles at 2.5 and 10 µm
+in diameter in mg/m^3^. A list of the specific hardware and software
+components can be found in Appendix B.
 
 ### Installation
 
@@ -572,15 +571,18 @@ Qualitative data collection consisted of 25 interviews with caregivers
 and hospital staff (including janitorial and maintenance staff, nurses,
 doctors, and administrators) conducted in October and November 2019, as
 well as an additional 31 interviews conducted with staff, patients, and
-caregivers in January and February 2021, spread around the hospital’s various wards and departments. Interviews were
-semi-structured, and included questions on hospital waste management
-practices, perceived best practices, and workplace health, safety, and
-risk. The first round of interviews included specific questions on air quality, while the second round focused on waste management more broadly. However, the semi-structured nature of the interviews allowed for
-the participants to raise topics of interest, and for unexpected themes
-to emerge. These interviews are supplemented by participatory
-observation recorded within detailed field notes, and supported by
-nearly a decade of sustained involvement and activism by the authors in
-the waste management practices of the hospital.
+caregivers in January and February 2021, spread around the hospital's
+various wards and departments. Interviews were semi-structured, and
+included questions on hospital waste management practices, perceived
+best practices, and workplace health, safety, and risk. The first round
+of interviews included specific questions on air quality, while the
+second round focused on waste management more broadly. However, the
+semi-structured nature of the interviews allowed for the participants to
+raise topics of interest, and for unexpected themes to emerge. These
+interviews are supplemented by participatory observation recorded within
+detailed field notes, and supported by nearly a decade of sustained
+involvement and activism by the authors in the waste management
+practices of the hospital.
 
 Interview respondents were chosen using a purposive or judgement
 sampling regimen, i.e. a subjective sampling method in which respondents
@@ -626,9 +628,20 @@ need for immediate action.
 
 ### Computational reproducibility and data availability
 
-R Statistical Software version 4.2.1, RStudio IDE version 2023.3.0.386, and Quarto scientific publishing system version were used for quantitative data analysis and writing of the manuscript [@R-base; @allaire2022quartoa; @positteam2023rstudio]. A set of additional R packages were used for data wrangling, analysis, and visualisation [@ggplot22016; @lubridate2011;  @R-dplyr; @R-forcats; @R-ggplot2; @R-janitor; @R-leaflet; @R-lubridate; @R-mapview; @R-readr; @R-tidyr; @R-waffle]. 
+R Statistical Software version 4.2.1, RStudio IDE version 2023.3.0.386,
+and Quarto scientific publishing system version were used for
+quantitative data analysis and writing of the manuscript [@R-base;
+@allaire2022quartoa; @positteam2023rstudio]. A set of additional R
+packages were used for data wrangling, analysis, and visualisation
+[@ggplot22016; @lubridate2011; @R-dplyr; @R-forcats; @R-ggplot2;
+@R-janitor; @R-leaflet; @R-lubridate; @R-mapview; @R-readr; @R-tidyr;
+@R-waffle].
 
-Raw data and analysis-ready processed data is available as an R package at @R-qechairquality. The data underlying the tables and figures of this manuscript are contained in a repository alongside a reproducible document that contains the analysis code and the written narrative of the manuscript [TODO: manuscript software citation]. 
+Raw data and analysis-ready processed data is available as an R package
+at @R-qechairquality. The data underlying the tables and figures of this
+manuscript are contained in a repository alongside a reproducible
+document that contains the analysis code and the written narrative of
+the manuscript \[TODO: manuscript software citation\].
 
 # Theory/calculation (not applicable)
 
@@ -639,9 +652,10 @@ setting and publishing all standards in the country. At the time of
 writing, the official website (www.mbsmw.org) was not available.
 However, published work that references Malawian standards
 [@kutlarjoss2017time; @mapoma2014air] indicate that the maximum 24-h
-PM~10~ value is 25 µg/m^3^ and the maximum annual PM~2.5~ value is 8 µg/m^3^.
-There is no daily maximum value for PM~2.5~. It should be noted that both
-of these values are at, or below, the level-4 interim WHO targets.
+PM~10~ value is 25 µg/m^3^ and the maximum annual PM~2.5~ value is 8
+µg/m^3^. There is no daily maximum value for PM~2.5~. It should be noted
+that both of these values are at, or below, the level-4 interim WHO
+targets.
 
 Therefore, for international comparisons and due to the lack of
 comprehensive Malawian Standards, we use the WHO recommendations as a
@@ -649,8 +663,8 @@ basis of comparison for the measured values
 [@worldhealthorganization2021who]. The relevant particulate matter
 targets are presented in @tbl-who-targets.
 
- (TODO: REPLACE screenshot)
- 
+(TODO: REPLACE screenshot)
+
 ```{r}
 #| label: tbl-who-targets
 #| tbl-cap: Particulate matter targets from [@worldhealthorganization2021who]
@@ -666,10 +680,9 @@ knitr::include_graphics(here::here("manuscript/img/image-replace-table.png"))
 Due to localised variation (air movement in the immediate area) and the
 density of the observations, the plotted 5-minute data obscure
 persistent trends. The full set of 5-minute data are plotted and
-presented in Appendix A @fig-five-minute-intervals. However, the number of measured values
-that exceeded the hazardous limit for both parameters are summarised in
-@tbl-peaks.
-
+presented in Appendix A @fig-five-minute-intervals. However, the number
+of measured values that exceeded the hazardous limit for both parameters
+are summarised in @tbl-peaks.
 
 ```{r}
 #| label: tbl-peaks
@@ -699,7 +712,6 @@ observations_location |>
   knitr::kable()
 ```
 
-
 Over the course of the two-month study, the hazardous limits for both
 parameters were exceeded at all locations except for the Lions Sight
 hospital. The limits were exceeded fewer than 50 times at five of the
@@ -708,22 +720,22 @@ Guardian Shelter recorded more than 50 instances above the hazardous
 limits. At the Lighthouse Clinic, the PM~10~ limit was exceeded almost
 twice as often as the PM~2.5~ limit, while at the Guardian Shelter, the
 reverse is true. Because the Lighthouse Clinic is within 50 m of the
-incinerator, the number and predominance of PM~10~ peaks is characteristic
-of incomplete combustion and dust that is typical for the area and the
-open burning that occurs there. The residents at the Guardian Shelter
-however are mostly cooking within contained clay stoves that have been
-designed to improve combustion of the coal and wood that is burned
-within them. The fewer number of PM~10~ peaks is a testament to this
-intervention, though the frequency of PM~2.5~ peaks is still beyond
-acceptable.
+incinerator, the number and predominance of PM~10~ peaks is
+characteristic of incomplete combustion and dust that is typical for the
+area and the open burning that occurs there. The residents at the
+Guardian Shelter however are mostly cooking within contained clay stoves
+that have been designed to improve combustion of the coal and wood that
+is burned within them. The fewer number of PM~10~ peaks is a testament
+to this intervention, though the frequency of PM~2.5~ peaks is still
+beyond acceptable.
 
 ### 24-hour averages
 
 The 24-hour averaged values (logged every 5 minutes) are presented for
-each location, for both PM~10~ and PM~2.5~ in fig-24-hour-average. As well as dampening
-local variation and peaks, the WHO air quality guidelines are also based
-on 24-hour averages which are the standard against which the health
-risks can be judged.
+each location, for both PM~10~ and PM~2.5~ in fig-24-hour-average. As
+well as dampening local variation and peaks, the WHO air quality
+guidelines are also based on 24-hour averages which are the standard
+against which the health risks can be judged.
 
 Overall, PM~2.5~ values remained below 100 µg/m^3^ at 6 of 8 locations
 (Administration, Lions Sight, Malaria Project, uMoyo, Ward 6B, and Mercy
@@ -757,8 +769,9 @@ fig03 <- dat_in_sum_day |>
   scale_y_continuous(limits = c(0, 400)) +
   scale_color_brewer(type = "qual", palette = 2) 
 
+fig03
 
-ggsave(filename = "manuscript/figs/fig-03-double-column.tiff",
+ggsave(filename = here::here("manuscript/figs/fig-03-double-column.tiff"),
        plot = fig03,
        dpi = param_dpi,
        width = param_width_double,
@@ -770,10 +783,10 @@ ggsave(filename = "manuscript/figs/fig-03-double-column.tiff",
 ### PM ratios
 
 Given that the type of fuel and the type of burning (contained vs. open)
-produce very different particulate "fingerprints", the ratio of PM~10~ to
-PM~2.5~ values were examined to determine if a clear difference between
-locations, and therefore source, could be identified. The results are
-presented in @fig-pm-ratios.
+produce very different particulate "fingerprints", the ratio of PM~10~
+to PM~2.5~ values were examined to determine if a clear difference
+between locations, and therefore source, could be identified. The
+results are presented in @fig-pm-ratios.
 
 ```{r}
 #| label: fig-pm-ratios
@@ -799,17 +812,6 @@ dat_in_ratios <- dat_in |>
 
 # Plot
 
-library(ggplot2)
-
-# create sample data
-df <- data.frame(x = 1:10, y = 1:10)
-
-# create plot
-ggplot(df, aes(x = x, y = y)) +
-  geom_point() +
-  xlab(expression(c('PM'[10], 'PM'[2.5])))
-
-
 fig04 <- dat_in_ratios |> 
   ggplot(aes(x = date)) +
   geom_linerange(aes(ymin = min, ymax = max)) +
@@ -820,7 +822,7 @@ fig04 <- dat_in_ratios |>
 
 fig04
 
-ggsave(filename = "manuscript/figs/fig-04-double-column.tiff",
+ggsave(filename = here::here("manuscript/figs/fig-04-double-column.tiff"),
        plot = fig04,
        dpi = param_dpi,
        width = param_width_double,
@@ -835,8 +837,8 @@ is observed.
 
 Unlike the peak values presented in Table 2, the values presented in
 Figure 5 indicate the relative presence of larger (PM~10~) particles to
-smaller ones (PM~2.5~) regardless of their concentration: the ratio of two
-low concentrations can be the same as the ratio of two high
+smaller ones (PM~2.5~) regardless of their concentration: the ratio of
+two low concentrations can be the same as the ratio of two high
 concentrations and is therefore more indicative of source than of
 proximity.
 
@@ -858,7 +860,8 @@ reflects a range of burning styles and/or fuel type.
 ## Exposure Data
 
 The relative amount of time exposed to a given category of air quality
-is shown in @fig-percent-exposure. Each square represents 1% of the measured time.
+is shown in @fig-percent-exposure. Each square represents 1% of the
+measured time.
 
 ```{r}
 #| label: fig-percent-exposure
@@ -878,11 +881,15 @@ percent_exposure <- dat_air_quality_sum_who_2021 |>
     & air_quality_who_annual == "Interim target 2" ~ exposure_percent - 1,
     
     location == "Administration" 
-    & indicator == "pm25"
+    & indicator == "pm2.5"
     & air_quality_who_annual == "Interim target 3" ~ exposure_percent + 1,
     
+    location == "Guardian Shelter" 
+    & indicator == "pm10"
+    & air_quality_who_annual == "Interim target 4" ~ exposure_percent + 1,
+    
     location == "uMoyo" 
-    & indicator == "pm25"
+    & indicator == "pm2.5"
     & air_quality_who_annual == "Interim target 4" ~ exposure_percent - 1,
     
     location == "Mercy James" 
@@ -891,11 +898,12 @@ percent_exposure <- dat_air_quality_sum_who_2021 |>
     
     TRUE ~ exposure_percent
   )) 
-  
+
   #filter(is.na(exposure_percent))
 
-fig05 <- ggplot(data = percent_exposure,
-                aes(fill = air_quality_who_annual, values = exposure_percent)) +
+fig05 <- 
+ggplot(data = percent_exposure,
+       aes(fill = air_quality_who_annual, values = exposure_percent)) +
   geom_waffle(color ="white", size = 0.5, n_rows = 5, na.rm = TRUE) +
   coord_equal() +
   labs(fill = "WHO 2021 targets (annual)") +
@@ -903,14 +911,25 @@ fig05 <- ggplot(data = percent_exposure,
   scale_x_discrete(expand=c(0,0)) +
   scale_y_discrete(expand=c(0,0)) +
   facet_grid(location ~ indicator, switch = "y") +
-  
+
   #facet_wrap(~location, ncol = 2) +
-  theme_minimal(base_size = 14) +
+  #theme_minimal(base_size = 14) +
   # help from: https://stackoverflow.com/questions/34749636/left-justify-text-from-multi-line-facet-labels
   theme(strip.text.x = element_text(hjust = 0),
-        strip.text.y = element_text(vjust = 0, size = 4))
+        strip.text.y = element_text(vjust = 0, size = 4),
+        legend.position = "bottom",
+        legend.title = element_blank(),
+        legend.text = element_text(size = 4)) #+
 
 fig05
+
+ggsave(filename = here::here("manuscript/figs/fig-05-double-column.tiff"),
+       plot = fig05,
+       dpi = param_dpi,
+       width = param_width_double,
+       height = param_width_double * width_height_ratio,
+       units = "mm")
+
 
 ```
 
@@ -1003,7 +1022,7 @@ patients and visitors, as one staff member (18/11/2019) expressed:
 
 > Personally, I have never experienced \[eye discomfort\] because I get
 > vaccinated and I am protected including other staff. However, we
-> realize that the air can badly affect other people and patients who
+> realise that the air can badly affect other people and patients who
 > come to this place.
 
 Another interesting misconception that emerged, which may be tied partly
@@ -1051,12 +1070,42 @@ when the new incinerator is opened."
 
 # Conclusions
 
-The air quality, as a result of open waste burning at Queen’s is poor and not suitable for a city, let alone a hospital. Over the course of this two-month study, the hazardous limits for both PM parameters were exceeded at all locations except for the Lions Sight hospital. The WHO limits were exceeded fewer than 50 times at five of the locations, and only the monitors at the Lighthouse Clinic and the Guardian Shelter recorded more than 50 instances above the most hazardous limit. The composition of emissions recorded ranged significantly, analysed as the ratio PM~10~:PM~2.5~ likely reflects a range of burning styles and/or fuel (waste) type, and no discernible trend was observed..  Among interview respondents, there was a general  consensus that air quality caused by the burning of waste within the hospital was a problem, although there were significant differences between respondents over their understandings of potential impacts, the effectiveness of various coping mechanisms, and their problematisations linked to the burning of specific waste materials. For most, going home or leaving the Queen’s campus was the only pathway to relief, though for patients who can not leave, endurance was the only option. This work was originally planned as a before-and-after study:  we envisioned reporting these baseline results compared to follow-up measurements once the long-promised incinerator was commissioned.  However, nearly 4 years later, the incinerator is rarely functional (partly for technical reasons, partly for financial ones) and the smoke hovering over Queen’s is still thick.  Waste management has long been known as an environmental health issue, but in the case of open trash burning at a medical facility, it becomes more:  for some of the most vulnerable, especially those with TB, asthma or other chronic disease, it could be a matter of life or death. 
+The air quality, as a result of open waste burning at Queen's is poor
+and not suitable for a city, let alone a hospital. Over the course of
+this two-month study, the hazardous limits for both PM parameters were
+exceeded at all locations except for the Lions Sight hospital. The WHO
+limits were exceeded fewer than 50 times at five of the locations, and
+only the monitors at the Lighthouse Clinic and the Guardian Shelter
+recorded more than 50 instances above the most hazardous limit. The
+composition of emissions recorded ranged significantly, analysed as the
+ratio PM~10~:PM~2.5~ likely reflects a range of burning styles and/or
+fuel (waste) type, and no discernible trend was observed.. Among
+interview respondents, there was a general consensus that air quality
+caused by the burning of waste within the hospital was a problem,
+although there were significant differences between respondents over
+their understandings of potential impacts, the effectiveness of various
+coping mechanisms, and their problematisations linked to the burning of
+specific waste materials. For most, going home or leaving the Queen's
+campus was the only pathway to relief, though for patients who can not
+leave, endurance was the only option. This work was originally planned
+as a before-and-after study: we envisioned reporting these baseline
+results compared to follow-up measurements once the long-promised
+incinerator was commissioned. However, nearly 4 years later, the
+incinerator is rarely functional (partly for technical reasons, partly
+for financial ones) and the smoke hovering over Queen's is still thick.
+Waste management has long been known as an environmental health issue,
+but in the case of open trash burning at a medical facility, it becomes
+more: for some of the most vulnerable, especially those with TB, asthma
+or other chronic disease, it could be a matter of life or death.
 
 # Acknowledgements
 
-The authors are grateful to the staff, patients and caregivers at QECH for their assistance, willingness to share their views, and importantly, perseverance in delivering the best care possible under difficult circumstances. Moreover, we would like to acknowledge the assistance and effort of Open Data Durban, now the Open Cities Lab, for their assistance in constructing and programming the sensors.
-
+The authors are grateful to the staff, patients and caregivers at QECH
+for their assistance, willingness to share their views, and importantly,
+perseverance in delivering the best care possible under difficult
+circumstances. Moreover, we would like to acknowledge the assistance and
+effort of Open Data Durban, now the Open Cities Lab, for their
+assistance in constructing and programming the sensors.
 
 # Appendix {.unnumbered}
 
@@ -1073,17 +1122,28 @@ etc.
 #| fig-cap: PM~2.5~ and PM~10~ values collected every 5 minutes over 10 months at 8 locations.
 #| fig-align: center
 
-dat_in |> 
+
+figA1 <- dat_in |> 
   ggplot(aes(x = date_time, y = value)) +
   geom_line(alpha = 0.5) +
-  labs(title = "Hospital Air Quality",
-       subtitle = "PM~2.5~ and PM~10~ measurements in 5-min intervals at eight locations") +
+  #labs(title = "Hospital Air Quality",
+  #     subtitle = "PM~2.5~ and PM~10~ measurements in 5-min intervals at eight locations") +
   ylab(bquote(uq/m^3)) +
+  labs(x = NULL) +
   facet_grid(indicator~location) +
-  theme_bw(base_size = 14) + 
   theme(panel.grid.minor = element_blank(),
         panel.grid.major.x = element_blank(),
         axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) 
+
+figA1
+
+ggsave(filename = here::here("manuscript/figs/fig-A1-double-column.tiff"),
+       plot = figA1,
+       dpi = param_dpi,
+       width = param_width_double,
+       height = param_width_double * width_height_ratio,
+       units = "mm")
+
 
 ```
 
@@ -1092,56 +1152,101 @@ dat_in |>
 ### Hardware Components {.unnumbered}
 
 1.  Raspberry Pi 3 Model B single-board computer technical
-specifications:
+    specifications:
+
 -   Broadcom BCM2837 64bit Quad Core Processor powered Single Board
-Computer running at 1.2GHz 1GB RAM
+    Computer running at 1.2GHz 1GB RAM
 -   BCM43438 WiFi on board
 -   Bluetooth Low Energy (BLE) on board
 -   40pin extended GPIO
 -   4 x USB 2 ports 4 pole Stereo output and Composite video port
 -   Full size HDMI CSI camera port for connecting the Raspberry Pi
-camera
+    camera
 -   DSI display port for connecting the Raspberry Pi touch screen
-display
+    display
 -   Micro SD port for loading your operating system and storing data
 -   Upgraded switched Micro USB power source (now supports up to 2.4
-Amps)
--   Same form factor as the Pi 2 Model B, however the LEDs have
-changed position
+    Amps)
+-   Same form factor as the Pi 2 Model B, however the LEDs have changed
+    position
 -   RPI3-MODB-16GB-NOOBS
+
 2.  Nova PM SDS011 Sensor
+
 -   See Data Sheet attachment for technical specifications
+
 3.  MCP3008 microchip
+
 -   analogue-to-digital converter (ADC)
+
 4.  Romoss Sense8+ 30000mAh QC Type-C
+
 -   Power bank battery
+
 5.  Pipe
+
 -   clear rubber pipe attainable from any local hardware store
+
 6.  Box
--   any box that can fit all the components comfortably can be used.
-The box will need to have a whole drilled in it for the pipe.
 
-### Software ‘components’ and data management {.unnumbered}
+-   any box that can fit all the components comfortably can be used. The
+    box will need to have a whole drilled in it for the pipe.
 
-1. The Raspberry Pi operating system runs off of Rasbian software on a NOOBS scandisk. 
-2. Air quality monitoring code is written in Python using the [aqi library](https://pypi.org/project/python-aqi/) (A library of algorithms to convert between AQI value and pollutant concentration). The code is stored on the [Open Data Durban GitHub account](https://github.com/opendatadurban/hospital_stations) and is free for all to access. To be able to collect data, the device needs to be connected to a reliable wifi network, the SSID and password need to be coded onto the device during step 2 in the building method.
-3. Once the whole device has been put together and placed on site, to access that data we use a combination of programs:
-- [Putty](https://www.putty.org/) - this is an SSH client that we use to gain access to the Raspberry Pi from another computer. To be able to access the Raspberry Pi in question, the computer in use and the air quality monitoring device need to be on the same network for the connection to be successful. 
-- [Winscp](https://winscp.net/eng/download.php) - this is an FTP client that we use, in conjunction with Putty, to be able to transfer data files from the air quality monitoring device to one’s computer.
-- [Remote.it](https://app.remote.it/) - this is an application that supports remote SSH, so this is used when wanting to access data from a device that is not connected to the same network as the computer in use. Remote.it is used together with Putty and Winscp to access the air quality data remotely. 
+### Software 'components' and data management {.unnumbered}
+
+1.  The Raspberry Pi operating system runs off of Rasbian software on a
+    NOOBS scandisk.
+2.  Air quality monitoring code is written in Python using the [aqi
+    library](https://pypi.org/project/python-aqi/) (A library of
+    algorithms to convert between AQI value and pollutant
+    concentration). The code is stored on the [Open Data Durban GitHub
+    account](https://github.com/opendatadurban/hospital_stations) and is
+    free for all to access. To be able to collect data, the device needs
+    to be connected to a reliable wifi network, the SSID and password
+    need to be coded onto the device during step 2 in the building
+    method.
+3.  Once the whole device has been put together and placed on site, to
+    access that data we use a combination of programs:
+
+-   [Putty](https://www.putty.org/) - this is an SSH client that we use
+    to gain access to the Raspberry Pi from another computer. To be able
+    to access the Raspberry Pi in question, the computer in use and the
+    air quality monitoring device need to be on the same network for the
+    connection to be successful.
+-   [Winscp](https://winscp.net/eng/download.php) - this is an FTP
+    client that we use, in conjunction with Putty, to be able to
+    transfer data files from the air quality monitoring device to one's
+    computer.
+-   [Remote.it](https://app.remote.it/) - this is an application that
+    supports remote SSH, so this is used when wanting to access data
+    from a device that is not connected to the same network as the
+    computer in use. Remote.it is used together with Putty and Winscp to
+    access the air quality data remotely.
 
 ### Connection/building method {.unnumbered}
 
 To build the sensor, we followed these steps:
 
-1. Set up the Raspberry Pi with the Rasbian software using the NOOBS scandisk. (insert the scandisk into the Raspberry Pi) A comprehensive start up guide can be found here. 
-2. Next we load the code onto the Raspberry Pi. The code can be found on the Open Data Durban Hospital Stations Repository Github. To use it you can follow the steps in the file called Initiate_WS.txt. Once all the steps have been completed, the Raspberry Pi is now a device that can be connected to a particulate matter monitoring sensor.  
-3. Connect the hardware components
-- Connect the Raspberry Pi to the Nova PM Sensor using the break out board that comes with the Sensor. 
-- Connect the battery to the Raspberry Pi via the micro port
-- Attach the rubber pipe to the sensor 
-- Assemble all components inside the box, with the pipe coming out of the drilled hole
-- To prevent dirt entering the system, close off all openings between the pipe and the box with silicone putty
-- Secure box in an elevated position (not too close to the ground) and with the pipe facing the direction of the inflow of the air under investigation. 
+1.  Set up the Raspberry Pi with the Rasbian software using the NOOBS
+    scandisk. (insert the scandisk into the Raspberry Pi) A
+    comprehensive start up guide can be found here.
+2.  Next we load the code onto the Raspberry Pi. The code can be found
+    on the Open Data Durban Hospital Stations Repository Github. To use
+    it you can follow the steps in the file called Initiate_WS.txt. Once
+    all the steps have been completed, the Raspberry Pi is now a device
+    that can be connected to a particulate matter monitoring sensor.\
+3.  Connect the hardware components
+
+-   Connect the Raspberry Pi to the Nova PM Sensor using the break out
+    board that comes with the Sensor.
+-   Connect the battery to the Raspberry Pi via the micro port
+-   Attach the rubber pipe to the sensor
+-   Assemble all components inside the box, with the pipe coming out of
+    the drilled hole
+-   To prevent dirt entering the system, close off all openings between
+    the pipe and the box with silicone putty
+-   Secure box in an elevated position (not too close to the ground) and
+    with the pipe facing the direction of the inflow of the air under
+    investigation.
 
 # References {.unnumbered}
