@@ -1,0 +1,73 @@
+---
+title: "'It Is Unbearable To Breath Here': Air Quality, Open Incineration, And Misinformation In Blantyre, Malawi"
+author:
+  - name: Elizabeth Tilley
+    orcid: 0000-0002-2095-9724
+    email: tilleye@ethz.ch
+    affiliations: 
+        - id: ethz
+          name: ETH Zurich
+          department: Department of Mechanical and Process Engineering
+          address: Global Health Engineering, Clausiusstrasse 37
+          city: Zurich
+          country: Switzerland
+          postal-code: 8092
+    attributes:
+        corresponding: true
+  - name: Hope Chilunga
+    orcid: 0000-0003-4216-6319
+    email: hchilunga@poly.ac.mw
+    affiliations: 
+        - id: mubas
+          name: Malawi University of Business and Applied Sciences
+          department: Department of Environmental Health
+          city: Blantyre
+          country: Malawi
+  - name: Jonathan Kwangulero
+    orcid: 0000-0002-4050-5121
+    email: kwangulero@gmail.com 
+    affilations:
+        - ref: mubas
+  - name: Lars Schöbitz
+    orcid: 0000-0003-2196-5015
+    email: lschoebitz@ethz.ch
+    affiliations:
+        - ref: ethz
+  - name: Saloni Vijay
+    orcid: 0000-0001-5883-5308
+    email: svijay@ethz.ch
+    affiliations:
+        - ref: ethz
+  - name: Heiko Heilgendorff
+    orcid: 0009-0004-1389-5541
+    email: heiko.heilgendorff@gmail.com
+    affiliations: 
+        - id: ukzn
+          name: University of KwaZulu-Natal
+          department: School of Mathematics, Statistics and Computer Science
+          city: Durban
+          country: South Africa
+  - name: Marc Kalina
+    orcid: 0000-0002-6335-3845
+    email: mkalina@ethz.ch
+    affiliations:
+        - ref: ethz
+date: last-modified
+bibliography: [man-qechairquality.bib, packages.bib]
+format:
+  docx: default
+execute: 
+  echo: false
+  warning: false
+  freeze: true
+editor: 
+  markdown: 
+    wrap: 72
+editor_options: 
+  chunk_output_type: console
+---
+
+# Declarations of interest
+
+Declarations of interest: none
+
