@@ -1,11 +1,41 @@
-pollutant,averageing_time,interim_target1,interim_target2,interim_target3,interim_target4,AQG_level
-"PM2.5, µg/m3",Annual,35,25,15,10,5
-"PM2.5, µg/m3",24-hour,75,50,37.5,25,15
-"PM 10, µg/m3",Annual,70,50,30,20,15
-"PM 10, µg/m3",24-hour,150,100,75,50,45
-"O3, µg/m3",Peak season,100,70,NA,NA,60
-"O3, µg/m3",8-hour,160,120,NA,NA,100
-"NO2, µg/m3",Annual,40,30,20,NA,10
-"NO2, µg/m3",24-hour,120,50,NA,NA,25
-"SO, µg/m3",24-hour,125,50,NA,NA,40
-"CO, mg/m3",24-hour,7,NA,NA,NA,4
+pollutant,averageing_time,AQG_level,interim_target,concentration
+"PM2.5, µg/m3",Annual,5,1,35
+"PM2.5, µg/m3",Annual,5,2,25
+"PM2.5, µg/m3",Annual,5,3,15
+"PM2.5, µg/m3",Annual,5,4,10
+"PM2.5, µg/m3",24-hour,15,1,75
+"PM2.5, µg/m3",24-hour,15,2,50
+"PM2.5, µg/m3",24-hour,15,3,37.5
+"PM2.5, µg/m3",24-hour,15,4,25
+"PM 10, µg/m3",Annual,15,1,70
+"PM 10, µg/m3",Annual,15,2,50
+"PM 10, µg/m3",Annual,15,3,30
+"PM 10, µg/m3",Annual,15,4,20
+"PM 10, µg/m3",24-hour,45,1,150
+"PM 10, µg/m3",24-hour,45,2,100
+"PM 10, µg/m3",24-hour,45,3,75
+"PM 10, µg/m3",24-hour,45,4,50
+"O3, µg/m3",Peak season,60,1,100
+"O3, µg/m3",Peak season,60,2,70
+"O3, µg/m3",Peak season,60,3,NA
+"O3, µg/m3",Peak season,60,4,NA
+"O3, µg/m3",8-hour,100,1,160
+"O3, µg/m3",8-hour,100,2,120
+"O3, µg/m3",8-hour,100,3,NA
+"O3, µg/m3",8-hour,100,4,NA
+"NO2, µg/m3",Annual,10,1,40
+"NO2, µg/m3",Annual,10,2,30
+"NO2, µg/m3",Annual,10,3,20
+"NO2, µg/m3",Annual,10,4,NA
+"NO2, µg/m3",24-hour,25,1,120
+"NO2, µg/m3",24-hour,25,2,50
+"NO2, µg/m3",24-hour,25,3,NA
+"NO2, µg/m3",24-hour,25,4,NA
+"SO, µg/m3",24-hour,40,1,125
+"SO, µg/m3",24-hour,40,2,50
+"SO, µg/m3",24-hour,40,3,NA
+"SO, µg/m3",24-hour,40,4,NA
+"CO, mg/m3",24-hour,4,1,7
+"CO, mg/m3",24-hour,4,2,NA
+"CO, mg/m3",24-hour,4,3,NA
+"CO, mg/m3",24-hour,4,4,NA

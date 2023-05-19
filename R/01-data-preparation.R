@@ -202,8 +202,14 @@ who_target_tidy <- who_df[[1]] |>
     averageing_time == "8-houra" ~ "8-hour",
     TRUE ~ averageing_time
   )) |>
-  mutate(across(interim_target1:AQG_level, as.numeric))
+  mutate(across(interim_target1:AQG_level, as.numeric)) |>
+  pivot_longer(cols = interim_target1:interim_target4,
+               values_to = "concentration",
+               names_to = "interim_target") |>
+  mutate(interim_target = str_replace(interim_target, "interim_target", ""))
 
+who_target_tidy |>
+  write_csv("data/processed-data/who-air-quality-guidelines-2021-targets-table.csv")
 
 
 
