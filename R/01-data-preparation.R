@@ -184,7 +184,7 @@ who_target_tidy <- who_df[[1]] |>
            sep = " ", remove = TRUE) |>
   rename(
     pollutant = V1,
-    averageing_time = V2,
+    averaging_time = V2,
     interim_target1 = V3,
     interim_target4 = V5,
     AQG_level = V6
@@ -196,11 +196,12 @@ who_target_tidy <- who_df[[1]] |>
   mutate(pollutant = str_replace(pollutant, "SO , μg/m32", "SO, μg/m3")) |>
   mutate(pollutant = str_replace(pollutant, "μg", "µg")) |>
   mutate(pollutant = str_replace(pollutant, "m 3", "m3")) |>
-  mutate(averageing_time = case_when(
-    averageing_time == "24-houra" ~ "24-hour",
-    averageing_time == "Peak seasonb" ~ "Peak season",
-    averageing_time == "8-houra" ~ "8-hour",
-    TRUE ~ averageing_time
+  mutate(pollutant = str_replace(pollutant, "PM 10", "PM10")) |>
+  mutate(averaging_time = case_when(
+    averaging_time == "24-houra" ~ "24-hour",
+    averaging_time == "Peak seasonb" ~ "Peak season",
+    averaging_time == "8-houra" ~ "8-hour",
+    TRUE ~ averaging_time
   )) |>
   mutate(across(interim_target1:AQG_level, as.numeric)) |>
   pivot_longer(cols = interim_target1:interim_target4,
@@ -208,8 +209,12 @@ who_target_tidy <- who_df[[1]] |>
                names_to = "interim_target") |>
   mutate(interim_target = str_replace(interim_target, "interim_target", ""))
 
+
 who_target_tidy |>
   write_csv("data/processed-data/who-air-quality-guidelines-2021-targets-table.csv")
+
+
+
 
 
 

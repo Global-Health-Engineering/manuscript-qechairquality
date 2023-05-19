@@ -6,6 +6,7 @@
 
 library(ggplot2)
 library(scales)
+library(gt)
 
 # theme adapted from:
 # https://github.com/teunbrand/ggplot_tricks
