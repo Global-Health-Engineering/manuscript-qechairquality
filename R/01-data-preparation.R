@@ -6,6 +6,8 @@
 
 library(readr)
 library(dplyr)
+library(tabulizer)
+library(stringr)
 library(forcats)
 library(lubridate)
 library(ggplot2)
@@ -168,6 +170,40 @@ dat_air_quality_sum_who_2021 <- dat_air_quality |>
   mutate(exposure_hrs = round(exposure_mins / 60)) |>
   select(-n)
 
-# data export -------------------------------------------------------------
+
+# extract table from WHO pdf ----------------------------------------------
+
+
+
+
+who_df <- extract_tables(file = "data/raw-data/9789240034228-eng.pdf", pages = 159)
+
+who_target_tidy <- who_df[[1]] |>
+  as_tibble() |>
+  separate(V4, into = c("interim_target2", "interim_target3"),
+           sep = " ", remove = TRUE) |>
+  rename(
+    pollutant = V1,
+    averageing_time = V2,
+    interim_target1 = V3,
+    interim_target4 = V5,
+    AQG_level = V6
+  ) |>
+  slice(-3:-1) |>
+  mutate_if(is.character, na_if, "") |>
+  mutate_if(is.character, na_if, "–") |>
+  fill(pollutant, .direction = "down") |>#pull(pollutant)
+  mutate(pollutant = str_replace(pollutant, "SO , μg/m32", "SO, μg/m3")) |>
+  mutate(pollutant = str_replace(pollutant, "μg", "µg")) |>
+  mutate(pollutant = str_replace(pollutant, "m 3", "m3")) |>
+  mutate(averageing_time = case_when(
+    averageing_time == "24-houra" ~ "24-hour",
+    averageing_time == "Peak seasonb" ~ "Peak season",
+    averageing_time == "8-houra" ~ "8-hour",
+    TRUE ~ averageing_time
+  )) |>
+  mutate(across(interim_target1:AQG_level, as.numeric))
+
+
 
 

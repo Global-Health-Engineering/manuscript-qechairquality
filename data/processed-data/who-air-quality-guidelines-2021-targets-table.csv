@@ -1,0 +1,11 @@
+pollutant,averageing_time,interim_target1,interim_target2,interim_target3,interim_target4,AQG_level
+"PM2.5, µg/m3",Annual,35,25,15,10,5
+"PM2.5, µg/m3",24-hour,75,50,37.5,25,15
+"PM 10, µg/m3",Annual,70,50,30,20,15
+"PM 10, µg/m3",24-hour,150,100,75,50,45
+"O3, µg/m3",Peak season,100,70,NA,NA,60
+"O3, µg/m3",8-hour,160,120,NA,NA,100
+"NO2, µg/m3",Annual,40,30,20,NA,10
+"NO2, µg/m3",24-hour,120,50,NA,NA,25
+"SO, µg/m3",24-hour,125,50,NA,NA,40
+"CO, mg/m3",24-hour,7,NA,NA,NA,4
