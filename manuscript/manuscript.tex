@@ -78,6 +78,9 @@
 \def\fps@figure{htbp}
 \makeatother
 
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{longtable}
 \makeatletter
 \makeatother
 \makeatletter
@@ -257,7 +260,7 @@ quality \sep Malawi \sep
     urbanisation
 \end{keyword}
 \end{frontmatter}
-    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, breakable, enhanced, sharp corners, interior hidden, frame hidden, borderline west={3pt}{0pt}{shadecolor}]}{\end{tcolorbox}}\fi
+    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, boxrule=0pt, enhanced, sharp corners, breakable, frame hidden, borderline west={3pt}{0pt}{shadecolor}]}{\end{tcolorbox}}\fi
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
@@ -780,27 +783,33 @@ Therefore, for international comparisons and due to the lack of
 comprehensive Malawian Standards, we use the WHO recommendations as a
 basis of comparison for the measured values
 \citep{worldhealthorganization2021who}. The relevant particulate matter
-targets are presented in \textbf{?@tbl-who-targets}.
+targets are presented in Table~\ref{tbl-who-targets}.
 
-(TODO: REPLACE screenshot with actual data)
+\hypertarget{tbl-who-targets}{}
+\setlength{\LTpost}{0mm}
+\begin{longtable}{l|rrrrr}
+\caption{\label{tbl-who-targets}Recommended long- and short-term AQG (Air Quality Guidelines) levels and
+interim targets. }\tabularnewline
 
-\begin{table}
-
-\caption{\textbf{?(caption)}}\begin{minipage}[t]{\linewidth}
-
-{\centering 
-
-\raisebox{-\height}{
-
-\includegraphics[width=2.04in,height=\textheight]{img/image-replace-table.png}
-
-}
-
-}
-
-\end{minipage}%
-
-\end{table}
+\toprule
+\multicolumn{1}{l}{} & \multicolumn{4}{c}{\textbf{Interim target}} &  \\ 
+\cmidrule(lr){2-5}
+\multicolumn{1}{l}{} & 1 & 2 & 3 & 4 & AQG level \\ 
+\midrule
+\multicolumn{6}{l}{Annual} \\ 
+\midrule
+PM$_{2.5}$, µg/m$_{3}$ & $35.0$ & $25.0$ & $15.0$ & $10.0$ & $5.0$ \\ 
+PM$_{10}$, µg/m$_{3}$ & $70.0$ & $50.0$ & $30.0$ & $20.0$ & $15.0$ \\ 
+\midrule
+\multicolumn{6}{l}{24-hour\textsuperscript{\textit{1}}} \\ 
+\midrule
+PM$_{2.5}$, µg/m$_{3}$ & $75.0$ & $50.0$ & $37.5$ & $25.0$ & $15.0$ \\ 
+PM$_{10}$, µg/m$_{3}$ & $150.0$ & $100.0$ & $75.0$ & $50.0$ & $45.0$ \\ 
+\bottomrule
+\end{longtable}
+\begin{minipage}{\linewidth}
+\textsuperscript{\textit{1}}99th percentile (i.e. 3-4 exceedance days per year).\\
+\end{minipage}
 
 \hypertarget{particulate-measurements}{%
 \subsection{Particulate Measurements}\label{particulate-measurements}}

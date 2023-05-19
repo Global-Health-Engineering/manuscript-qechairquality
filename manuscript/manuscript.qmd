@@ -670,14 +670,41 @@ basis of comparison for the measured values
 [@worldhealthorganization2021who]. The relevant particulate matter
 targets are presented in @tbl-who-targets.
 
-(TODO: REPLACE screenshot with actual data)
-
 ```{r}
 #| label: tbl-who-targets
-#| tbl-cap: Particulate matter targets from [@worldhealthorganization2021who]
+#| tbl-cap: Recommended long- and short-term AQG (Air Quality Guidelines) levels and interim targets.
 
-knitr::include_graphics(here::here("manuscript/img/image-replace-table.png"))
-
+who_target_tidy |>
+  pivot_wider(names_from = "interim_target",
+              values_from = "concentration") |>
+  filter(str_detect(pollutant, "PM")) |>
+  relocate(AQG_level, .after = "4") |>
+  group_by(averaging_time) |>
+  # prepare table
+  gt(rowname_col = "pollutant") |>
+  tab_spanner(label = md("**Interim target**"), columns = `1`:`4`) |>
+  cols_label(
+    averaging_time = "Averaging time",
+    AQG_level = "AQG level"
+  ) |>
+  fmt_number(columns = `1`:AQG_level, decimals = 1) |>
+  tab_style(
+    locations = cells_column_labels(),
+    style = list(cell_text(weight = "bold"))
+  ) |>
+  tab_style(locations = cells_row_groups(),
+            style = list(cell_text(weight = "bold"))) |>
+  text_transform(locations = cells_stub(),
+                 fn = function(x) { 
+                   x |> 
+                     str_replace_all("2.5", "$_{2.5}$") |> 
+                     str_replace_all("3", "$_{3}$") |> 
+                     str_replace_all("10", "$_{10}$") }
+                 ) |> 
+  tab_footnote(
+    footnote = "99th percentile (i.e. 3-4 exceedance days per year).",
+    locations = cells_row_groups(group = "24-hour")
+  ) 
 
 ```
 

@@ -173,10 +173,7 @@ dat_air_quality_sum_who_2021 <- dat_air_quality |>
 
 # extract table from WHO pdf ----------------------------------------------
 
-
-
-
-who_df <- extract_tables(file = "data/raw-data/9789240034228-eng.pdf", pages = 159)
+who_df <- extract_tables(file = here::here("data/raw-data/9789240034228-eng.pdf"), pages = 159)
 
 who_target_tidy <- who_df[[1]] |>
   as_tibble() |>
@@ -211,8 +208,7 @@ who_target_tidy <- who_df[[1]] |>
 
 
 who_target_tidy |>
-  write_csv("data/processed-data/who-air-quality-guidelines-2021-targets-table.csv")
-
+  write_csv(here::here("data/processed-data/who-air-quality-guidelines-2021-targets-table.csv"))
 
 
 
