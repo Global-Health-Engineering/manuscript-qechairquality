@@ -141,7 +141,7 @@ municipal collection that is done is ad-hoc, sporadic, and based on the
 hospital's available financial resources. Rather, most hospital waste
 (infectious and non-infectious) is gathered by grounds staff and burnt
 at the hospital's incinerator, located at a central point within the
-hospital campus[^1] [@kalina2020this]. However, the vast majority of the
+hospital campus[^1] [@tilley2020wea]. However, the vast majority of the
 deposited waste is not incinerated, as a new incinerator provided by the
 Ministry of Health in late 2019, is only able to handle a small
 percentage of the hospital's waste. Furthermore, the incinerator is
@@ -170,7 +170,7 @@ article, 'unbearable.'
     bathing, and all other non-medical services.
 
 [^4]: ID5, 2019-11-18
-
+x
 Challenges with solid waste management (SWM) are not unique to Queen's,
 and remain persistent globally, particularly within African nations, and
 the Global South more broadly [@bundhoo2018solid;
