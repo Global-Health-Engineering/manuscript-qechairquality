@@ -9,7 +9,6 @@
   3p]{elsarticle}
 
 \usepackage{amsmath,amssymb}
-\usepackage{lmodern}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
@@ -19,6 +18,10 @@
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -119,10 +122,12 @@
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
 \makeatletter
-\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
 \makeatother
 \makeatletter
 \@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
 \makeatother
 \makeatletter
 \makeatother
@@ -164,7 +169,7 @@ Incineration, And Misinformation In Blantyre, Malawi}
 \author[]{Jonathan Kwangulero%
 %
 }
- \ead{kwangerlo@gmail.comm} 
+ \ead{kwangulero@gmail.com} 
 \author[1]{Lars Schöbitz%
 %
 }
@@ -252,7 +257,7 @@ quality \sep Malawi \sep
     urbanisation
 \end{keyword}
 \end{frontmatter}
-    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, frame hidden, borderline west={3pt}{0pt}{shadecolor}, interior hidden, enhanced, breakable, sharp corners]}{\end{tcolorbox}}\fi
+    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, breakable, enhanced, sharp corners, interior hidden, frame hidden, borderline west={3pt}{0pt}{shadecolor}]}{\end{tcolorbox}}\fi
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
@@ -299,9 +304,9 @@ hospital's available financial resources. Rather, most hospital waste
 (infectious and non-infectious) is gathered by grounds staff and burnt
 at the hospital's incinerator, located at a central point within the
 hospital campus\footnote{Sharps are handled and disposed of separately.}
-\citep{kalina2020this}. However, the vast majority of the deposited
-waste is not incinerated, as a new incinerator provided by the Ministry
-of Health in late 2019, is only able to handle a small percentage of the
+\citep{tilley2020wea}. However, the vast majority of the deposited waste
+is not incinerated, as a new incinerator provided by the Ministry of
+Health in late 2019, is only able to handle a small percentage of the
 hospital's waste. Furthermore, the incinerator is frequently inoperable,
 under repair, or without power\footnote{There was an older incinerator
   on the grounds which failed in 2017. Between 2017 and 2021, when the
@@ -313,8 +318,8 @@ clouds of smoke, which choke the grounds
 scattered across the QECH campus (Figure~\ref{fig-map-sensors})
 contribute their part, as grounds and maintenance staff habitually burn
 leaves and other garden refuse. Furthermore, caregivers\footnote{Patients
-  are required to bring a caregiver for in-patient hospitals stays,
-  usually a family member, who assist with feeding, bathing, and all
+  are required to bring a caregiver for in-patient hospital stays,
+  usually a family member, who assists with feeding, bathing, and all
   other non-medical services.} who reside separately on hospital
 grounds, cook for themselves throughout the day and night using biomass
 (charcoal or wood), and burn their own domestic waste. As a result, air
@@ -383,7 +388,7 @@ factors, including vehicular emissions, dust, or the use of low-quality
 fuels for cooking, lighting, and heating, however, the open burning of
 waste has been identified as one of the key contributors to air
 pollution within urban areas
-\citep{amegah2018proliferation, bulto2020impact}. Although open trashing
+\citep{amegah2018proliferation, bulto2020impact}. Although open trash
 burning is a problem in LICs broadly, for instance,
 \citet{wiedinmyer2014global} estimate that open trash burning
 contributes to 29\% of the total global PM\textsubscript{2.5}
@@ -548,10 +553,10 @@ below and shown in Figure 2:
   guardian: someone to cook for them, buy medicine, do their laundry,
   and help them bathe. The \textbf{Guardian Shelter} is a
   gender-separated concrete floor shelter for sleeping along with a
-  cooking pavilion and toilet/shower block are maintained by a the local
-  NGO Chira fund. Though simple, the facility is secure and offers one
-  of the only free/accessible toilet facilities for visitors on the QECH
-  campus.
+  cooking pavilion and toilet/shower block that are maintained by a
+  local NGO, Chira fund. Though simple, the facility is secure and
+  offers one of the only free/accessible toilet facilities for visitors
+  on the QECH campus.
 \end{itemize}
 
 \begin{figure}
@@ -608,7 +613,7 @@ resources, and quality of care between public wards, supported by the
 Malawi Ministry of Health, and the private wads with international
 funding, such as the aforementioned Mercy James Institute. For staff,
 these shortages have manifested in poor salaries, missed pay cheques,
-failing infrastructure and limited supplies \citep{kalina2020this}.
+failing infrastructure and limited supplies \citep{tilley2020wea}.
 Regarding waste management, these shortages have manifested in a chronic
 shortage of black bags, waste containers and cleaning staff. As a
 result, due to a lack of bags and storage containers, there is minimal
@@ -620,16 +625,16 @@ waste, all waste is mixed, necessitating more burning than would be
 necessary if non-hazardous waste was diverted, and contributing to
 workplace risk, with reports of accidental exposure to potentially
 infected waste, including accidental pokes from improperly disposed of
-sharps, common amongst hospital staff. Regardless, separation ends at
-the point of collection. The hospital is not serviced by regular
-municipal waste collection, and as a result, nearly all of the waste
-produced by the hospital, hazardous and non-hazardous, has to be
-disposed of on-site, either within the limited capacity of the hospital
-incinerator, or more commonly, through open burning. As a result, the
-constantly smouldering pile of waste puts forth a continuous cloud of
-grey smoke, which mingling with the dozens of other fires on the
-grounds, from cooking fires and burning garden waste, blankets Queen's
-in a permanent cloud of foul smelling haze.
+sharps, common amongst hospital staff \citep{kalina2020this}.
+Regardless, separation ends at the point of collection. The hospital is
+not serviced by regular municipal waste collection, and as a result,
+nearly all of the waste produced by the hospital, hazardous and
+non-hazardous, has to be disposed of on-site, either within the limited
+capacity of the hospital incinerator, or more commonly, through open
+burning. As a result, the constantly smouldering pile of waste puts
+forth a continuous cloud of grey smoke, which mingling with the dozens
+of other fires on the grounds, from cooking fires and burning garden
+waste, blankets Queen's in a permanent cloud of foul smelling haze.
 
 \hypertarget{measuring-air-quality}{%
 \subsection{Measuring Air Quality}\label{measuring-air-quality}}
@@ -644,7 +649,7 @@ lost if the internet connection breaks down. Because the Pi can only
 read digital signals, we needed to include an analogue-to-digital (ADC)
 converter. The amount of dust is measured by a Nova PM SDS011 High
 Precision Laser sensor. This sensor measures particles at 2.5 and 10 µm
-in diameter in mg/m\textsuperscript{3}. A list of the specific hardware
+in diameter in µg/m\textsuperscript{3}. A list of the specific hardware
 and software components can be found in Appendix B.
 
 \hypertarget{installation}{%
@@ -658,11 +663,11 @@ Mercy James, Malaria Project, Lighthouse Clinic) while the remaining
 four sensors were installed inside (Ward 6B, Administration, Lions
 Sight, uMoyo). All of the sensors were mounted to a wall at a height of
 approximately two metres from the ground with the help of QECH
-maintenance department personnel. This height was chosen to prevent the
-public from tampering with the equipment when they visit the hospital.
-Additionally, we assured that each pipe that inhaled ambient air was
-freely protruding in the building (room) in order to capture the air
-quality.
+maintenance department personnel. TThis height was chosen to both
+capture the approximate breathing zone and to prevent the public from
+tampering with the equipment when they visit the hospital. Additionally,
+we assured that each pipe that inhaled ambient air was freely protruding
+in the building (room) in order to capture the airquality.
 
 Because connecting each unit to a power supply was not possible, each
 unit was equipped with an external battery (5000 mAh) which powered the
@@ -725,11 +730,12 @@ study, the immediate hazards for the staff and patients at QECH are
 relevant regardless of the burning source.
 
 Knowing the exact burning locations and burning times, especially at the
-incinerator and the Guardian Shelter, would have helped in better
-identifying the sources and movements of the plumes. However, given the
-size of the campus and it's 24-hour schedule, a much larger research
-team would have been required to quantify all the burning. Finally, The
-humidity, and the potential for interference was not accounted for; the
+incinerator and the cooking times at the Guardian Shelter (though it is
+nearly constant), would have helped in better identifying the sources
+and movements of the plumes. However, given the size of the campus and
+its 24-hour schedule, a much larger research team would have been
+required to quantify all the burning. Finally, the relative humidity,
+and the potential for interference was not accounted for; the
 measurements were not adjusted for humidity which could affect the
 values, though not enough to significantly alter the key findings and
 need for immediate action.
@@ -750,7 +756,7 @@ Raw data and analysis-ready processed data is available as an R package
 at \citet{R-qechairquality}. The data underlying the tables and figures
 of this manuscript are contained in a repository alongside a
 reproducible document that contains the analysis code and the written
-narrative of the manuscript {[}TODO: manuscript software citation{]}.
+narrative of the manuscript \citep{schobitz2023manuscript}.
 
 \hypertarget{theorycalculation-not-applicable}{%
 \section{Theory/calculation (not
@@ -815,14 +821,16 @@ parameters are summarised in Table~\ref{tbl-peaks}.
 PM\textsubscript{10} are the number of data points above the WHO interim
 target 1 (annual) which is the least stringent; the number of
 observations recorded (count) is provided for reference.}\tabularnewline
-\toprule()
+\toprule\noalign{}
 location & n & pm10 & pm2.5 \\
-\midrule()
+\midrule\noalign{}
 \endfirsthead
-\toprule()
+\toprule\noalign{}
 location & n & pm10 & pm2.5 \\
-\midrule()
+\midrule\noalign{}
 \endhead
+\bottomrule\noalign{}
+\endlastfoot
 Administration & 10900 & 171 & 0 \\
 Guardian Shelter & 11032 & 4529 & 0 \\
 Lighthouse Clinic & 11472 & 4365 & 0 \\
@@ -831,7 +839,6 @@ Malaria & 12031 & 617 & 0 \\
 Mercy James & 12193 & 736 & 0 \\
 Ward 6B & 11861 & 1113 & 0 \\
 uMoyo & 10637 & 703 & 0 \\
-\bottomrule()
 \end{longtable}
 
 Over the course of the two-month study, the hazardous limits for both
@@ -845,21 +852,23 @@ at the Guardian Shelter, the reverse is true. Because the Lighthouse
 Clinic is within 50 m of the incinerator, the number and predominance of
 PM\textsubscript{10} peaks is characteristic of incomplete combustion
 and dust that is typical for the area and the open burning that occurs
-there. The residents at the Guardian Shelter however are mostly cooking
-within contained clay stoves that have been designed to improve
-combustion of the coal and wood that is burned within them. The fewer
-number of PM\textsubscript{10} peaks is a testament to this
-intervention, though the frequency of PM\textsubscript{2.5} peaks is
-still beyond acceptable.
+there. Although there is trash burning at the Guardian Shelter, the main
+source of smoke is from the constant cooking. The residents at the
+Guardian Shelter are mostly cooking coal and wood that is burned within
+small ``improved'' cooking stoves that are contained, in a row, within a
+dedicated cooking block. The fewer number of PM10 peaks is a testament
+to this intervention, though the frequency of PM2.5 peaks is still
+beyond acceptable.
 
 \hypertarget{hour-averages}{%
 \subsubsection{24-hour averages}\label{hour-averages}}
 
 The 24-hour averaged values (logged every 5 minutes) are presented for
 each location, for both PM\textsubscript{10} and PM\textsubscript{2.5}
-in fig-24-hour-average. As well as dampening local variation and peaks,
-the WHO air quality guidelines are also based on 24-hour averages which
-are the standard against which the health risks can be judged.
+in Figure~\ref{fig-24-hour-average}. As well as dampening local
+variation and peaks, the WHO air quality guidelines are also based on
+24-hour averages which are the standard against which the health risks
+can be judged.
 
 Overall, PM\textsubscript{2.5} values remained below 100
 µg/m\textsuperscript{3} at 6 of 8 locations (Administration, Lions
@@ -870,14 +879,14 @@ average values extending slightly above, and then infrequently.
 
 The daily averages at both the Lighthouse Clinic and the Guardian
 Shelter are both consistently higher for both parameters and the two
-averages closely followed the same general trends. Though the peaks at
-the Lighthouse Clinic were higher than the Guardian Shelter, the low
-values were consistently lower, indicating more times of little or no
-burning, unlike the Guardian Shelter emissions which were relatively
-constant. However, further analysis of 12 hour averages (8:00-15:59
-(working hours) and 16:00-7:59 (evening)) did not indicate clear
-differences between the time periods; stated differently, the data did
-not clearly point to more or less burning in the day or at night.
+averages closely follow the same general trends. Though the peaks at the
+Lighthouse Clinic were higher than the Guardian Shelter, the low values
+were consistently lower, indicating more times of little or no burning,
+unlike the Guardian Shelter emissions which were relatively constant.
+However, further analysis of 12 hour averages (8:00-15:59 (working
+hours) and 16:00-7:59 (evening)) did not indicate clear differences
+between the time periods; stated differently, the data did not clearly
+point to more or less burning in the day or at night.
 
 \begin{figure}
 
@@ -958,16 +967,17 @@ categorised according to WHO 2021 targets}
 \end{figure}
 
 Unsurprisingly, a majority of the air quality at the Lighthouse Clinic
-and the Guardian Shelter falls at, or below, interim target 1. What is
+and the Guardian Shelter falls at, or above, interim target 1. What is
 less expected is that even though there are fewer days of hazardous or
 very bad air quality at the other locations, most locations do not have
 target 4 values for even half of the time. Mercy James, the Malaria
 Project and Lions Sight have the largest percentages of days with air
-quality meeting the interim target 4. Interim target 2 rated air
-occupies an unexpectedly large proportion of the days at all locations,
-indicating that although there are a few very toxic, and a few quite
-good days, the majority of the air is actually neither, but still cause
-for concern.
+quality meeting the interim target 4, which is expected as these
+locations are further away from the main burning site. Interim target 2
+rated air occupies an unexpectedly large proportion of the days at all
+locations, indicating that although there are a few very toxic, and a
+few quite good days, the majority of the air is actually neither, but
+still cause for concern.
 
 \hypertarget{the-air-we-breathe-is-not-good-perspectives-from-qech}{%
 \subsection{``The Air We Breathe is Not Good'': Perspectives from
@@ -1111,10 +1121,15 @@ exceeded at all locations except for the Lions Sight hospital. The WHO
 limits were exceeded fewer than 50 times at five of the locations, and
 only the monitors at the Lighthouse Clinic and the Guardian Shelter
 recorded more than 50 instances above the most hazardous limit. The
+results for the Lighthouse Clinic are directly related to the main trash
+burning site, while the worrisome air quality at the Guardian Shelter is
+primarily from near constant cooking with coal. Simple improvements to
+the cooking block (e.g.~Whirlybird vents) could at least vent the smoke
+above the roof and improve the air quality at human level. The
 composition of emissions recorded ranged significantly, analysed as the
 ratio PM\textsubscript{10}:PM\textsubscript{2.5} likely reflects a range
 of burning styles and/or fuel (waste) type, and no discernible trend was
-observed.. Among interview respondents, there was a general consensus
+observed. Among interview respondents, there was a general consensus
 that air quality caused by the burning of waste within the hospital was
 a problem, although there were significant differences between
 respondents over their understandings of potential impacts, the
@@ -1140,7 +1155,7 @@ The authors are grateful to the staff, patients and caregivers at QECH
 for their assistance, willingness to share their views, and importantly,
 perseverance in delivering the best care possible under difficult
 circumstances. Moreover, we would like to acknowledge the assistance and
-effort of Open Data Durban, now the Open Cities Lab, for their
+effort of the Open Cities Lab (formerly Open Data Durban), for their
 assistance in constructing and programming the sensors.
 
 \hypertarget{appendix}{%
@@ -1299,12 +1314,9 @@ management}
   Air quality monitoring code is written in Python using the
   \href{https://pypi.org/project/python-aqi/}{aqi library} (A library of
   algorithms to convert between AQI value and pollutant concentration).
-  The code is stored on the
-  \href{https://github.com/opendatadurban/hospital_stations}{Open Data
-  Durban GitHub account} and is free for all to access. To be able to
-  collect data, the device needs to be connected to a reliable wifi
-  network, the SSID and password need to be coded onto the device during
-  step 2 in the building method.
+  To be able to collect data, the device needs to be connected to a
+  reliable wifi network, the SSID and password need to be coded onto the
+  device during step 2 in the building method.
 \item
   Once the whole device has been put together and placed on site, to
   access that data we use a combination of programs:
