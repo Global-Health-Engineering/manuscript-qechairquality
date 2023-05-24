@@ -40,7 +40,7 @@ author:
         - ref: ethz
   - name: Heiko Heilgendorff
     orcid: 0009-0004-1389-5541
-    email: heiko.heilgendorff@gmail.com
+    email: heiko@opencitieslab.org
     affiliations: 
         - id: ukzn
           name: University of KwaZulu-Natal
