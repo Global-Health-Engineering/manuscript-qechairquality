@@ -66,17 +66,14 @@ bibliography: [man-qechairquality.bib, packages.bib]
 format:
   docx: default
   elsevier-pdf:
+    include-in-header: 
+      text: '\usepackage{lineno}\linenumbers'
     keep-tex: true
     journal:
-      name: "Habitat International (Declarations of interest: none.)"
+      name: "Environment International"
       formatting: review
       model: 3p
       cite-style: authoryear
-      highlights:
-        - Low-cost monitors were used to assess air quality at Malawi’s largest hospital
-        - Open waste burning is physically extensive and temporally frequent across the hospital campus
-        - Air quality measured as PM~2.5~ and PM~10~ consistently exceeded even the most hazardous levels 
-        - The most exposed locations were where guardians of patients stay and the HIV clinic
 execute: 
   echo: false
   warning: false
