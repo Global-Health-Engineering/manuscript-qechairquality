@@ -1,5 +1,5 @@
 ---
-title: "'It Is Unbearable To Breath Here': Air Quality, Open Incineration, And Misinformation In Blantyre, Malawi"
+title: "'It Is Unbearable To Breathe Here': Air Quality, Open Incineration, And Misinformation In Blantyre, Malawi"
 author:
   - name: Elizabeth Tilley
     orcid: 0000-0002-2095-9724
