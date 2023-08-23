@@ -16,7 +16,7 @@ axis_title_just = "rt"
 xj <- switch(tolower(substr(axis_title_just, 1, 1)), b=0, l=0, m=0.5, c=0.5, r=1, t=1)
 yj <- switch(tolower(substr(axis_title_just, 2, 2)), b=0, l=0, m=0.5, c=0.5, r=1, t=1)
 
-base_size = 7
+base_size = 8
 axis_title_size = 6
 
 theme_set(
@@ -41,10 +41,10 @@ theme_set(
 
 # paramaters for ggsave
 
-param_dpi = 1000
-param_width_single = 90
-param_width_double = 190
-width_height_ratio = 190/275
+param_dpi = 300
+param_width_single = 85
+param_width_double = 180
+width_height_ratio = 180/275
 
 # test
 
