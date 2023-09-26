@@ -725,9 +725,12 @@ observations_location <- dat_in |>
   unique() |> 
   count(location)
 
-no_peaks_who <- dat_in |> 
+no_peaks_who
+
+
+dat_in |> 
   mutate(peaks = case_when(
-    indicator == "pm25" & value >  35 ~ TRUE,
+    indicator == "pm2.5" & value >  35 ~ TRUE,
     indicator == "pm10" & value >  70 ~ TRUE,
     TRUE ~ FALSE
   )) |> 
