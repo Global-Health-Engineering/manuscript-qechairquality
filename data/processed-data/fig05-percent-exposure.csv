@@ -1,81 +1,81 @@
 location,indicator,air_quality_who_annual,exposure_mins,exposure_hrs,exposure_percent
-Administration,pm10,Interim target 4,7490,125,14
-Administration,pm10,Interim target 3,16370,273,30
-Administration,pm10,Interim target 2,26640,444,48
-Administration,pm10,Interim target 1,3145,52,6
-Administration,pm10,Greater interim target 1,855,14,2
-Administration,pm2.5,Interim target 4,10995,183,20
-Administration,pm2.5,Interim target 3,25870,431,48
-Administration,pm2.5,Interim target 2,13740,229,25
-Administration,pm2.5,Interim target 1,3425,57,6
-Administration,pm2.5,Greater interim target 1,470,8,1
-Guardian Shelter,pm10,Interim target 4,2425,40,5
-Guardian Shelter,pm10,Interim target 3,5220,87,9
-Guardian Shelter,pm10,Interim target 2,13725,229,25
-Guardian Shelter,pm10,Interim target 1,11110,185,20
-Guardian Shelter,pm10,Greater interim target 1,22645,377,41
-Guardian Shelter,pm2.5,Interim target 4,4905,82,9
-Guardian Shelter,pm2.5,Interim target 3,3695,62,7
-Guardian Shelter,pm2.5,Interim target 2,9980,166,18
-Guardian Shelter,pm2.5,Interim target 1,10180,170,18
-Guardian Shelter,pm2.5,Greater interim target 1,26570,443,48
-Lighthouse Clinic,pm10,Interim target 4,5090,85,9
-Lighthouse Clinic,pm10,Interim target 3,8905,148,16
-Lighthouse Clinic,pm10,Interim target 2,15415,257,27
-Lighthouse Clinic,pm10,Interim target 1,6005,100,10
-Lighthouse Clinic,pm10,Greater interim target 1,21825,364,38
-Lighthouse Clinic,pm2.5,Interim target 4,11085,185,19
-Lighthouse Clinic,pm2.5,Interim target 3,8520,142,15
-Lighthouse Clinic,pm2.5,Interim target 2,12180,203,21
-Lighthouse Clinic,pm2.5,Interim target 1,6120,102,11
-Lighthouse Clinic,pm2.5,Greater interim target 1,19455,324,34
-Lions Sight,pm10,Interim target 4,10105,168,17
-Lions Sight,pm10,Interim target 3,17890,298,30
-Lions Sight,pm10,Interim target 2,25205,420,43
-Lions Sight,pm10,Interim target 1,5090,85,9
-Lions Sight,pm10,Greater interim target 1,455,8,1
-Lions Sight,pm2.5,Interim target 4,29280,488,50
-Lions Sight,pm2.5,Interim target 3,13680,228,23
-Lions Sight,pm2.5,Interim target 2,14190,236,24
-Lions Sight,pm2.5,Interim target 1,1525,25,3
-Lions Sight,pm2.5,Greater interim target 1,70,1,0
-Malaria,pm10,Interim target 4,20605,343,34
-Malaria,pm10,Interim target 3,18240,304,30
-Malaria,pm10,Interim target 2,15955,266,27
-Malaria,pm10,Interim target 1,2265,38,4
-Malaria,pm10,Greater interim target 1,3085,51,5
-Malaria,pm2.5,Interim target 4,21635,361,36
-Malaria,pm2.5,Interim target 3,18855,314,31
-Malaria,pm2.5,Interim target 2,13780,230,23
-Malaria,pm2.5,Interim target 1,2995,50,5
-Malaria,pm2.5,Greater interim target 1,2890,48,5
-Mercy James,pm10,Interim target 4,30655,511,51
-Mercy James,pm10,Interim target 3,14305,238,23
-Mercy James,pm10,Interim target 2,10495,175,17
-Mercy James,pm10,Interim target 1,1825,30,3
-Mercy James,pm10,Greater interim target 1,3680,61,6
-Mercy James,pm2.5,Interim target 4,40300,672,66
-Mercy James,pm2.5,Interim target 3,10120,169,17
-Mercy James,pm2.5,Interim target 2,5320,89,9
-Mercy James,pm2.5,Interim target 1,1480,25,2
-Mercy James,pm2.5,Greater interim target 1,3745,62,6
-Ward 6B,pm10,Interim target 4,9020,150,15
-Ward 6B,pm10,Interim target 3,18185,303,31
-Ward 6B,pm10,Interim target 2,21730,362,37
-Ward 6B,pm10,Interim target 1,4805,80,8
-Ward 6B,pm10,Greater interim target 1,5565,93,9
-Ward 6B,pm2.5,Interim target 4,17335,289,29
-Ward 6B,pm2.5,Interim target 3,13735,229,23
-Ward 6B,pm2.5,Interim target 2,15745,262,27
-Ward 6B,pm2.5,Interim target 1,6310,105,11
-Ward 6B,pm2.5,Greater interim target 1,6180,103,10
-uMoyo,pm10,Interim target 4,10755,179,20
-uMoyo,pm10,Interim target 3,11060,184,20
-uMoyo,pm10,Interim target 2,25105,418,46
-uMoyo,pm10,Interim target 1,4015,67,7
-uMoyo,pm10,Greater interim target 1,3515,59,7
-uMoyo,pm2.5,Interim target 4,21005,350,38
-uMoyo,pm2.5,Interim target 3,4860,81,9
-uMoyo,pm2.5,Interim target 2,19405,323,36
-uMoyo,pm2.5,Interim target 1,7190,120,13
-uMoyo,pm2.5,Greater interim target 1,1995,33,4
+Administration,PM[10],Interim target 4,7490,125,14
+Administration,PM[10],Interim target 3,16370,273,30
+Administration,PM[10],Interim target 2,26640,444,48
+Administration,PM[10],Interim target 1,3145,52,6
+Administration,PM[10],Greater interim target 1,855,14,2
+Administration,PM[2.5],Interim target 4,10995,183,20
+Administration,PM[2.5],Interim target 3,25870,431,48
+Administration,PM[2.5],Interim target 2,13740,229,25
+Administration,PM[2.5],Interim target 1,3425,57,6
+Administration,PM[2.5],Greater interim target 1,470,8,1
+Guardian Shelter,PM[10],Interim target 4,2425,40,5
+Guardian Shelter,PM[10],Interim target 3,5220,87,9
+Guardian Shelter,PM[10],Interim target 2,13725,229,25
+Guardian Shelter,PM[10],Interim target 1,11110,185,20
+Guardian Shelter,PM[10],Greater interim target 1,22645,377,41
+Guardian Shelter,PM[2.5],Interim target 4,4905,82,9
+Guardian Shelter,PM[2.5],Interim target 3,3695,62,7
+Guardian Shelter,PM[2.5],Interim target 2,9980,166,18
+Guardian Shelter,PM[2.5],Interim target 1,10180,170,18
+Guardian Shelter,PM[2.5],Greater interim target 1,26570,443,48
+Lighthouse Clinic,PM[10],Interim target 4,5090,85,9
+Lighthouse Clinic,PM[10],Interim target 3,8905,148,16
+Lighthouse Clinic,PM[10],Interim target 2,15415,257,27
+Lighthouse Clinic,PM[10],Interim target 1,6005,100,10
+Lighthouse Clinic,PM[10],Greater interim target 1,21825,364,38
+Lighthouse Clinic,PM[2.5],Interim target 4,11085,185,19
+Lighthouse Clinic,PM[2.5],Interim target 3,8520,142,15
+Lighthouse Clinic,PM[2.5],Interim target 2,12180,203,21
+Lighthouse Clinic,PM[2.5],Interim target 1,6120,102,11
+Lighthouse Clinic,PM[2.5],Greater interim target 1,19455,324,34
+Lions Sight,PM[10],Interim target 4,10105,168,17
+Lions Sight,PM[10],Interim target 3,17890,298,30
+Lions Sight,PM[10],Interim target 2,25205,420,43
+Lions Sight,PM[10],Interim target 1,5090,85,9
+Lions Sight,PM[10],Greater interim target 1,455,8,1
+Lions Sight,PM[2.5],Interim target 4,29280,488,50
+Lions Sight,PM[2.5],Interim target 3,13680,228,23
+Lions Sight,PM[2.5],Interim target 2,14190,236,24
+Lions Sight,PM[2.5],Interim target 1,1525,25,3
+Lions Sight,PM[2.5],Greater interim target 1,70,1,0
+Malaria,PM[10],Interim target 4,20605,343,34
+Malaria,PM[10],Interim target 3,18240,304,30
+Malaria,PM[10],Interim target 2,15955,266,27
+Malaria,PM[10],Interim target 1,2265,38,4
+Malaria,PM[10],Greater interim target 1,3085,51,5
+Malaria,PM[2.5],Interim target 4,21635,361,36
+Malaria,PM[2.5],Interim target 3,18855,314,31
+Malaria,PM[2.5],Interim target 2,13780,230,23
+Malaria,PM[2.5],Interim target 1,2995,50,5
+Malaria,PM[2.5],Greater interim target 1,2890,48,5
+Mercy James,PM[10],Interim target 4,30655,511,51
+Mercy James,PM[10],Interim target 3,14305,238,23
+Mercy James,PM[10],Interim target 2,10495,175,17
+Mercy James,PM[10],Interim target 1,1825,30,3
+Mercy James,PM[10],Greater interim target 1,3680,61,6
+Mercy James,PM[2.5],Interim target 4,40300,672,66
+Mercy James,PM[2.5],Interim target 3,10120,169,17
+Mercy James,PM[2.5],Interim target 2,5320,89,9
+Mercy James,PM[2.5],Interim target 1,1480,25,2
+Mercy James,PM[2.5],Greater interim target 1,3745,62,6
+Ward 6B,PM[10],Interim target 4,9020,150,15
+Ward 6B,PM[10],Interim target 3,18185,303,31
+Ward 6B,PM[10],Interim target 2,21730,362,37
+Ward 6B,PM[10],Interim target 1,4805,80,8
+Ward 6B,PM[10],Greater interim target 1,5565,93,9
+Ward 6B,PM[2.5],Interim target 4,17335,289,29
+Ward 6B,PM[2.5],Interim target 3,13735,229,23
+Ward 6B,PM[2.5],Interim target 2,15745,262,27
+Ward 6B,PM[2.5],Interim target 1,6310,105,11
+Ward 6B,PM[2.5],Greater interim target 1,6180,103,10
+uMoyo,PM[10],Interim target 4,10755,179,20
+uMoyo,PM[10],Interim target 3,11060,184,20
+uMoyo,PM[10],Interim target 2,25105,418,46
+uMoyo,PM[10],Interim target 1,4015,67,7
+uMoyo,PM[10],Greater interim target 1,3515,59,7
+uMoyo,PM[2.5],Interim target 4,21005,350,38
+uMoyo,PM[2.5],Interim target 3,4860,81,9
+uMoyo,PM[2.5],Interim target 2,19405,323,36
+uMoyo,PM[2.5],Interim target 1,7190,120,13
+uMoyo,PM[2.5],Greater interim target 1,1995,33,4

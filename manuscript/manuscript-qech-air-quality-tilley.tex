@@ -134,7 +134,7 @@
 \makeatletter
 \makeatother
 \makeatletter
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, sharp corners, frame hidden, interior hidden, enhanced, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, interior hidden, enhanced, frame hidden, breakable, sharp corners]}{\end{tcolorbox}}\fi
 \makeatother
 \makeatletter
 \makeatother
@@ -834,14 +834,14 @@ location & n & pm10 & pm2.5 \\
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-Administration & 10900 & 171 & 0 \\
-Guardian Shelter & 11032 & 4529 & 0 \\
-Lighthouse Clinic & 11472 & 4365 & 0 \\
-Lions Sight & 11749 & 91 & 0 \\
-Malaria & 12031 & 617 & 0 \\
-Mercy James & 12193 & 736 & 0 \\
-Ward 6B & 11861 & 1113 & 0 \\
-uMoyo & 10637 & 703 & 0 \\
+Administration & 10900 & 171 & 94 \\
+Guardian Shelter & 11032 & 4529 & 5314 \\
+Lighthouse Clinic & 11472 & 4365 & 3891 \\
+Lions Sight & 11749 & 91 & 14 \\
+Malaria & 12031 & 617 & 578 \\
+Mercy James & 12193 & 736 & 749 \\
+Ward 6B & 11861 & 1113 & 1236 \\
+uMoyo & 10637 & 703 & 399 \\
 \end{longtable}
 
 Over the course of the two-month study, the hazardous limits for both
@@ -968,6 +968,8 @@ is shown in Figure~\ref{fig-percent-exposure}. Each square represents
 categorised according to WHO 2021 targets}
 
 \end{figure}
+
+\includegraphics{manuscript-qech-air-quality-tilley_files/figure-pdf/unnamed-chunk-9-1.pdf}
 
 Unsurprisingly, a majority of the air quality at the Lighthouse Clinic
 and the Guardian Shelter falls at, or above, interim target 1. What is

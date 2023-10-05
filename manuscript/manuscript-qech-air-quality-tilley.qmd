@@ -725,10 +725,7 @@ observations_location <- dat_in |>
   unique() |> 
   count(location)
 
-no_peaks_who
-
-
-dat_in |> 
+no_peaks_who <- dat_in |> 
   mutate(peaks = case_when(
     indicator == "pm2.5" & value >  35 ~ TRUE,
     indicator == "pm10" & value >  70 ~ TRUE,
@@ -918,6 +915,11 @@ measured time.
 #| fig-align: center
 #| fig-height: 5
 
+# Create a custom labeller function
+custom_labeller <- function(labels) {
+  lapply(labels, function(x) bquote(.(x)))
+}
+
 percent_exposure <- dat_air_quality_sum_who_2021 |> 
   #filter(indicator == "PM~2.5~") |> 
   group_by(location, indicator) |> 
@@ -947,12 +949,16 @@ percent_exposure <- dat_air_quality_sum_who_2021 |>
     & air_quality_who_annual == "Interim target 4" ~ exposure_percent + 1,
     
     TRUE ~ exposure_percent
-  )) 
+  )) |> 
+  mutate(indicator = case_when(
+    indicator == "pm10" ~ "PM[10]",
+    indicator == "pm2.5" ~ "PM[2.5]"
+  )) |> 
+  ungroup()
 
   #filter(is.na(exposure_percent))
 
-fig05 <- 
-ggplot(data = percent_exposure,
+fig05 <- ggplot(data = percent_exposure,
        aes(fill = air_quality_who_annual, values = exposure_percent)) +
   geom_waffle(color ="white", size = 0.5, n_rows = 5, na.rm = TRUE) +
   coord_equal() +
@@ -960,7 +966,8 @@ ggplot(data = percent_exposure,
   scale_fill_brewer(type = "div", palette = "RdYlBu", direction = -1) +
   scale_x_discrete(expand=c(0,0)) +
   scale_y_discrete(expand=c(0,0)) +
-  facet_grid(location ~ indicator, switch = "y") +
+  facet_grid(location~indicator, switch = "y", 
+             labeller = labeller(location = custom_labeller, indicator = label_parsed)) +
 
   #facet_wrap(~location, ncol = 2) +
   #theme_minimal(base_size = 14) +
@@ -984,6 +991,36 @@ percent_exposure |>
   write_csv(here::here("data/processed-data/fig05-percent-exposure.csv"))
 
 ```
+
+```{r}
+# Load required libraries
+library(ggplot2)
+
+# Create example data
+df <- data.frame(
+  x = rep(1:3, each = 10),
+  y = rnorm(30),
+  group = rep(c("A[1]", "B[2]", "C[3]"), each = 10),
+  category = rep(c("Cat 1", "Cat 2"), 15)
+)
+
+# Create a custom labeller function
+custom_labeller <- function(labels) {
+  lapply(labels, function(x) bquote(.(x)))
+}
+
+# Create a ggplot with subscript labels in facets
+p <- ggplot(df, aes(x, y)) +
+  geom_point() +
+  facet_grid(category ~ group, labeller = labeller(category = custom_labeller, group = label_parsed))
+
+# Print the plot
+print(p)
+
+
+
+```
+
 
 Unsurprisingly, a majority of the air quality at the Lighthouse Clinic
 and the Guardian Shelter falls at, or above, interim target 1. What is
